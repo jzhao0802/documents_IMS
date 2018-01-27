@@ -1,0 +1,72 @@
+model{
+
+# Set Prior Constants For Population precision parameters
+
+#m0<-3
+#var0<-1
+
+#a1<-m0/2
+#a2<-m0*var0/2
+
+# Loop Through Tier categories (all except 1)
+
+for(j in 1:(prods-1)){
+
+# Prior Mean and Precision
+
+mu[j]~dnorm(0,0.05)
+#Precb[j]~dgamma(a1,a2)
+Varb[j]~dunif(0,9)
+Precb[j]<-1/Varb[j]
+
+myvar[j]<-1/Precb[j]
+
+# Prior For Price Coefficients
+
+	for(att in 1:atts){ 
+	alpha[j,att]~dnorm(0,0.05)
+		          }
+		  }
+			
+# Loop Through IDs
+
+for(i in 1:IDs){
+
+	# Loop Through Tier Categories	
+		
+	for(j in 1:(prods-1)){
+		
+		# Draw Intercepts		
+
+		b[i,j]~dnorm(0,Precb[j])
+		 }
+
+
+		# Loop through scenarios
+
+	for(scen in 1:scens){
+
+		# Loop Through Tiers (all except 1)
+		
+		for(j in 1:(prods-1)){
+
+				u[i,scen,j]<-exp(mu[j]+b[i,j]+inprod(alpha[j,],A[scen+scens*(i-1),]))
+				
+				}			    						
+
+		u[i,scen,prods]<-1	
+
+	w[i,scen]<-sum(u[i,scen,])
+
+	for(j in 1:prods){
+					
+	p[i,scen,j]<-u[i,scen,j]/w[i,scen]
+				}
+	
+
+	Y[scen+scens*(i-1),1:prods]~dmulti(p[i,scen,1:prods],1)
+					
+  				}
+			}
+
+}

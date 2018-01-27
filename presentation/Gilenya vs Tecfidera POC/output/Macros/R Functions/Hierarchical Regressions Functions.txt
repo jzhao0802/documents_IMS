@@ -1,0 +1,354 @@
+###################################################### Start code ################################
+library(Baldur)
+library(MASS)
+
+
+
+### Bayesreg function
+
+Bayesreg<-function(n=1,y,X,PPop,mu,V0,tol = 1e-6, empirical = FALSE){
+
+# Find prior precision matrix 
+
+P0<-solve(V0)
+
+# Find Data precision, Posterior Precision and posterior variance
+
+PData<-t(X)%*%(PPop%*%X)
+PStar<-PData+P0
+Sigma<-solve(PStar)
+
+# Find "data" Double check this part
+
+bdata<-solve(PData)%*%((t(X)%*%PPop)%*%y)
+
+# Find posterior mean
+
+bstar<-Sigma%*%(PData%*%bdata+P0%*%mu)
+
+
+return(mvrnorm(n = n,bstar, Sigma, tol = tol, empirical = empirical))
+
+}
+
+
+MBayesreg<-function(n=1,y,X,dimbeta,PPop,mu,V0,tol = 1e-6, empirical = FALSE){
+
+
+IDs<-length(y)/dimbeta
+PPoplarge<-matrix(0,nrow=IDs*dimbeta,ncol=IDs*dimbeta)
+
+for(i in 1:IDs){
+	      PPoplarge[(1+dimbeta*(i-1)):(dimbeta+dimbeta*(i-1)),(1+dimbeta*(i-1)):(dimbeta+dimbeta*(i-1))]<-PPop	
+	      }
+
+PPoplarge
+
+return(Bayesreg(n=n,y,X,PPoplarge,mu,V0,tol = tol, empirical =empirical))
+
+}
+
+
+MBayesPrec<-function(y,X,mu,dimbeta,V0,m0){
+
+n<-1
+
+IDs<-length(y)/dimbeta
+
+resid<-y-X%*%mu
+stackresid<-matrix(0,nrow=dimbeta,ncol=IDs)
+
+for(i in 1:IDs){
+	      stackresid[1:dimbeta,i]<-resid[(1+dimbeta*(i-1)):(dimbeta+dimbeta*(i-1))]	
+	      }	
+
+
+VData<-stackresid%*%t(stackresid)/IDs
+VPost<-(IDs*VData+m0*V02)/(m0+IDs)
+
+m<-m0+IDs
+
+PPop<-matrix(0,nrow=dimbeta,ncol=dimbeta)
+# Update precision assuming independence of dimensions (Replace with Wishart function)
+
+for(i in 1:dimbeta){
+rate<-VPost[1,1]*m
+PPop[i,i]<-rgamma(n=1, shape=m, rate =rate, scale = 1/rate)
+		}
+return(PPop)
+
+}
+
+
+HMlogitInner<-function(draws=10,muold,Z,y,X,mu2,V0,PPop,Start,dimbeta,IDs){
+
+mu<-muold
+dimy<-length(y[1,])
+dimX<-length(X[1,])
+
+dimbeta<-length(mu2)
+beta<-matrix(0,nrow=IDs*dimbeta,ncol=1)
+
+alpha<-matrix(0,nrow=length(y[,1]),ncol=dimy)
+
+
+# Calculate prior mean for the betas
+
+for(j in 1:draws){
+
+munew<-Z%*%mu
+
+# Loop through IDs and update betas 
+
+for(i in 1:IDs){
+mutemp<-matrix(munew[(1+dimbeta*(i-1)):(dimbeta+dimbeta*(i-1)),1],nrow=dimbeta,ncol=1)
+
+
+
+
+beta[(1+dimbeta*(i-1)):(dimbeta+dimbeta*(i-1)),1]<-BMLogit(y[Start[i,1]:Start[i,2],1:dimy],X[Start[i,1]:Start[i,2],1:(dimbeta/(dimy-1))],alpha[Start[i,1]:Start[i,2],1:dimy],mutemp,PPop,1,Prec=TRUE,A=FALSE)
+
+}
+
+# Update mu
+
+mu<-MBayesreg(n=1,beta,Z,dimbeta,PPop,mu2,V0,tol = 1e-6, empirical = FALSE)
+
+}
+
+# Store output
+
+return(list(beta=beta,mu=mu))
+
+}
+
+
+HMlogitInnerv2<-function(draws=10,muold,Z,y,X,mu2,V0,PPop,Start,dimbeta,IDs){
+
+mu<-muold
+dimy<-length(y[1,])
+dimX<-length(X[1,])
+
+dimbeta<-length(mu2)
+beta<-matrix(0,nrow=IDs*dimbeta,ncol=1)
+
+alpha<-matrix(0,nrow=length(y[,1]),ncol=dimy)
+
+
+# Calculate prior mean for the betas
+
+for(j in 1:draws){
+
+# Block 1:
+	
+	# Note --> Setup smaller Z matrix (needs to be linked outside function evantually)
+	
+	
+	dimXsmall<-4
+	dimbetasmall<-dimXsmall*(dimy-1)
+
+	Z1<-matrix(0,nrow=IDs*dimbetasmall,ncol=dimbetasmall)  
+
+	for(i in 1:IDs){
+			Z1[(1+dimbetasmall*(i-1)):(dimbetasmall+dimbetasmall*(i-1)),1:dimbetasmall]<-diag(dimbetasmall)
+			}
+	
+
+	# Setup smaller mu matrix and populate
+
+	musmall<-matrix(0,nrow=dimbetasmall,ncol=1)
+
+	for(l in 1:(dimy-1)){
+			    musmall[(1+dimXsmall*(l-1)):(dimXsmall+dimXsmall*(l-1)),1]<-mu[(1+dimbeta*(l-1)):(dimXsmall+dimbeta*(l-1)),1]				
+	
+			    }	
+
+	munew<-Z1%*%musmall
+
+	# Setup smaller X matrix and populate
+
+	XSmall<-X[,1:dimXsmall]	
+
+	# Calculate alpha matrix [Add later after testing]
+
+
+	
+
+	for(i in 1:IDs){
+	mutemp<-matrix(munew[(1+dimbetasmall*(i-1)):(dimbetasmall+dimbetasmall*(i-1)),1],nrow=dimbetasmall,ncol=1)
+#	beta[(1+dimbeta*(i-1)):(dimbeta+dimbeta*(i-1)),1]<-BMLogit(y[Start[i,1]:Start[i,2],1:dimy],XSmall[Start[i,1]:Start[i,2],1:(dimbetasmall/(dimy-1))],alpha[Start[i,1]:Start[i,2],1:dimy],mutemp,PPop,1,Prec=TRUE,A=FALSE)
+
+              }
+
+
+#	munew<-Z%*%mu
+
+
+# Loop through IDs and update betas 
+	
+#	for(i in 1:IDs){
+#	mutemp<-matrix(munew[(1+dimbeta*(i-1)):(dimbeta+dimbeta*(i-1)),1],nrow=dimbeta,ncol=1)
+#	beta[(1+dimbeta*(i-1)):(dimbeta+dimbeta*(i-1)),1]<-BMLogit(y[Start[i,1]:Start[i,2],1:dimy],X[Start[i,1]:Start[i,2],1:(dimbeta/(dimy-1))],alpha[Start[i,1]:Start[i,2],1:dimy],mutemp,PPop,1,Prec=TRUE,A=FALSE)
+
+#              }
+
+
+
+# Update mu
+
+mu<-MBayesreg(n=1,beta,Z,dimbeta,PPop,mu2,V0,tol = 1e-6, empirical = FALSE)
+
+}
+
+# Store output
+
+return(list(beta=beta,mu=mu))
+
+}
+
+
+
+
+
+HMLogit<-function(outerdraws,innerdraws,y,X,Z,mu2,V0,Start,V02,m0,IDs){
+
+dimy2<-length(y[1,])
+dimX2<-length(X[1,])
+
+dimbeta<-dimX2*(dimy2-1)
+IDs<-length(Z[,1])
+mu<-mu2
+
+# Initialize precision matrix
+
+PPop<-solve(V02)
+
+
+betaout<-matrix(0,nrow=outerdraws,ncol=IDs*dimbeta)
+muout<-matrix(0,nrow=outerdraws,ncol=length(mu2))
+PPopout<-matrix(0,nrow=outerdraws,ncol=dimbeta)
+
+# Run outerloop
+
+for(i in 1:outerdraws){
+
+# Run innerloop in order to update mu and beta
+
+muold<-mu
+
+
+
+#Innerout<-HMlogitInner(draws=innerdraws,muold,Z,y,X,mu2,V0,PPop,Start,dimbeta,IDs)
+
+
+
+mu<-matrix(Innerout$mu,nrow=length(mu2),ncol=1)
+beta<-Innerout$beta
+
+# Update precision
+
+PPop<-MBayesPrec(beta,Z,mu,dimbeta,V02,m0)
+
+# Store output
+
+betaout[i,1:(IDs*dimbeta)]<-beta
+muout[i,1:length(mu2)]<-mu
+
+for(j in 1:dimbeta){
+		PPopout[i,j]<-PPop[j,j]	
+		}
+
+
+}
+
+list(beta=betaout,mu=muout,PPop=PPopout)
+
+}
+
+
+
+
+HMLogitv2<-function(outerdraws,innerdraws,y,X,Z,mu2,V0,Start,V02,m0,IDs){
+
+dimy2<-length(y[1,])
+dimX2<-length(X[1,])
+
+dimbeta<-dimX2*(dimy2-1)
+IDs<-length(Z[,1])
+mu<-mu2
+
+# Initialize precision matrix
+
+PPop<-solve(V02)
+
+
+betaout<-matrix(0,nrow=outerdraws,ncol=IDs*dimbeta)
+muout<-matrix(0,nrow=outerdraws,ncol=length(mu2))
+PPopout<-matrix(0,nrow=outerdraws,ncol=dimbeta)
+
+# Run outerloop
+PPopSmall<-PPop[1:8,1:8]
+
+
+
+for(i in 1:outerdraws){
+
+# Run innerloop in order to update mu and beta
+
+muold<-mu
+
+#Block 1:
+
+	dimbetasmall<-8
+	Z2<-matrix(0,nrow=IDs*dimbetasmall,ncol=dimbetasmall)
+	for(i in 1:IDs){
+			Z2[(1+dimbetasmall*(i-1)):(dimbetasmall+dimbetasmall*(i-1)),1:dimbetasmall]<-diag(dimbetasmall)
+			}
+
+
+
+
+XSmall<-X[,1:4]
+musmall<-matrix(mu2[1:8,1],nrow=8,ncol=1)
+V0Small<-V0[1:8,1:8]
+V02Small<-V02[1:8,1:8]
+muoldsmall<-matrix(muold[1:8,1],nrow=8,ncol=1)
+
+
+Innerout1<-HMlogitInner(draws=innerdraws,muoldsmall,Z2,y,XSmall,musmall,V0Small,PPopSmall,Start,dimbetasmall,IDs)
+
+#Innerout<-HMlogitInner(draws=innerdraws,muold,Z,y,X,mu2,V0,PPop,Start,dimbeta,IDs)
+
+
+
+#muSmall<-matrix(Innerout1$mu,nrow=length(muoldsmall),ncol=1)
+#betaSmall<-Innerout1$beta
+
+#mu<-matrix(Innerout$mu,nrow=length(mu2),ncol=1)
+#beta<-Innerout$beta
+
+# Update precision
+
+#PPopSmall<-MBayesPrec(betaSmall,Z,muSmall,dimbetasmall,V02Small,m0)
+
+# Store output
+
+#betaout[i,1:(IDs*dimbeta)]<-beta
+#muout[i,1:length(mu2)]<-mu
+
+for(j in 1:dimbeta){
+#		PPopout[i,j]<-PPop[j,j]	
+		}
+
+
+}
+
+#list(beta=betaout,mu=muout,PPop=PPopout)
+
+}
+
+
+
+
+
+

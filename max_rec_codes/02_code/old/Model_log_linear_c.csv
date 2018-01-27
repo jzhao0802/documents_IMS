@@ -1,0 +1,2 @@
+Trail,Cost,svm_option,crit
+1,10 to 50 by 10  , -l 3 -w 3 --b 0 ,multiply by 1000

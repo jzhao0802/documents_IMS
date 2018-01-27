@@ -1,0 +1,31 @@
+covariate_name	mean_score	sd_score	top20_occupation	var_description
+pre_relapse	14.9087120832977	5.08471789532871	1	Boolean for presence of pre-index relapse
+pre_cort_iv	12.3511708126709	4.49518129478289	1	Boolean for pre-index iv corticosteroid use
+persist_days	11.1251896611082	4.08753175982766	1	Days persistent, equal to 180 where persistent = 1
+pre_90_cort_any	10.9083630907371	4.26894263203046	1	Boolean for corticosteroid use within 90 days pre-index
+pre_cort_oral	5.40787287176112	3.18335522226826	1	Boolean for pre-index oral corticosteroid use
+num_pre_op_dx_4	4.8923668440681	2.7075724772282	0.99	Number of pre-index OP visits with an MS diagnosis: 13+
+num_pre_meds_4	4.5594555237943	2.76170901255019	0.99	Number of unique medications received pre-index: 12+
+num_pre_meds_2	2.13852041494236	1.8116907012243	0.83	Number of unique medications received pre-index: 4-7
+pre_comor4	1.83839299101606	1.56639827081216	0.85	Boolean for pre-index symptoms and comorbidities: Muscle weakness/spasm/spasticity
+pre_comor23	1.69585967155797	1.31459500368306	0.83	Boolean for pre-index symptoms and comorbidities: Depression Comorbidity
+pre_comor6	1.64210980213882	1.61382487416745	0.78	Boolean for pre-index symptoms and comorbidities: Bladder Dysfunction
+pre_comor16	1.64084601098502	1.41074421999113	0.78	Boolean for pre-index symptoms and comorbidities: Respiration/breathing problems
+pre_non_ms_total_allowed_4	1.50291699536995	1.19888583055418	0.83	Total non-ms pre-index costs: highest 25%
+pre_comor1	1.40618667882806	1.18812690087046	0.8	Boolean for pre-index symptoms and comorbidities: Numbness
+pre_comor15	1.39104036488161	1.25270192453874	0.67	Boolean for pre-index symptoms and comorbidities: Tremor
+pchrlson_1	1.38001241419221	1.05682213077409	0.67	CCI score = 0
+pre_comor12	1.31833710180097	1.36795244313879	0.64	Boolean for pre-index symptoms and comorbidities: Pain
+pre_comor2	1.28393420822015	1.28823400758502	0.63	Boolean for pre-index symptoms and comorbidities: Walking (Gait), Balance, and Coordination Problems
+pchrlson_3	1.10380281081424	1.2300464243259	0.6	CCI score = 2+
+pre_ms_total_allowed_4	1.01028130208393	0.94994438443155	0.61	MS-related total pre-index costs: highest 25%
+num_pre_meds_1	0.980010215656149	0.90855563132119	0.54	Number of unique medications received pre-index: 0-3
+idx_spec_04	0.967295959746798	0.847087318376622	0.66	Index Prescribing physician specialty: Other
+pre_comor31	0.936199705197671	0.962913864330634	0.58	Boolean for pre-index symptoms and comorbidities: Tobacco use (including disorder)
+num_pre_meds_3	0.858141388988734	0.883058140262855	0.51	Number of unique medications received pre-index: 8-11
+pre_comor5	0.839422047403927	0.792968579908369	0.59	Boolean for pre-index symptoms and comorbidities: Fatigue
+pre_ms_total_allowed_1	0.81810613062198	0.831335089588688	0.51	MS-related total pre-index costs: lowest 25%
+pre_non_ms_total_allowed_1	0.796916234534161	0.694517833798555	0.54	Total non-ms pre-index costs: lowest 25%
+age_2	0.793959943537863	0.879516572083161	0.45	Aged 35-44
+idx_paytype_C	0.773459388666898	0.804817421054304	0.4	Index Payer type: Commercial
+pat_region_MW	0.758819710748186	0.65670993817187	0.45	Region: Midwest

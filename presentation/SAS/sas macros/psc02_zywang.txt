@@ -1,0 +1,80 @@
+/* ----------------------------------------------------------------- */
+/* Program:  psc02.txt                                               */
+/* Description: logon script to establish remote connection to psc02 */
+/* ----------------------------------------------------------------- */
+
+   log "NOTE: Script file entered.";
+
+   if not tcp then goto notcp;
+   if signoff then goto signoff;
+
+/* -----  TCP SIGNON  --------------------------------------------- */
+   waitfor 'login:' , 120 seconds: noinit;
+
+/* -----  Unix Logon  --------------------------------------------- */
+
+   type 'wangzh';  
+   type LF;
+   waitfor 'Password', 120 seconds : nolog;
+   type 'wzy2013';  
+   type LF;
+
+   unx_log:
+      waitfor '$'
+         , '>'              /* -- another common prompt character -- */
+         , '%'              /* -- another common prompt character -- */
+         , '}'              /* -- another common prompt character -- */
+         , 'Login incorrect'      : nouser
+         , 'Enter terminal type'  : unx_term
+         , 'TERM'                 : unx_term
+         , 30 seconds             : timeout
+         ;
+      log 'NOTE: Logged onto UNIX... Starting remote SAS now.';
+   type '/usr/local/sas9_2_oracle/SASFoundation/9.2/sas -synchio -dmr -comamid tcp -device grlink -terminal -no\$syntaxcheck' LF;
+   waitfor 'SESSION ESTABLISHED', 90 seconds : nosas;
+   log 'NOTE: SAS/CONNECT conversation established.';
+   stop;
+
+/* -----  TCP Signoff  -------------------------------------------- */
+
+   signoff:
+   waitfor '$'
+         , '>'             /* -- another common prompt character -- */
+         , '%'             /* -- another common prompt character -- */
+         , '}'             /* -- another common prompt character -- */
+         , 60 seconds
+         ;
+   type    'logout' LF;
+   log 'NOTE: SAS/CONNECT conversation terminated.';
+   stop;
+
+/* -----  Subroutines  -------------------------------------------- */
+
+   unx_term:
+      type 'tty' LF;
+      goto unx_log;
+
+   timeout:
+      log 'ERROR: Timeout waiting for remote session response.';
+      abort;
+
+   nouser:
+      log 'ERROR: Unrecognized userid or password.';
+      abort;
+
+   notcp:
+      log 'ERROR: Incorrect communications access method.';
+      log 'NOTE: You must set "OPTIONS COMAMID=TCP;" before using this';
+      log '      script file.';
+      abort;
+
+   noinit:
+      log 'ERROR: Did not understand remote session banner.';
+
+   nolog:
+      log 'ERROR: Did not receive userid or password prompt.';
+      abort;
+
+   nosas:
+      log 'ERROR: Did not get SAS software startup messages.';
+      abort;

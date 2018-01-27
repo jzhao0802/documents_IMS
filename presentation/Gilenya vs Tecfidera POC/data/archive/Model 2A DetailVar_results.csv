@@ -1,0 +1,13 @@
+,Group,Gilenya_pat,Gilenya_relapse,Gilenya_relapse_rate,Tecfidera_pat,Tecfidera_relapse,Tecfidera_relapse_rate,actual_treatment,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment
+training,lowest 35%,640,36,0.06,289,56,0.19,-0.14,0.06,0.24,-0.18
+training,middle 30%,515,40,0.08,282,32,0.11,-0.04,0.10,0.13,-0.03
+training,highest 35%,574,127,0.22,355,38,0.11,0.11,0.19,0.07,0.12
+test,lowest 50%,208,23,0.11,124,12,0.10,0.01,0.07,0.20,-0.12
+test,highest 50%,212,29,0.14,119,18,0.15,-0.01,0.18,0.08,0.11
+,,,,,,,,,,,
+AUC of training data: 0.67,,,,,,,,,,,
+AUC of test data: 0.5,,,,,,,,,,,
+,,,,,,,,,,,
+,summary_actual_treatment_effect,summary_expect_treatment_effect,,,,,,,,,
+Training data,-0.19,-0.22,,,,,,,,,
+Test data,0.03,-0.23,,,,,,,,,

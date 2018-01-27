@@ -1,0 +1,36 @@
+Variable,Variable Description,Average Importance Score,SD of Importance Score,% of times in top 30 variables
+pre_relapse,Boolean for presence of pre-index relapse,14.9 ,5.1 ,100%
+pre_cort_iv,Boolean for pre-index iv corticosteroid use,12.4 ,4.5 ,100%
+persist_days,"Days persistent, equal to 180 where persistent = 1",11.1 ,4.1 ,100%
+pre_90_cort_any,Boolean for corticosteroid use within 90 days pre-index,10.9 ,4.3 ,100%
+pre_cort_oral,Boolean for pre-index oral corticosteroid use,5.4 ,3.2 ,100%
+num_pre_op_dx_4,Number of pre-index OP visits with an MS diagnosis: 13+,4.9 ,2.7 ,99%
+num_pre_meds_4,Number of unique medications received pre-index: 12+,4.6 ,2.8 ,99%
+num_pre_meds_2,Number of unique medications received pre-index: 4-7,2.1 ,1.8 ,83%
+pre_comor4,Boolean for pre-index symptoms and comorbidities: Muscle weakness/spasm/spasticity,1.8 ,1.6 ,85%
+pre_comor23,Boolean for pre-index symptoms and comorbidities: Depression Comorbidity,1.7 ,1.3 ,83%
+pre_comor6,Boolean for pre-index symptoms and comorbidities: Bladder Dysfunction,1.6 ,1.6 ,78%
+pre_comor16,Boolean for pre-index symptoms and comorbidities: Respiration/breathing problems,1.6 ,1.4 ,78%
+pre_non_ms_total_allowed_4,Total non-ms pre-index costs: highest 25%,1.5 ,1.2 ,83%
+pre_comor1,Boolean for pre-index symptoms and comorbidities: Numbness,1.4 ,1.2 ,80%
+pre_comor15,Boolean for pre-index symptoms and comorbidities: Tremor,1.4 ,1.3 ,67%
+pchrlson_1,CCI score = 0,1.4 ,1.1 ,67%
+pre_comor12,Boolean for pre-index symptoms and comorbidities: Pain,1.3 ,1.4 ,64%
+pre_comor2,"Boolean for pre-index symptoms and comorbidities: Walking (Gait), Balance, and Coordination Problems",1.3 ,1.3 ,63%
+pchrlson_3,CCI score = 2+,1.1 ,1.2 ,60%
+pre_ms_total_allowed_4,MS-related total pre-index costs: highest 25%,1.0 ,0.9 ,61%
+num_pre_meds_1,Number of unique medications received pre-index: 0-3,1.0 ,0.9 ,54%
+idx_spec_04,Index Prescribing physician specialty: Other,1.0 ,0.8 ,66%
+pre_comor31,Boolean for pre-index symptoms and comorbidities: Tobacco use (including disorder),0.9 ,1.0 ,58%
+num_pre_meds_3,Number of unique medications received pre-index: 8-11,0.9 ,0.9 ,51%
+pre_comor5,Boolean for pre-index symptoms and comorbidities: Fatigue,0.8 ,0.8 ,59%
+pre_ms_total_allowed_1,MS-related total pre-index costs: lowest 25%,0.8 ,0.8 ,51%
+pre_non_ms_total_allowed_1,Total non-ms pre-index costs: lowest 25%,0.8 ,0.7 ,54%
+age_2,age 35-44,0.8 ,0.9 ,45%
+idx_paytype_C,Index Payer type: Commercial,0.8 ,0.8 ,40%
+pat_region_MW,Region: Midwest,0.8 ,0.7 ,45%
+,,,,
+Notes:,,,,
+1. above results were calculated based on Uplift Ramdom Forest with 100 runs,,,,
+2. importance of variable was calculated using built-in function 'varImportance',,,,
+,,,,

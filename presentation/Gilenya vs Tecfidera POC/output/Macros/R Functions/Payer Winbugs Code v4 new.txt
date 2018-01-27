@@ -1,0 +1,97 @@
+model{
+
+# Set Prior Constants For Population precision parameters (note: 3 prior observations yields better convergence)
+
+m0<-3
+var0<-1
+
+a1<-m0/2
+a2<-m0*var0/2
+
+
+
+# Set A3
+
+for(i in 1:IDs){
+   for(scen in 1:scens){
+	for(j in 1:prods){
+			for(att in 1:atts2){
+			
+			   A3[scen+scens*(i-1),j,att]<-A2[scen+scens*(i-1),att]*z[j,att]	
+					   }	
+			    }		
+
+			}	
+}
+
+
+
+# Loop Through Product categories (all except 1)
+
+for(j in 1:(prods-1)){
+
+	# Prior Mean and Precision for population
+
+	mu[j]~dnorm(0,0.01)
+	Precb[j]~dgamma(a1,a2)
+	myvar[j]<-1/Precb[j]
+
+			# Priors for Patient Coefficients
+
+			for(att in 1:atts1){
+								alpha[j,att]~dnorm(0,0.01)
+								}	
+	
+						}
+						
+	# Priors for Product Coefficients	
+
+	for(att in 1:atts2){
+							delta[att]~dnorm(0,0.01)
+							}					
+
+	# Loop Through IDs
+
+for(i in 1:IDs){
+				
+					# Loop Through Product Categories	
+		
+			for(j in 1:(prods-1)){
+		
+				# Draw Intercepts		
+
+				b[i,j]~dnorm(0,Precb[j])
+							 }	
+
+		# Loop through scenarios
+
+	for(scen in 1:scens){
+
+		# Loop Through Tiers (all except 1)
+		
+		for(j in 1:(prods-1)){
+
+				u[i,scen,j]<-exp(mu[j]+b[i,j]+inprod(alpha[j,],A1[scen+scens*(i-1),])+inprod(delta[],A3[scen+scens*(i-1),j,]))
+				
+				
+				}			    						
+
+		u[i,scen,prods]<-exp(inprod(delta[],A3[scen+scens*(i-1),prods,]) )	
+
+
+	w[i,scen]<-sum(u[i,scen,])
+
+	for(j in 1:(prods)){
+					
+	p[i,scen,j]<-u[i,scen,j]/w[i,scen]
+				}
+	
+
+	Y[scen+scens*(i-1),1:prods]~dmulti(p[i,scen,1:prods],N[scen+scens*(i-1)])
+					
+  				}
+
+
+
+				}
+}

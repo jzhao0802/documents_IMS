@@ -1,0 +1,26 @@
+Variable,Variable Description,Average Importance Score,SD of Importance Score,% of times in top 20 variables
+pre_ms_total_allowed_2,MS-related total pre-index costs: middle lower 25%,2.8 ,0.7 ,88%
+pre_ms_total_allowed_4,MS-related total pre-index costs: highest 25%,2.7 ,0.8 ,80%
+pre_cort_iv,Boolean for pre-index iv corticosteroid use,2.7 ,0.8 ,76%
+pre_comor5,Boolean for pre-index symptoms and comorbidities: Fatigue,2.6 ,0.8 ,78%
+der_sex_female,Female,2.6 ,0.8 ,68%
+pat_region_S,Region: South,2.5 ,0.7 ,74%
+age_3,Aged 45-54,2.3 ,0.5 ,70%
+pre_non_ms_total_allowed_3,Total non-ms pre-index costs: middle upper 25%,2.3 ,0.6 ,70%
+idx_spec_03,Index Prescribing physician specialty: Neurology,2.3 ,0.5 ,68%
+idx_spec_04,Index Prescribing physician specialty: Other,2.2 ,0.6 ,62%
+pre_comor13,Boolean for pre-index symptoms and comorbidities: Headache,2.2 ,0.6 ,55%
+pat_region_E,Region: Northeast,2.2 ,0.6 ,60%
+num_pre_meds_2,Number of unique medications received pre-index: 4-7,2.2 ,0.6 ,58%
+pat_region_MW,Region: Midwest,2.1 ,0.5 ,54%
+pre_mri_any,Boolean for pre-index MRI use,2.1 ,0.7 ,57%
+num_pre_op_dx_3,Number of pre-index OP visits with an MS diagnosis: 8-12,2.1 ,0.6 ,53%
+num_pre_op_dx_2,Number of pre-index OP visits with an MS diagnosis: 5-7,2.0 ,0.6 ,48%
+pre_comor25,Boolean for pre-index symptoms and comorbidities: Dyslipidemia,2.0 ,0.6 ,46%
+idx_paytype_S,Index Payer type: Self-insured,2.0 ,0.5 ,51%
+idx_paytype_C,Index Payer type: Commercial,2.0 ,0.5 ,52%
+,,,,
+Notes:,,,,
+1. above results were calculated based on Uplift Ramdom Forest with 100 runs,,,,
+2. importance of variable was calculated using built-in function 'varImportance',,,,
+,,,,

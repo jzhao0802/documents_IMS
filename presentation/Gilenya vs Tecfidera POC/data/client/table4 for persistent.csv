@@ -1,0 +1,16 @@
+Model type ,Modified Outcome (Y/N),Mean / standard deviation ,Quintile 1,Quinitel 2,Quintile 3,Quintile 4 ,Quintile 5 
+Logistic regression,Y,Mean,0.114 ,0.130 ,0.108 ,0.094 ,0.067 
+Logistic regression,Y,standard deviation,0.037 ,0.039 ,0.039 ,0.038 ,0.035 
+Logistic regression,N,Mean,0.163 ,0.125 ,0.093 ,0.089 ,0.046 
+Logistic regression,N,standard deviation,0.039 ,0.042 ,0.043 ,0.043 ,0.030 
+Uplift Random Forest,Y,Mean,0.131 ,0.134 ,0.103 ,0.078 ,0.070 
+Uplift Random Forest,Y,standard deviation,0.041 ,0.040 ,0.038 ,0.043 ,0.031 
+Uplift Random Forest,N,Mean,0.126 ,0.122 ,0.107 ,0.094 ,0.079 
+Uplift Random Forest,N,standard deviation,0.039 ,0.046 ,0.036 ,0.042 ,0.034 
+,,,,,,,
+Notes:,,,,,,,
+1. all these models' response variable is persistent,,,,,,,
+2. interaction between treatment and other covariates were not included in logistic regression model,,,,,,,
+3. uplift value equals to persistent rate of Gilenya minus that of Tecfidera,,,,,,,
+4. modified outcome means label outcome as 1 if persistent and 0 if not for Gilenya; while code 0 if persistent and 1 if not for Tecfidera,,,,,,,
+5. the above results are on the basis of test data (50% of full data),,,,,,,

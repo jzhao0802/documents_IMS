@@ -1,0 +1,28 @@
+CV Lasso based on AUC evaluation,,,,,,,,,,,
+,Group,Gilenya_pat,Gilenya_relapse,Gilenya_relapse_rate,Tecfidera_pat,Tecfidera_relapse,Tecfidera_relapse_rate,actual_treatment,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment
+training,lowest 35%,1465,179,0.1221843,700,104,0.148571429,-0.026387128,0.120128935,0.130924637,-0.010795702
+training,middle 30%,0,0,NaN,0,0,NaN,NaN,NaN,NaN,NaN
+training,highest 35%,1729,203,0.117408907,926,126,0.136069114,-0.018660208,0.120785216,0.130237002,-0.009451785
+test,lowest 50%,354,44,0.124293785,179,27,0.150837989,-0.026544204,0.120128935,0.130924637,-0.010795702
+test,highest 50%,66,8,0.121212121,64,3,0.046875,0.074337121,0.123743506,0.127138256,-0.00339475
+AUC of training data: 0.5169525,,,,,,,,,,,
+AUC of test data: 0.5101066,,,,,,,,,,,
+,,,,,,,,,,,
+,summary_actual_treatment_effect,summary_expect_treatment_effect,,,,,,,,,
+training data,-0.01995109,-0.007281835,,,,,,,,,
+test data,-0.1008813,-0.007400952,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+CV Lasso based on treatment effect evaluation,,,,,,,,,,,
+,Group,Gilenya_pat,Gilenya_relapse,Gilenya_relapse_rate,Tecfidera_pat,Tecfidera_relapse,Tecfidera_relapse_rate,actual_treatment,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment
+training,lowest 35%,632,41,0.064873418,297,27,0.090909091,-0.026035673,0.109611534,0.145990964,-0.036379431
+training,middle 30%,516,49,0.09496124,280,41,0.146428571,-0.051467331,0.116572356,0.137554719,-0.020982363
+training,highest 35%,581,113,0.194492255,349,58,0.166189112,0.028303143,0.127098761,0.126483586,0.000615175
+test,lowest 50%,219,20,0.091324201,113,15,0.132743363,-0.041419162,0.111657971,0.143480021,-0.03182205
+test,highest 50%,201,32,0.15920398,130,15,0.115384615,0.043819365,0.125156684,0.128527582,-0.003370897
+AUC of training data: 0.5881884,,,,,,,,,,,
+AUC of test data: 0.5883044,,,,,,,,,,,
+,,,,,,,,,,,
+,summary_actual_treatment_effect,summary_expect_treatment_effect,,,,,,,,,
+training data,-0.05816788,-0.02777406,,,,,,,,,
+test data,-0.08523853,-0.02845115,,,,,,,,,

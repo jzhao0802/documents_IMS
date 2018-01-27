@@ -1,0 +1,143 @@
+
+# initial settings 
+setwd("C:\\bayes")
+
+# load packages
+library(lattice)
+library(coda)
+library("arm")
+library("R2WinBUGS")
+
+# Links to Mlogit Function 
+source("\\\\plyvnas01\\statservices\\CustomStudies\\Pricing Studies\\2013\\Abbive - 933756\\105 Physician R code\\R Functions\\Mlogit Simulation v4.txt")
+
+# Read In Data
+MyData<-read.table("D:\\Zhao Jie\\working materials\\Materials for Pricing\\case study\\abbvie\\canada\\Abbvie_m_CA_pt1.csv",header=T,sep=',')
+MyData[1:32,]
+
+dim(MyData)
+# Sets Some Constants 
+# atts1 - Number of Patient Attributes (dummies that go to to all choices??) -- In this CASE NO Patient Attributes
+# atts2 - Number of Physician Attributes (dummies relevant to only some choices)
+prods<-7   
+Obs<-dim(MyData)[1]
+Scens<-6
+IDs<-Obs/Scens
+atts1<-0
+atts2<-4   
+iters<-20000
+name="Abbvie_Canada_pt1_u"
+
+# Sets Up Dependent and Independent Variable Matrices
+y1<-c(1:(Obs*prods))
+dim(y1)<-c(Obs,prods)
+
+#No need to setup P
+A2<-c(1:(Obs*atts2))
+dim(A2)<-c(Obs,atts2)
+
+# Dummies referencing for which products these are attributes
+z<-c(1:(prods*atts2))
+dim(z)<-c(prods,atts2)
+z<-0*z
+
+# Assigns The Dependent Columns (Last Column should be reference category)
+# Treatment Options Without Product Attributes
+# Run Means and set reference category to something with Large average share  (Vanco?)
+y1[1:Obs,1]<-MyData$RegimenA[1:Obs]   
+y1[1:Obs,2]<-MyData$RegimenB[1:Obs]  #Abbvie 
+y1[1:Obs,3]<-MyData$RegimenC[1:Obs]  #Gilead 
+y1[1:Obs,4]<-MyData$Interferon[1:Obs] 
+y1[1:Obs,5]<-MyData$Boceprevir[1:Obs] 
+y1[1:Obs,6]<-MyData$Telaprevir[1:Obs]  
+y1[1:Obs,7]<-MyData$Other[1:Obs]  
+
+mean(y1)
+mean(y1[1:Obs,1])
+mean(y1[1:Obs,2])
+mean(y1[1:Obs,3])
+mean(y1[1:Obs,4])
+mean(y1[1:Obs,5])
+mean(y1[1:Obs,6])
+mean(y1[1:Obs,7])
+
+
+N<-y1[,1]
+for(i in 1:Obs)
+{
+  N[i]<-sum(y1[i,1:prods])
+}
+y1[1:32,]
+N[1:15]
+
+# Patient Dummies (Not Needed Here)
+
+# Product Attributes 
+A2[1:Obs,1]<-(MyData$x11[1:Obs])
+A2[1:Obs,2]<-(MyData$x12[1:Obs])
+A2[1:Obs,3]<-(MyData$x21[1:Obs])
+A2[1:Obs,4]<-(MyData$x22[1:Obs])
+
+
+# Set Indicator Variables for which products are affiliated with each attribute
+
+z[2,1]<-1  # Abbvie x11
+z[2,2]<-1  # Abbvie x12
+z[3,3]<-1  # Gilead x21
+z[3,4]<-1  # Gilead x22
+
+z
+
+
+# Set Data List (passed to HMlogit) - Should contain both data and constants
+data<-list(Y=y1,N=N,z=z,A2=A2,prods=prods,atts2=atts2,IDs=IDs,scens=Scens)
+# Y - Dependent Variables
+# A - Independent Variables
+# prods - Number of tier categories - 1
+# atts -  Number of Attributes
+# IDs - Number of Plans
+# scens - Number of Scenarios
+
+# Set Parameters to Monitor
+parameters <- c("mu","delta","b","Precb","u")
+# Set Inits for MCMC
+mu<-c(1:(prods-1))
+mu<-0*mu
+delta<-c(1:atts2)
+delta<-0*delta
+Precb<-c(1:(prods-1))
+Precb<-0*Precb+10000
+Precb
+b<-c(1:(IDs*(prods-1)))
+dim(b)<-c(IDs,(prods-1))
+b<-0*b
+
+# Gives Intital Values for three Markov Chains
+inits1 <- list (mu=mu,Precb=Precb,b=b,delta=delta)
+inits2 <- list (mu=mu,Precb=Precb,b=b,delta=delta)
+inits3 <- list (mu=mu,Precb=Precb,b=b,delta=delta)
+inits <- list (inits1, inits2, inits3)
+
+# Run Winbugs and compute/store output
+#testsim<-HMlogit3(data,inits,parameters,n.chains=3,n.iter=iters,debug=TRUE,prods=prods,atts2=atts2,IDs=IDs,name="Abbvie_Canada_pt1")
+mysim.sim<-bugs(data=data,inits=inits,parameters=parameters, "Payer Winbugs Code v5 new.txt",n.chains=3, n.iter=300, debug=FALSE,codaPkg=TRUE)
+
+# Display Summary Stats
+
+mysim.sim
+names(mysim.sim)
+attach.bugs(testsim)
+mysim.sim$summary
+pdf(file="summary_sim.pdf")
+plot(mysim.sim)
+dev.off()
+getwd()
+
+coda.sim <-read.bugs(mysim.sim)
+plot(coda.sim)
+autocorr.plot(coda.sim[[1]],lag.max=0)
+?autocorr.plot
+gelman.diag(coda.sim,confidence = 0.95, transform=FALSE, autoburnin=TRUE)
+?gelman.diag
+?gelman.plot
+gelman.plot(coda.sim)

@@ -1,0 +1,36 @@
+Variable,Variable Description,Average in Quintile 1,SD in Quintile 1,Average in Quintile 5,SD in Quintile 5,Difference between Quintile 1 and 5,p-value
+persist_days,"Days persistent, equal to 180 where persistent = 1",166.50 ,6.17 ,136.92 ,14.90 ,29.58 ,7.99E-22
+num_pre_meds_3,Number of unique medications received pre-index: 8-11,0.34 ,0.09 ,0.17 ,0.06 ,0.17 ,1.00E-14
+pat_region_MW,Region: Midwest,0.26 ,0.08 ,0.43 ,0.13 ,-0.18 ,9.62E-13
+pre_ms_total_allowed_4,MS-related total pre-index costs: highest 25%,0.30 ,0.06 ,0.21 ,0.06 ,0.09 ,5.65E-10
+pre_comor9,Boolean for pre-index symptoms and comorbidities: Speech disorders,0.02 ,0.01 ,0.01 ,0.01 ,0.01 ,4.97E-09
+idx_paytype_C,Index Payer type: Commercial,0.62 ,0.07 ,0.69 ,0.06 ,-0.07 ,6.66E-08
+idx_prodtype_P,Index Provider type: Preferred Provided Organization,0.82 ,0.03 ,0.78 ,0.04 ,0.04 ,1.50E-07
+pre_comor31,Boolean for pre-index symptoms and comorbidities: Tobacco use (including disorder),0.13 ,0.05 ,0.08 ,0.04 ,0.05 ,1.99E-07
+idx_prodtype_H,Index Provider type: Health Maintenance Organization,0.09 ,0.02 ,0.13 ,0.04 ,-0.04 ,4.40E-07
+idx_paytype_S,Index Payer type: Self-insured,0.36 ,0.07 ,0.29 ,0.06 ,0.06 ,8.45E-07
+pre_non_ms_total_allowed_3,Total non-ms pre-index costs: middle upper 25%,0.28 ,0.05 ,0.23 ,0.05 ,0.05 ,1.24E-06
+pat_region_S,Region: South,0.37 ,0.09 ,0.25 ,0.09 ,0.12 ,1.59E-06
+pre_comor5,Boolean for pre-index symptoms and comorbidities: Fatigue,0.39 ,0.07 ,0.31 ,0.08 ,0.08 ,1.59E-06
+pre_comor1,Boolean for pre-index symptoms and comorbidities: Numbness,0.31 ,0.08 ,0.20 ,0.08 ,0.11 ,4.22E-06
+pre_ms_total_allowed_1,MS-related total pre-index costs: lowest 25%,0.20 ,0.06 ,0.26 ,0.07 ,-0.06 ,1.08E-05
+idx_prodtype_I,Index Provider type: Indemnity,0.02 ,0.01 ,0.02 ,0.01 ,-0.01 ,1.48E-05
+pat_region_W,Region: West,0.08 ,0.03 ,0.06 ,0.02 ,0.02 ,2.21E-05
+pre_comor2,"Boolean for pre-index symptoms and comorbidities: Walking (Gait), Balance, and Coordination Problems",0.29 ,0.08 ,0.22 ,0.08 ,0.07 ,2.67E-05
+pre_comor33,Boolean for pre-index symptoms and comorbidities: Valvular disease,0.04 ,0.02 ,0.03 ,0.01 ,0.02 ,3.04E-05
+age_3,Aged 45-54,0.32 ,0.05 ,0.37 ,0.06 ,-0.05 ,3.78E-05
+pre_comor4,Boolean for pre-index symptoms and comorbidities: Muscle weakness/spasm/spasticity,0.26 ,0.09 ,0.15 ,0.08 ,0.11 ,5.33E-05
+pre_comor27,Boolean for pre-index symptoms and comorbidities: History of CVD,0.09 ,0.03 ,0.06 ,0.03 ,0.03 ,5.33E-05
+pre_comor8,Boolean for pre-index symptoms and comorbidities: Hearing Loss,0.03 ,0.01 ,0.02 ,0.01 ,0.01 ,1.05E-04
+pre_comor19,Boolean for pre-index symptoms and comorbidities: Other emotional change,0.00 ,0.00 ,0.01 ,0.00 ,0.00 ,3.47E-04
+pre_comor30,Boolean for pre-index symptoms and comorbidities: Obesity,0.07 ,0.02 ,0.05 ,0.02 ,0.02 ,5.94E-04
+num_pre_op_dx_1,Number of pre-index OP visits with an MS diagnosis: 0-4,0.11 ,0.08 ,0.18 ,0.10 ,-0.06 ,9.11E-04
+num_pre_op_dx_3,Number of pre-index OP visits with an MS diagnosis: 8-12,0.32 ,0.08 ,0.28 ,0.08 ,0.04 ,9.11E-04
+pre_comor12,Boolean for pre-index symptoms and comorbidities: Pain,0.10 ,0.05 ,0.07 ,0.04 ,0.03 ,1.23E-03
+pre_rx_any,Boolean for pre-index DMT use (max of pre_rx1-pre_rx11),0.73 ,0.05 ,0.69 ,0.06 ,0.04 ,1.37E-03
+idx_paytype_M,Index Payer type: Medicare,0.01 ,0.00 ,0.01 ,0.00 ,0.00 ,1.46E-03
+,,,,,,,
+Notes:,,,,,,,
+1. top 30 variables selected on the basis of p-value,,,,,,,
+2. the above results were calculated based on Uplift Ramdom Forest with 100 runs,,,,,,,
+3. p-value was calculated using Friedman rank sum test,,,,,,,

@@ -1,0 +1,262 @@
+## R function for calling underlying Winbugs Code
+
+Mlogit<-function(y,X,N,name,iters=11000){
+
+# Arguments:
+# y --> Matrix with dependent variables (count of number of selections for each alternative)
+# X --> Matrix with independent variables
+# N --> Number of observations for multinomial    	
+# name --> Model name
+## iters (optional) number of iterations for Markov Chain
+
+
+## Create name for output file 
+
+Means<-paste(name,"_Means.csv",sep="")
+
+# Calculate number of products, number of independent variables, and number of 
+
+prods<-length(y[1,])
+atts<-length(X[1,])
+Scens<-length(N)
+
+# Create "Data" list for Winbugs 
+
+data<-list(prods=prods,atts=atts,Scens=Scens,X=X,N=N,y=y)
+
+# Set parameters to output 
+
+parameters<-list("int","beta")
+
+# Set some information for winbugs (Number of Markov Chains, iterations, and ask to debug)
+
+n.chains<-4
+n.iter<-iters
+debug<-T
+
+# Set initial values for MArkov Chain
+
+betain<-0*c(1:atts)
+intin<-0*c(1:(prods-1))
+
+inits1<-list(beta=betain,int=intin)
+inits2<-list(beta=betain,int=intin)
+inits3<-list(beta=betain,int=intin)
+inits4<-list(beta=betain,int=intin)
+
+inits<-inits<-list(inits1,inits2,inits3,inits4)
+
+## Calls Winbugs Code
+
+mysim.sim<-bugs(data=data,inits=inits,parameters=parameters, "Aggregate Winbugs Code.txt",n.chains=n.chains, n.iter=n.iter, debug=debug)
+
+# Set dimensions for output
+
+params<-prods+atts*(prods-1)
+
+# Attach information from winbugs run
+
+attach.all(mysim.sim)
+
+# Store key output 
+
+Mean<-mysim.sim$summary[1:params,1]
+Stdev<-mysim.sim$summary[1:params,2]
+Per2.5<-mysim.sim$summary[1:params,3]
+Per25<-mysim.sim$summary[1:params,4]
+Per50<-mysim.sim$summary[1:params,5]
+Per75<-mysim.sim$summary[1:params,6]
+Per97.5<-mysim.sim$summary[1:params,7]
+Rhat<-mysim.sim$summary[1:params,8]		
+n.eff<-mysim.sim$summary[1:params,9]
+
+# Create dataframe with key output
+
+MCMC<-data.frame(Mean=Mean, Stdev=Stdev, Per2.5=Per2.5,Per25=Per25,Per50=Per50,Per75=Per75,Per97.5=Per97.5,Rhat=Rhat, n.eff=n.eff)
+
+# Write to output file
+
+write.table(MCMC, file=Means, sep= "," , col.names=NA)
+
+# Return dataframe to R
+
+return(MCMC)
+
+}
+
+
+
+
+Mlogit2<-function(y,X,X2,N,name,iters=11000){
+
+# Arguments:
+# y --> Matrix with dependent variables (count of number of selections for each alternative)
+# X --> Matrix with independent variables
+# N --> Number of observations for multinomial    	
+# name --> Model name
+## iters (optional) number of iterations for Markov Chain
+
+
+## Create name for output file 
+
+Means<-paste(name,"_Means.csv",sep="")
+
+# Calculate number of products, number of independent variables, and number of 
+
+prods<-length(y[1,])
+atts<-length(X[1,])
+atts2<-length(X2[1,])
+Scens<-length(N)
+
+# Create "Data" list for Winbugs 
+
+data<-list(prods=prods,atts=atts,atts2=atts2,Scens=Scens,X=X,X2=X2,N=N,y=y)
+
+# Set parameters to output 
+
+parameters<-list("int","beta","beta2")
+
+# Set some information for winbugs (Number of Markov Chains, iterations, and ask to debug)
+
+n.chains<-4
+n.iter<-iters
+debug<-T
+
+# Set initial values for MArkov Chain
+
+betain<-0*c(1:atts)
+intin<-0*c(1:(prods-1))
+
+inits1<-list(beta=betain,int=intin)
+inits2<-list(beta=betain,int=intin)
+inits3<-list(beta=betain,int=intin)
+inits4<-list(beta=betain,int=intin)
+
+inits<-inits<-list(inits1,inits2,inits3,inits4)
+
+## Calls Winbugs Code
+
+mysim.sim<-bugs(data=data,inits=inits,parameters=parameters, "Aggregate Winbugs Code v2.txt",n.chains=n.chains, n.iter=n.iter, debug=debug)
+
+# Set dimensions for output
+
+params<-prods+atts+atts2
+
+# Attach information from winbugs run
+
+attach.all(mysim.sim)
+
+# Store key output 
+
+Mean<-mysim.sim$summary[1:params,1]
+Stdev<-mysim.sim$summary[1:params,2]
+Per2.5<-mysim.sim$summary[1:params,3]
+Per25<-mysim.sim$summary[1:params,4]
+Per50<-mysim.sim$summary[1:params,5]
+Per75<-mysim.sim$summary[1:params,6]
+Per97.5<-mysim.sim$summary[1:params,7]
+Rhat<-mysim.sim$summary[1:params,8]		
+n.eff<-mysim.sim$summary[1:params,9]
+
+# Create dataframe with key output
+
+MCMC<-data.frame(Mean=Mean, Stdev=Stdev, Per2.5=Per2.5,Per25=Per25,Per50=Per50,Per75=Per75,Per97.5=Per97.5,Rhat=Rhat, n.eff=n.eff)
+
+# Write to output file
+
+write.table(MCMC, file=Means, sep= "," , col.names=NA)
+
+# Return dataframe to R
+
+return(MCMC)
+
+}
+
+
+## R function for calling underlying Winbugs Code
+
+MlogitSpecialties<-function(y,X,N,S,Spec,name,iters=11000){
+
+# Arguments:
+# y --> Matrix with dependent variables (count of number of selections for each alternative)
+# X --> Matrix with independent variables
+# N --> Number of observations for multinomial    	
+# name --> Model name
+## iters (optional) number of iterations for Markov Chain
+
+
+## Create name for output file 
+
+Means<-paste(name,"_Means.csv",sep="")
+
+# Calculate number of products, number of independent variables, and number of 
+
+prods<-length(y[1,])
+atts<-length(X[1,])
+Scens<-length(N)
+
+# Create "Data" list for Winbugs 
+
+data<-list(prods=prods,atts=atts,Scens=Scens,Spec=Spec,X=X,N=N,S=S,y=y)
+
+# Set parameters to output 
+
+parameters<-list("a","int","beta")
+
+# Set some information for winbugs (Number of Markov Chains, iterations, and ask to debug)
+
+n.chains<-4
+n.iter<-iters
+debug<-T
+
+# Set initial values for MArkov Chain
+
+betain<-0*c(1:atts)
+intin<-0*c(1:(prods-1))
+
+inits1<-list(beta=betain,int=intin)
+inits2<-list(beta=betain,int=intin)
+inits3<-list(beta=betain,int=intin)
+inits4<-list(beta=betain,int=intin)
+
+inits<-inits<-list(inits1,inits2,inits3,inits4)
+
+## Calls Winbugs Code
+
+mysim.sim<-bugs(data=data,inits=inits,parameters=parameters, "Aggregate Winbugs Code Specialties.txt",n.chains=n.chains, n.iter=n.iter, debug=debug)
+
+# Set dimensions for output
+
+params<-prods+atts+(prods-1)*(Spec-1)
+
+# Attach information from winbugs run
+
+attach.all(mysim.sim)
+
+# Store key output 
+
+Mean<-mysim.sim$summary[1:params,1]
+Stdev<-mysim.sim$summary[1:params,2]
+Per2.5<-mysim.sim$summary[1:params,3]
+Per25<-mysim.sim$summary[1:params,4]
+Per50<-mysim.sim$summary[1:params,5]
+Per75<-mysim.sim$summary[1:params,6]
+Per97.5<-mysim.sim$summary[1:params,7]
+Rhat<-mysim.sim$summary[1:params,8]		
+n.eff<-mysim.sim$summary[1:params,9]
+
+# Create dataframe with key output
+
+MCMC<-data.frame(Mean=Mean, Stdev=Stdev, Per2.5=Per2.5,Per25=Per25,Per50=Per50,Per75=Per75,Per97.5=Per97.5,Rhat=Rhat, n.eff=n.eff)
+
+# Write to output file
+
+write.table(MCMC, file=Means, sep= "," , col.names=NA)
+
+# Return dataframe to R
+
+return(MCMC)
+
+}
+
+

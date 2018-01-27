@@ -1,0 +1,50 @@
+treatment	NA	1674	1674
+Continuous Covariates
+age	NA	45.63	10.22
+der_sex_female	Female	2585	763
+pre_rx_any	Boolean for pre-index DMT use (max of pre_rx1-pre_rx11)	2367	981
+pat_region_E	Region: Northeast	962	2386
+pat_region_MW	Region: Midwest	1140	2208
+pat_region_S	Region: South	991	2357
+idx_paytype_C	Index Payer type: Commercial	2235	1113
+idx_paytype_S	Index Payer type: Self-insured	1065	2283
+idx_prodtype_H	Index Provider type: Health Maintenance Organization	378	2970
+idx_prodtype_P	Index Provider type: Preferred Provided Organization	2687	661
+idx_prodtype_S	Index Provider type: Point of Service	162	3186
+idx_spec_01	Index Prescribing physician specialty: General practice/Family practice 	188	3160
+idx_spec_02	Index Prescribing physician specialty: Internal medicine	138	3210
+idx_spec_03	Index Prescribing physician specialty: Neurology	1669	1679
+idx_spec_04	Index Prescribing physician specialty: Other	1265	2083
+pre_comor1	Boolean for pre-index symptoms and comorbidities: Numbness	741	2607
+pre_comor2	Boolean for pre-index symptoms and comorbidities: Walking (Gait), Balance, and Coordination Problems	720	2628
+pre_comor3	Boolean for pre-index symptoms and comorbidities: Dizziness and Vertigo	356	2992
+pre_comor4	Boolean for pre-index symptoms and comorbidities: Muscle weakness/spasm/spasticity	546	2802
+pre_comor5	Boolean for pre-index symptoms and comorbidities: Fatigue	1051	2297
+pre_comor6	Boolean for pre-index symptoms and comorbidities: Bladder Dysfunction	437	2911
+pre_comor7	Boolean for pre-index symptoms and comorbidities: Bowel Dysfunction	348	3000
+pre_comor11	Boolean for pre-index symptoms and comorbidities: Visual Symptoms	480	2868
+pre_comor12	Boolean for pre-index symptoms and comorbidities: Pain	212	3136
+pre_comor13	Boolean for pre-index symptoms and comorbidities: Headache	739	2609
+pre_comor14	Boolean for pre-index symptoms and comorbidities: Seizures	114	3234
+pre_comor15	Boolean for pre-index symptoms and comorbidities: Tremor	183	3165
+pre_comor16	Boolean for pre-index symptoms and comorbidities: Respiration/breathing problems	320	3028
+pre_comor23	Boolean for pre-index symptoms and comorbidities: Depression Comorbidity	722	2626
+pre_comor24	Boolean for pre-index symptoms and comorbidities: Diabetes mellitus	228	3120
+pre_comor25	Boolean for pre-index symptoms and comorbidities: Dyslipidemia	820	2528
+pre_comor27	Boolean for pre-index symptoms and comorbidities: History of CVD	194	3154
+pre_comor30	Boolean for pre-index symptoms and comorbidities: Obesity	183	3165
+pre_comor31	Boolean for pre-index symptoms and comorbidities: Tobacco use (including disorder)	290	3058
+pre_ampyra1	Boolean for pre-index ampyra use	315	3033
+pre_mri_any	Boolean for pre-index MRI use	2533	815
+pre_90_cort_any	Boolean for corticosteroid use within 90 days pre-index	865	2483
+pre_cort_oral	Boolean for pre-index oral corticosteroid use	1121	2227
+pre_cort_iv	Boolean for pre-index iv corticosteroid use	1142	2206
+pre_relapse	Boolean for presence of pre-index relapse	1254	2094
+num_pre_meds_upmedian	NA	1715	1633
+num_pre_op_dx_upmedian	NA	1838	1510
+pre_non_ms_total_allowed_upmedian	NA	1674	1674
+pre_ms_total_allowed_upmedian	NA	1674	1674
+pchrlson_2	CCI score = 1	466	2882
+pchrlson_3	CCI score = 2+	2355	993
+persistent	Boolean for persistent during the post-index	2669	679
+post_relapse_persist	NA	428	2920

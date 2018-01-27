@@ -1,0 +1,675 @@
+
+HMlogit<-function(data,inits,parameters,n.chains,n.iter,debug,prods,atts,IDs,name){
+
+
+Means<-paste(name,"_Means.csv",sep="")
+Aggs<-paste(name,"_Aggs.csv",sep="")
+Inds<-paste(name,"_Inds.csv",sep="")
+
+
+mysim.sim<-bugs(data=data,inits=inits,parameters=parameters, "Payer Winbugs Code v1 new.txt",n.chains=n.chains, n.iter=n.iter, debug=debug)
+
+params<-(2*(prods-1))+((prods-1)*atts)+((prods-1)*IDs)+1
+
+attach.bugs(mysim.sim)
+
+if((prods-1)==1){ n.iter2<-length(mu) }
+if((prods-1)>1){ n.iter2<-length(mu[,1]) }
+
+
+Mean<-mysim.sim$summary[1:params,1]
+Stdev<-mysim.sim$summary[1:params,2]
+Per2.5<-mysim.sim$summary[1:params,3]
+Per25<-mysim.sim$summary[1:params,4]
+Per50<-mysim.sim$summary[1:params,5]
+Per75<-mysim.sim$summary[1:params,6]
+Per97.5<-mysim.sim$summary[1:params,7]
+Rhat<-mysim.sim$summary[1:params,8]		
+n.eff<-mysim.sim$summary[1:params,9]
+
+
+MCMC<-data.frame(Mean=Mean, Stdev=Stdev, Per2.5=Per2.5,Per25=Per25,Per50=Per50,Per75=Per75,Per97.5=Per97.5,Rhat=Rhat, n.eff=n.eff)
+
+write.table(MCMC, file=Means, sep= "," , col.names=NA)
+
+MCMC
+
+alpha2<-c(1:(n.iter2*(prods-1)*atts))
+
+dim(alpha2)<-c(n.iter2,(prods-1)*atts)
+
+for(i in 1:n.iter2)
+{
+	for(j in 1:(prods-1)){
+
+		for(k in 1:atts){
+                		alpha2[i,k+atts*(j-1)]<-alpha[i,j,k] 
+		
+				}
+			}
+
+}
+
+if((prods-1)>1){
+
+AggParam<-data.frame(mu=mu[1:n.iter2,1:(prods-1)],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],Precb=Precb[1:n.iter2,1:(prods-1)])  
+
+}
+
+if((prods-1)==1){
+
+AggParam<-data.frame(mu=mu[1:n.iter2],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],Precb=Precb[1:n.iter2])  
+
+}
+
+
+write.table(AggParam, file= Aggs, sep= "," , col.names=NA)
+
+int<-c(1:(n.iter2*IDs*(prods-1)))
+
+dim(int)<-c(n.iter2*IDs,(prods-1))
+
+for(i in 1:n.iter2){
+
+int[(1+IDs*(i-1)):(IDs+IDs*(i-1)),1:(prods-1)]<-b[i,1:IDs,1:(prods-1)]
+
+}
+
+
+CountID<-c(1:(n.iter2*IDs))
+CountIter<-c(1:(n.iter2*IDs))
+
+for(i in 1:n.iter2){
+
+for(j in 1:IDs){
+		CountID[j+IDs*(i-1)]<-j
+		CountIter[j+IDs*(i-1)]<-i
+
+		}
+
+}
+IndParam<-data.frame(iter=CountIter, ID=CountID,int=int[1:(IDs*n.iter2),1:(prods-1)])  
+
+write.table(IndParam, file= Inds, sep= "," , col.names=NA)
+
+
+mysim.sim$summary
+
+}
+
+HMlogitQC<-function(data,inits,parameters,n.chains,n.iter,debug,prods,atts,IDs,name){
+
+
+Means<-paste(name,"_Means.csv",sep="")
+Aggs<-paste(name,"_Aggs.csv",sep="")
+Inds<-paste(name,"_Inds.csv",sep="")
+
+
+mysim.sim<-bugs(data=data,inits=inits,parameters=parameters, "Payer Winbugs Code v1 new.txt",n.chains=n.chains, n.iter=n.iter, debug=debug)
+
+
+params<-(2*(prods-1))+((prods-1)*atts)+((prods-1)*IDs)+1
+
+
+attach.bugs(mysim.sim)
+
+if((prods-1)==1){ n.iter2<-length(mu) }
+if((prods-1)>1){ n.iter2<-length(mu[,1]) }
+
+
+Mean<-mysim.sim$summary[1:params,1]
+Stdev<-mysim.sim$summary[1:params,2]
+Per2.5<-mysim.sim$summary[1:params,3]
+Per25<-mysim.sim$summary[1:params,4]
+Per50<-mysim.sim$summary[1:params,5]
+Per75<-mysim.sim$summary[1:params,6]
+Per97.5<-mysim.sim$summary[1:params,7]
+Rhat<-mysim.sim$summary[1:params,8]		
+n.eff<-mysim.sim$summary[1:params,9]
+
+
+MCMC<-data.frame(Mean=Mean, Stdev=Stdev, Per2.5=Per2.5,Per25=Per25,Per50=Per50,Per75=Per75,Per97.5=Per97.5,Rhat=Rhat, n.eff=n.eff)
+
+write.table(MCMC, file=Means, sep= "," , col.names=NA)
+
+MCMC
+
+alpha2<-c(1:(n.iter2*(prods-1)*atts))
+
+dim(alpha2)<-c(n.iter2,(prods-1)*atts)
+
+for(i in 1:n.iter2)
+{
+	for(j in 1:(prods-1)){
+
+		for(k in 1:atts){
+                		alpha2[i,k+atts*(j-1)]<-alpha[i,j,k] 
+		
+				}
+			}
+
+}
+
+if((prods-1)>1){
+
+AggParam<-data.frame(mu=mu[1:n.iter2,1:(prods-1)],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],Precb=Precb[1:n.iter2,1:(prods-1)])  
+
+}
+
+if((prods-1)==1){
+
+AggParam<-data.frame(mu=mu[1:n.iter2],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],Precb=Precb[1:n.iter2])  
+
+}
+
+
+write.table(AggParam, file= Aggs, sep= "," , col.names=NA)
+
+int<-c(1:(n.iter2*IDs*(prods-1)))
+
+dim(int)<-c(n.iter2*IDs,(prods-1))
+
+for(i in 1:n.iter2){
+
+int[(1+IDs*(i-1)):(IDs+IDs*(i-1)),1:(prods-1)]<-b[i,1:IDs,1:(prods-1)]
+
+}
+
+
+CountID<-c(1:(n.iter2*IDs))
+CountIter<-c(1:(n.iter2*IDs))
+
+for(i in 1:n.iter2){
+
+for(j in 1:IDs){
+		CountID[j+IDs*(i-1)]<-j
+		CountIter[j+IDs*(i-1)]<-i
+
+		}
+
+}
+IndParam<-data.frame(iter=CountIter, ID=CountID,int=int[1:(IDs*n.iter2),1:(prods-1)])  
+
+write.table(IndParam, file= Inds, sep= "," , col.names=NA)
+
+
+mysim.sim$summary
+
+
+}
+
+
+
+
+
+
+
+
+HMlogit2<-function(data,inits,parameters,n.chains,n.iter,debug,prods,atts,atts2,IDs,name){
+
+
+Means<-paste(name,"_Means.csv",sep="")
+Aggs<-paste(name,"_Aggs.csv",sep="")
+Inds<-paste(name,"_Inds.csv",sep="")
+
+
+
+
+
+mysim.sim<-bugs(data=data,inits=inits,parameters=parameters, "Payer Winbugs Code v4 new.txt",n.chains=n.chains, n.iter=n.iter, debug=debug)
+
+params<-(2*(prods-1))+((prods-1)*atts1)+atts2+((prods-1)*IDs)+1
+
+#attach.bugs(mysim.sim)
+
+attach.bugs(mysim.sim)
+
+
+
+if((prods-1)==1){ n.iter2<-length(mu) }
+if((prods-1)>1){ n.iter2<-length(mu[,1]) }
+
+
+
+Mean<-mysim.sim$summary[1:params,1]
+Stdev<-mysim.sim$summary[1:params,2]
+Per2.5<-mysim.sim$summary[1:params,3]
+Per25<-mysim.sim$summary[1:params,4]
+Per50<-mysim.sim$summary[1:params,5]
+Per75<-mysim.sim$summary[1:params,6]
+Per97.5<-mysim.sim$summary[1:params,7]
+Rhat<-mysim.sim$summary[1:params,8]		
+n.eff<-mysim.sim$summary[1:params,9]
+
+
+MCMC<-data.frame(Mean=Mean, Stdev=Stdev, Per2.5=Per2.5,Per25=Per25,Per50=Per50,Per75=Per75,Per97.5=Per97.5,Rhat=Rhat, n.eff=n.eff)
+
+write.table(MCMC, file=Means, sep= "," , col.names=NA)
+
+MCMC
+
+alpha2<-c(1:(n.iter2*(prods-1)*atts))
+
+dim(alpha2)<-c(n.iter2,(prods-1)*atts)
+
+
+#return(mysim.sim)
+
+for(i in 1:n.iter2)
+{
+	for(j in 1:(prods-1)){
+
+		for(k in 1:atts){
+                		alpha2[i,k+atts*(j-1)]<-alpha[i,j,k] 
+		
+				}
+			}
+
+}
+
+if((prods-1)>1){
+
+if(atts2>1) {
+AggParam<-data.frame(mu=mu[1:n.iter2,1:(prods-1)],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2,1:atts2],Precb=Precb[1:n.iter2,1:(prods-1)])  
+}
+
+if (atts2==1){
+AggParam<-data.frame(mu=mu[1:n.iter2,1:(prods-1)],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2],Precb=Precb[1:n.iter2,1:(prods-1)])  
+}
+}
+
+if((prods-1)==1){
+
+if(atts2>1) {
+AggParam<-data.frame(mu=mu[1:n.iter2],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2,1:atts2],Precb=Precb[1:n.iter2])  
+}
+if (atts2==1){
+AggParam<-data.frame(mu=mu[1:n.iter2],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2],Precb=Precb[1:n.iter2])  
+}
+}
+
+
+write.table(AggParam, file= Aggs, sep= "," , col.names=NA)
+
+int<-c(1:(n.iter2*IDs*(prods-1)))
+
+dim(int)<-c(n.iter2*IDs,(prods-1))
+
+for(i in 1:n.iter2){
+
+int[(1+IDs*(i-1)):(IDs+IDs*(i-1)),1:(prods-1)]<-b[i,1:IDs,1:(prods-1)]
+
+}
+
+
+CountID<-c(1:(n.iter2*IDs))
+CountIter<-c(1:(n.iter2*IDs))
+
+for(i in 1:n.iter2){
+
+for(j in 1:IDs){
+		CountID[j+IDs*(i-1)]<-j
+		CountIter[j+IDs*(i-1)]<-i
+
+		}
+
+}
+IndParam<-data.frame(iter=CountIter, ID=CountID,int=int[1:(IDs*n.iter2),1:(prods-1)])  
+
+write.table(IndParam, file= Inds, sep= "," , col.names=NA)
+
+
+mysim.sim$summary
+
+}
+
+
+HMlogit3<-function(data,inits,parameters,n.chains,n.iter,debug,prods,atts2,IDs,name){
+
+
+Means<-paste(name,"_Means.csv",sep="")
+Aggs<-paste(name,"_Aggs.csv",sep="")
+Inds<-paste(name,"_Inds.csv",sep="")
+
+
+mysim.sim<-bugs(data=data,inits=inits,parameters=parameters, "Payer Winbugs Code v5 new.txt",n.chains=n.chains, n.iter=n.iter, debug=debug)
+
+params<-(2*(prods-1))+atts2+((prods-1)*IDs)+1
+
+attach.bugs(mysim.sim)
+
+if((prods-1)==1){ n.iter2<-length(mu) }
+if((prods-1)>1){ n.iter2<-length(mu[,1]) }
+
+
+
+Mean<-mysim.sim$summary[1:params,1]
+Stdev<-mysim.sim$summary[1:params,2]
+Per2.5<-mysim.sim$summary[1:params,3]
+Per25<-mysim.sim$summary[1:params,4]
+Per50<-mysim.sim$summary[1:params,5]
+Per75<-mysim.sim$summary[1:params,6]
+Per97.5<-mysim.sim$summary[1:params,7]
+Rhat<-mysim.sim$summary[1:params,8]		
+n.eff<-mysim.sim$summary[1:params,9]
+
+
+MCMC<-data.frame(Mean=Mean, Stdev=Stdev, Per2.5=Per2.5,Per25=Per25,Per50=Per50,Per75=Per75,Per97.5=Per97.5,Rhat=Rhat, n.eff=n.eff)
+
+write.table(MCMC, file=Means, sep= "," , col.names=NA)
+
+MCMC
+
+if((prods-1)>1){
+
+if(atts2>1) {
+AggParam<-data.frame(mu=mu[1:n.iter2,1:(prods-1)],delta=delta[1:n.iter2,1:atts2],Precb=Precb[1:n.iter2,1:(prods-1)])  
+}
+
+if (atts2==1){
+AggParam<-data.frame(mu=mu[1:n.iter2,1:(prods-1)],delta=delta[1:n.iter2],Precb=Precb[1:n.iter2,1:(prods-1)])  
+}
+}
+
+if((prods-1)==1){
+
+if(atts2>1) {
+AggParam<-data.frame(mu=mu[1:n.iter2],delta=delta[1:n.iter2,1:atts2],Precb=Precb[1:n.iter2])  
+}
+if (atts2==1){
+AggParam<-data.frame(mu=mu[1:n.iter2],delta=delta[1:n.iter2],Precb=Precb[1:n.iter2])  
+}
+}
+
+
+write.table(AggParam, file= Aggs, sep= "," , col.names=NA)
+
+int<-c(1:(n.iter2*IDs*(prods-1)))
+
+dim(int)<-c(n.iter2*IDs,(prods-1))
+
+for(i in 1:n.iter2){
+
+int[(1+IDs*(i-1)):(IDs+IDs*(i-1)),1:(prods-1)]<-b[i,1:IDs,1:(prods-1)]
+
+}
+
+
+CountID<-c(1:(n.iter2*IDs))
+CountIter<-c(1:(n.iter2*IDs))
+
+for(i in 1:n.iter2){
+
+for(j in 1:IDs){
+		CountID[j+IDs*(i-1)]<-j
+		CountIter[j+IDs*(i-1)]<-i
+
+		}
+
+}
+IndParam<-data.frame(iter=CountIter, ID=CountID,int=int[1:(IDs*n.iter2),1:(prods-1)])  
+
+write.table(IndParam, file= Inds, sep= "," , col.names=NA)
+
+
+mysim.sim$summary
+
+}
+
+
+HMlogit2covar<-function(data,inits,parameters,n.chains,n.iter,debug,prods,atts,atts2,atts3,IDs,name){
+
+
+Means<-paste(name,"_Means.csv",sep="")
+Aggs<-paste(name,"_Aggs.csv",sep="")
+Inds<-paste(name,"_Inds.csv",sep="")
+
+
+mysim.sim<-bugs(data=data,inits=inits,parameters=parameters, "Payer Winbugs Code v2 new_covar.txt",n.chains=n.chains, n.iter=n.iter, debug=debug)
+
+params<-(2*(prods-1))+((prods-1)*atts1)+atts2+((prods-1)*IDs)+atts3+1
+
+attach.bugs(mysim.sim)
+
+if((prods-1)==1){ n.iter2<-length(mu) }
+if((prods-1)>1){ n.iter2<-length(mu[,1]) }
+
+
+Mean<-mysim.sim$summary[1:params,1]
+Stdev<-mysim.sim$summary[1:params,2]
+Per2.5<-mysim.sim$summary[1:params,3]
+Per25<-mysim.sim$summary[1:params,4]
+Per50<-mysim.sim$summary[1:params,5]
+Per75<-mysim.sim$summary[1:params,6]
+Per97.5<-mysim.sim$summary[1:params,7]
+Rhat<-mysim.sim$summary[1:params,8]		
+n.eff<-mysim.sim$summary[1:params,9]
+
+
+MCMC<-data.frame(Mean=Mean, Stdev=Stdev, Per2.5=Per2.5,Per25=Per25,Per50=Per50,Per75=Per75,Per97.5=Per97.5,Rhat=Rhat, n.eff=n.eff)
+
+write.table(MCMC, file=Means, sep= "," , col.names=NA)
+
+MCMC
+
+alpha2<-c(1:(n.iter2*(prods-1)*atts))
+
+dim(alpha2)<-c(n.iter2,(prods-1)*atts)
+
+for(i in 1:n.iter2)
+{
+	for(j in 1:(prods-1)){
+
+		for(k in 1:atts){
+                		alpha2[i,k+atts*(j-1)]<-alpha[i,j,k] 
+		
+				}
+			}
+}
+
+if((prods-1)>1){
+
+	if(atts2>1) {
+
+		if(atts3>1){
+AggParam<-data.frame(mu=mu[1:n.iter2,1:(prods-1)],mu2=mu2[1:n.iter2,1:atts3],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2,1:atts2],Precb=Precb[1:n.iter2,1:(prods-1)])  
+			    }				
+		if(atts3==1){
+AggParam<-data.frame(mu=mu[1:n.iter2,1:(prods-1)],mu2=mu2[1:n.iter2],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2,1:atts2],Precb=Precb[1:n.iter2,1:(prods-1)])  
+			    }				
+
+		    }
+
+	if (atts2==1){
+		if(atts3>1){
+AggParam<-data.frame(mu=mu[1:n.iter2,1:(prods-1)],mu2=mu2[1:n.iter2,1:atts3],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2],Precb=Precb[1:n.iter2,1:(prods-1)])  
+			   }	
+		if(atts3==1){
+AggParam<-data.frame(mu=mu[1:n.iter2,1:(prods-1)],mu2=mu2[1:n.iter2],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2],Precb=Precb[1:n.iter2,1:(prods-1)])  
+			   }	
+
+		    }
+		}
+
+
+if((prods-1)==1){
+
+	if(atts2>1) {
+		if(atts3>1){
+AggParam<-data.frame(mu=mu[1:n.iter2],mu2=mu2[1:n.iter2,1:atts3],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2,1:atts2],Precb=Precb[1:n.iter2])  
+			    }	
+		if(atts3==1){
+AggParam<-data.frame(mu=mu[1:n.iter2],mu2=mu2[1:n.iter2],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2,1:atts2],Precb=Precb[1:n.iter2])  
+			    }	
+
+		   }
+	if (atts2==1){
+		if(atts3>1){
+AggParam<-data.frame(mu=mu[1:n.iter2],mu2=mu2[1:n.iter2,1:atts3],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2],Precb=Precb[1:n.iter2])  
+			   }	
+		if(atts3==1){
+AggParam<-data.frame(mu=mu[1:n.iter2],mu2=mu2[1:n.iter2],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2],Precb=Precb[1:n.iter2])  
+			   }	
+		    }
+}
+
+
+write.table(AggParam, file= Aggs, sep= "," , col.names=NA)
+
+int<-c(1:(n.iter2*IDs*(prods-1)))
+
+dim(int)<-c(n.iter2*IDs,(prods-1))
+
+for(i in 1:n.iter2){
+
+int[(1+IDs*(i-1)):(IDs+IDs*(i-1)),1:(prods-1)]<-b[i,1:IDs,1:(prods-1)]
+
+}
+
+
+CountID<-c(1:(n.iter2*IDs))
+CountIter<-c(1:(n.iter2*IDs))
+
+for(i in 1:n.iter2){
+
+for(j in 1:IDs){
+		CountID[j+IDs*(i-1)]<-j
+		CountIter[j+IDs*(i-1)]<-i
+
+		}
+
+}
+IndParam<-data.frame(iter=CountIter, ID=CountID,int=int[1:(IDs*n.iter2),1:(prods-1)])  
+
+write.table(IndParam, file= Inds, sep= "," , col.names=NA)
+
+
+mysim.sim$summary
+
+}
+
+
+
+
+
+HMlogit2_Pfizer_temp<-function(data,inits,parameters,n.chains,n.iter,debug,prods,atts,atts2,IDs,name){
+
+
+Means<-paste(name,"_Means.csv",sep="")
+Aggs<-paste(name,"_Aggs.csv",sep="")
+Inds<-paste(name,"_Inds.csv",sep="")
+
+
+
+
+
+mysim.sim<-bugs(data=data,inits=inits,parameters=parameters, "Payer Winbugs Code v2 new temp_For_Pfizer.txt",n.chains=n.chains, n.iter=n.iter, debug=debug)
+
+params<-(2*(prods-1))+((prods-1)*atts1)+atts2+((prods-1)*IDs)+1
+
+attach.bugs(mysim.sim)
+
+
+if((prods-1)==1){ n.iter2<-length(mu) }
+if((prods-1)>1){ n.iter2<-length(mu[,1]) }
+
+
+
+Mean<-mysim.sim$summary[1:params,1]
+Stdev<-mysim.sim$summary[1:params,2]
+Per2.5<-mysim.sim$summary[1:params,3]
+Per25<-mysim.sim$summary[1:params,4]
+Per50<-mysim.sim$summary[1:params,5]
+Per75<-mysim.sim$summary[1:params,6]
+Per97.5<-mysim.sim$summary[1:params,7]
+Rhat<-mysim.sim$summary[1:params,8]		
+n.eff<-mysim.sim$summary[1:params,9]
+
+
+MCMC<-data.frame(Mean=Mean, Stdev=Stdev, Per2.5=Per2.5,Per25=Per25,Per50=Per50,Per75=Per75,Per97.5=Per97.5,Rhat=Rhat, n.eff=n.eff)
+
+write.table(MCMC, file=Means, sep= "," , col.names=NA)
+
+MCMC
+
+alpha2<-c(1:(n.iter2*(prods-1)*atts))
+
+dim(alpha2)<-c(n.iter2,(prods-1)*atts)
+
+for(i in 1:n.iter2)
+{
+	for(j in 1:(prods-1)){
+
+		for(k in 1:atts){
+                		alpha2[i,k+atts*(j-1)]<-alpha[i,j,k] 
+		
+				}
+			}
+
+}
+
+if((prods-1)>1){
+
+if(atts2>1) {
+AggParam<-data.frame(mu=mu[1:n.iter2,1:(prods-1)],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2,1:atts2],Precb=Precb[1:n.iter2,1:(prods-1)])  
+}
+
+if (atts2==1){
+AggParam<-data.frame(mu=mu[1:n.iter2,1:(prods-1)],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2],Precb=Precb[1:n.iter2,1:(prods-1)])  
+}
+}
+
+if((prods-1)==1){
+
+if(atts2>1) {
+AggParam<-data.frame(mu=mu[1:n.iter2],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2,1:atts2],Precb=Precb[1:n.iter2])  
+}
+if (atts2==1){
+AggParam<-data.frame(mu=mu[1:n.iter2],alpha=alpha2[1:n.iter2,1:((prods-1)*atts)],delta=delta[1:n.iter2],Precb=Precb[1:n.iter2])  
+}
+}
+
+
+write.table(AggParam, file= Aggs, sep= "," , col.names=NA)
+
+int<-c(1:(n.iter2*IDs*(prods-1)))
+
+dim(int)<-c(n.iter2*IDs,(prods-1))
+
+for(i in 1:n.iter2){
+
+int[(1+IDs*(i-1)):(IDs+IDs*(i-1)),1:(prods-1)]<-b[i,1:IDs,1:(prods-1)]
+
+}
+
+
+CountID<-c(1:(n.iter2*IDs))
+CountIter<-c(1:(n.iter2*IDs))
+
+for(i in 1:n.iter2){
+
+for(j in 1:IDs){
+		CountID[j+IDs*(i-1)]<-j
+		CountIter[j+IDs*(i-1)]<-i
+
+		}
+
+}
+IndParam<-data.frame(iter=CountIter, ID=CountID,int=int[1:(IDs*n.iter2),1:(prods-1)])  
+
+write.table(IndParam, file= Inds, sep= "," , col.names=NA)
+
+
+mysim.sim$summary
+
+}
+
+
+
+
+
+
+
+
+
+

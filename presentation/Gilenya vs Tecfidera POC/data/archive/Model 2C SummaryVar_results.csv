@@ -1,0 +1,28 @@
+CV Lasso based on AUC evaluation,,,,,,,,,,,
+,Group,Gilenya_pat,Gilenya_relapse,Gilenya_relapse_rate,Tecfidera_pat,Tecfidera_relapse,Tecfidera_relapse_rate,actual_treatment,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment
+training,lowest 35%,626,35,0.055910543,307,31,0.100977199,-0.045066656,0.103500274,0.152145775,-0.048645501
+training,middle 30%,497,49,0.098591549,295,39,0.13220339,-0.033611841,0.116440799,0.13562256,-0.019181761
+training,highest 35%,606,119,0.196369637,324,56,0.172839506,0.023530131,0.134829424,0.117586602,0.017242822
+test,lowest 50%,206,17,0.082524272,126,11,0.087301587,-0.004777315,0.106884267,0.147661584,-0.040777317
+test,highest 50%,214,35,0.163551402,117,19,0.162393162,0.001158239,0.130272987,0.121882306,0.008390681
+AUC of training data: 0.5951508,,,,,,,,,,,
+AUC of test data: 0.5805382,,,,,,,,,,,
+,,,,,,,,,,,
+,summary_actual_treatment_effect,summary_expect_treatment_effect,,,,,,,,,
+training data,-0.08545259,-0.04970122,,,,,,,,,
+test data,-0.005935555,-0.049168,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+CV Lasso based on treatment effect evaluation,,,,,,,,,,,
+,Group,Gilenya_pat,Gilenya_relapse,Gilenya_relapse_rate,Tecfidera_pat,Tecfidera_relapse,Tecfidera_relapse_rate,actual_treatment,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment
+training,lowest 35%,642,27,0.042056075,287,27,0.094076655,-0.05202058,0.091906111,0.169287928,-0.077381817
+training,middle 30%,488,58,0.118852459,309,39,0.126213592,-0.007361133,0.114606932,0.136629615,-0.022022684
+training,highest 35%,599,118,0.196994992,330,60,0.181818182,0.01517681,0.148229849,0.106511955,0.041717894
+test,lowest 50%,204,13,0.06372549,128,11,0.0859375,-0.02221201,0.097940207,0.16008774,-0.062147533
+test,highest 50%,216,39,0.180555556,115,19,0.165217391,0.015338164,0.139120218,0.114012486,0.025107733
+AUC of training data: 0.6093735,,,,,,,,,,,
+AUC of test data: 0.5552559,,,,,,,,,,,
+,,,,,,,,,,,
+,summary_actual_treatment_effect,summary_expect_treatment_effect,,,,,,,,,
+training data,-0.07732075,-0.09016964,,,,,,,,,
+test data,-0.03755017,-0.08725527,,,,,,,,,

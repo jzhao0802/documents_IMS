@@ -1,0 +1,190 @@
+STUDY PROTOCOL
+
+1.	Lay Summary
+
+Tuberous Sclerosis Complex (TSC) is a multi-system genetic disorder that causes benign (non-cancerous) tumours to develop in many organs including the skin, kidneys, brain, heart, eyes and lungs. In addition, TSC may cause a range of manifestations that can vary significantly from patient to patient, even among members of the same family1, 2. Many aspects of TSC are still poorly understood, including uncertainty of diagnosis, and specific treatment pathways3. 
+
+As such, the primary aim of this proposed study will be to develop and test novel machine learning methods that will be used to detect TSC in undiagnosed patients. There have been several recent studies that have demonstrated the efficacy of machine learning methods in conjunction with electronic health records data for medical research4, 5, 6. 
+
+This research will complement an ongoing study conducted in the Clinical Practice Research Datalink (CPRD) linked to the Hospital Episode Statistics (HES) database, which aims at characterizing the TSC population and at determining the burden of disease in the UK (Refer to protocol number: 13_146). 
+
+
+2.	Background
+
+TSC is caused by mutations to the TSC1 or TSC2 gene. Its manifestations result in a range of symptoms experienced by patients, as well as in morbidity and decreased quality of life (QoL). Benign tumours or hamartomas are the pathological hallmark of TSC and they can present in a range of number, size, location, and distribution in the body7, 8. In addition to physical sequelae, many patients can experience TSC-related neuropsychiatric disorders, referring to the interrelated behavioural, intellectual, and neuropsychiatric features common in TSC. 
+
+TSC affects approximately 1 in 6,000 to 1 in 10,000 births2. Due to diverse and variable symptoms and under-recognition of less severe phenotypes, the incidence and prevalence of TSC are difficult to accurately assess. Additionally, the detection of individuals not severely affected is difficult, thus the true frequency of TSC may be higher9, 10. 
+
+The progression of TSC appears to depend on incidence and severity of manifestations in individuals. Many patients show evidence of the disorder in their first 12 months of life4, while for other patients features of TSC only become evident in childhood after the age of 3 years, which limits their usefulness for early diagnosis. Furthermore, in some individuals TSC can go unrecognized or misdiagnosed for years7, 9, 11. 
+
+
+3.	Objective, Specific Aims and Rationale
+
+The main objective of this study will be to develop an algorithm that will be used to identify undiagnosed TSC patients. As such, this research could contribute to the early detection of TSC in paediatric patients, to identify patients with the mild forms of the disease (still unrecognised) and to identify potential misdiagnosis. Further characterisation of the undiagnosed TSC population will be conducted including demographics, clinical and other characteristics.
+
+
+4.	Study Type
+
+This is an analytic study. 
+
+
+5.	Study Design
+This study will be designed as a retrospective database analysis of the UK Clinical Practice Research Datalink (CPRD) linked to the Hospital Episode Statistics (HES) database.
+
+The observational period will be January 1987 to June 2013.
+
+The study sample will comprise two subsamples:
+
+First subsample: 
+
+?	Patients who reside at a CPRD practice linked to HES and with a record of TSC defined by relevant Read codes (PK5..00, PK5..12) or ICD-10 codes (Q85.1) (N=341). This subsample represents the study population of an on-going research that aims at describing the clinical and treatment characteristics of patients with TSC and additionally, at evaluating health care resource utilization and cost of care of TSC. 
+
+Second subsample:
+
+?	A randomly selected sample of patients (N=1 million) with no recorded diagnosis of TSC in the CPRD or HES databases within the observational period.
+
+The study will involve an analysis of the entire CPRD patient history (available from January 1987 to June 2013).  In addition, access to the HES database will enrich the patient information captured in CPRD, enabling additional clinical manifestations and interventions to be identified.
+
+In the proposed study, the following techniques will be applied and tested:
+
+- Classical statistical methods (including logistic regression) which have been widely used to perform classification tasks12. 
+
+- Modern statistical learning methods that will include one-class support vector machine, a highly flexible and accurate classification method that is ideally suited for situations where only a single class is known (in this case, confirmed TSC patients). For an overview of modern statistical learning methods, see Hastie et al.12 ; for one-class support vector machines, see Scholkopf et al13, 14.
+
+In order to estimate true TSC status for patients without a confirmed TSC diagnosis,  two alternative and effective computational strategies are proposed as follows: 
+
+First method
+
+In the first strategy, patients with a confirmed diagnosis of TSC will be randomly divided into two cohorts, a training cohort and a test cohort. The test cohort will also include all non-diagnosed patients (one million individuals). The training cohort will be used to train a machine learning algorithm (e.g. One-class support vector machine). The ability of the generated classifier, to identify (diagnosed / undiagnosed) TSC patients, will be evaluated by applying it to the test cohort. 
+
+Second method
+
+In the second approach, the entire study sample ¨C both patients diagnosed and not diagnosed with TSC ¨C will be randomly split into a training cohort and a test cohort.
+A model will be generated by using a learning algorithm (e.g. Logistic regression, ensemble of binary support vector machine) in conjunction with the training cohort. The classifier will be applied to the test cohort to identify undiagnosed TSC patients.
+
+The optimal method will be chosen that most accurately identifies TSC patients based on the test cohort.
+
+In this study a t-test will be applied to assess the null hypothesis that the performance of the proposed methodology is no better than random.
+
+
+6.	Sample Size
+
+For this analytic study a formal sample size calculation will not be conducted.
+
+
+7.	Study Population
+
+The study population will include a subsample of patients with a TSC diagnosis recorded during the observational period (N=341) and a subpopulation with no record of TSC during the study period (N= 1 million) (See Section 5). As TSC is a rare disease with a low prevalence rate, a large sample size will help to establish the effectiveness of the proposed machine learning methodologies.
+
+
+8.	Exposure, Outcomes and Covariates
+
+
+There are no exposures in this study. 
+
+Covariates and outcomes are described below:
+
+Covariates
+
+1.	Demographics:
+?	Age 
+?	Gender
+
+2.	Clinical manifestations/co-morbidities
+?	ICD-10 / Read codes and their description 
+
+3.	Medication Codes
+?	Medcodes
+
+4.	Practice Ids
+?	Practice IDs will enable a binary flag to be created identifying whether a patient belongs to a practice where there is at least one confirmed TSC patient. This will be used as a potential predictor of TSC. The rationale is that family members tend to attend the same practice and there is a genetic cause to TSC. Thus, it is expected that a positive flag would indicate an elevated risk of undiagnosed TSC.
+
+Outcomes
+
+TSC Indicator 
+?	A dichotomous variable illustrating the presence of TSC.
+
+
+9.	Use of Linked Data
+
+As outlined in section 5, the study entails an analysis of the entire history of patients. Hence, access to secondary care data (HES) would allow the capture of clinical manifestations and interventions that could be related to TSC. 
+
+
+10.	Data/Statistical Analysis Plan
+
+Performance of the classification methods will be evaluated and reported using standard evaluation metrics (i.e. Sensitivity15). 
+
+An estimate will be provided for the number of patients without a medically confirmed diagnosis of TSC along with a confidence measure (confidence interval) to judge the accuracy of the algorithm. 
+
+Descriptive statistics (e.g. Age, gender, key organ-related manifestations) will be reported for all patients identified by the algorithm as potential TSC patients,  presented as mean, standard deviation and range for continuous variables and as a number and percentage (N, %) for dichotomous variables. 
+
+Data cleaning and pre-processing will be performed with the statistical software SAS?, Version 9.3 or higher version and predictive analysis will be conducted by using the R statistical environment. 
+
+Confounding
+
+Potential confounders (e.g. Age) will be implicitly controlled for through the proposed machine learning methods which are all multivariate.
+
+Missing data
+
+Missing data will not be imputed.
+
+
+11.	Study Limitations
+
+11.1.	Data source
+
+The CPRD has limitations consistent with other EMR databases:
+
+?	Patients included in the database may not be fully representative of all patients as not all NHS patients are included in the panel.
+
+?	HES data linkage to CPRD is for only ~55% of practices.
+
+11.2.	Study Design
+
+?	There are a relatively small number of confirmed TSC patients which will be used to develop the algorithm. This may pose challenges for the algorithm to fully capture all the characteristics of TSC. 
+
+
+12.	Dissemination and Communication Plan
+
+Results of this study are intended to be disseminated into the public domain (e.g. Scientific congress and/or peer-reviewed manuscript) as described below:
+
+?	A manuscript will be written describing the methodology and techniques used in this study.
+?	Further publications may be possible based on improved methods and new findings related to TSC.
+?	Presentation of abstracts/posters at relevant conferences. 
+
+
+Hi Yan,
+Huma has been working on a project to identify potentially undiagnosed cases of TSC (Tuberous Sclerosis Complex), a rare oncology disease. I¡¯m attaching the approved scientific protocol. The data is linked HES and CPRD. We used various SVMs for the modelling. Huma has almost finished the project now.
+We need someone to 1) QC her work and 2) generate more potentially undiagnosed cases (she has identified ~2-5 cases from 100,000 patients but we would like to process another 100,000 patients). I was wondering if someone from your team could help? We would use the sandbox code for PSA purposes.
+Broadly speaking, the project would involve:
+. 1) QC / use Huma¡¯s code to generate an additional 100k patients (we have 1m in total but only have the processing power to handle 100k at a time). This would involve SAS using the London servers (the data cannot leave the servers).
+. 2) QC / use Huma¡¯s R code to create the patient-level feature vector.
+. 3) QC / use Huma¡¯s R code to run the SVMs to A) verify the results and B) identify additional cases from the new 100k patients.
+We will provide further detail but this is a broad outline. I think it will probably take ~3 weeks for someone in your team to do. The code will not be ready for perhaps another couple of weeks (and then perhaps just the initial SAS bit), but I wanted to give you the heads-up about this project. Is this something you would be happy to take on?
+John
+
+
+Dear All,
+
+Huma: Can you provide BJ team with instructions on how to do this. If you've done this previously, please cut and paste your instructions from previous mail and include in this thread.
+
+1.	Find Indices subfolders named as ¡°D:/RareDisease_TSC/Results/FV_1/2n/Indices/lin/¡± in each folder.
+2.	Identify files named as ¡°ProspectiveTSC13.csv¡±. Here 1 represents simulation number and 3 specifies test set split. These files contain indices of Patient Ids (patid) and scores assigned to these patient by a SV machine, for example, 2040   0.056. 
+3.	Now Identify corresponding subfolders named as ¡°D:/RareDisease_TSC/Data/Dict_Ind_1/2n¡± in each  folder. 
+4.	Identify files named as ¡°TestIndices13.csv¡±. Here 1 represents simulation number and 3 specifies test split number. Select the value stored at the corresponding row, for example select the Patient Id given at row 2040 and save it in a file.
+5.	Repeat the above procedure for all the entries in a file and for all the files in the subfolder.
+6.	Now delete duplicated Patient Ids.
+7.	There is a folder saved at SAS server, ¡°E:/Read_ICD_OPCS_Desc¡±¡± that contains files containing codes description. 
+8.	Use information contained in SAS data ¡°CPRDHES¡± and the files mentioned above to extract information of the identified patients.
+9.	This subfolder has an example SAS script ¡°SelProspectiveTSC.sas¡±, that can be used as a reference.
+
+
+The scores of confirmed TSC patients are saved in files ¡°ConfirmedTSC_.csv¡±, where _ can be 1,2,....
+
+Huma: Would it be better if we convert the scores to probabilities? If so, can you advise the BJ team which method is most appropriate.
+
+If you want to generate probabilities update R code to generate them. In short update the R scripts for modelling accordingly.
+
+Hope it helps,
+
+Huma

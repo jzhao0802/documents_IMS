@@ -1,0 +1,23 @@
+Country,Area_wise,Populations,Dummy1,Dummy2
+Afghanistan,29835392,250000,1,0
+Albania,2994667,11100,2,a
+Algeria,34994937,919590,3,a
+Andorra,84825,181,4,a
+Angola,13338541,481351,5,a
+Antigua and Barbuda,87884,171,6,a
+Argentina,41769726,1068296,7,b
+Armenia,2967975,11506,8,b
+Australia,21766711,2967893,9,b
+Austria,8217280,32382,10,b
+Azerbaijan,8372373,33436,11,b
+Bahamas The,313312,5382,12,c
+Bahrain,1214705,257,13,c
+Bangladesh,158570535,55598,14,c
+Barbados,286705,166,15,c
+Belarus,9577552,80154,16,c
+Belgium,10431477,11787,17,d
+Belize,321115,8867,18,d
+Benin,9325032,43483,19,d
+Bhutan,708427,18147,20,d
+Bolivia,10118683,424162,,d
+Bosnia and Herzegov,4622163,19741,22,d

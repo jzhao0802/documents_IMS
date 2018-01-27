@@ -1,0 +1,2 @@
+cd C:/work/working materials/TSC and QC project/Max_rec/02_code/svm_perf_1000
+./svm_perf_classify C:/work/working materials/TSC and QC project/Max_rec/01_data/2n/trainv9.csv C:/work/working materials/TSC and QC project/Max_rec/03_model/Model/svm_model_trail_1/tr_model/model_simulation_9/model_C_10 C:/work/working materials/TSC and QC project/Max_rec/03_model/Rs/result_trail_1/vl_rs/vl_result_simulation_9/pred_tr_C_10.csv

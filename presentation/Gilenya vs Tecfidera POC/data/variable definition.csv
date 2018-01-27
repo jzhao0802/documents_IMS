@@ -1,0 +1,129 @@
+Covariate,Variable Definition,Gilenya_relapse,Gilenya_not_relapse,Gilenya_relapse_rate,Tecfidera_relapse,Tecfidera_not_relapse,Tecfidera_relapse_rate,odds_ratio,p_value
+persistent,Boolean for persistent during the post-index,223,"1,596",0.12,131,748,0.15,0.8,0.06
+persist_days,"Days persistent, equal to 180 where persistent = 1",,,,,,,,
+der_sex_female,Female,196,"1,430",0.12,127,775,0.14,0.84,0.15
+der_sex_male,Male,59,464,0.11,29,238,0.11,1.04,0.91
+pat_region_E,Region: Northeast,62,481,0.11,49,323,0.13,0.85,0.47
+pat_region_MW,Region: Midwest,100,657,0.13,41,308,0.12,1.14,0.56
+pat_region_S,Region: South,79,644,0.11,50,280,0.15,0.69,0.05
+pat_region_W,Region: West,14,112,0.11,16,102,0.14,0.8,0.57
+idx_paytype_C,Index Payer type: Commercial,168,"1,225",0.12,109,663,0.14,0.83,0.18
+idx_paytype_M,Index Payer type: Medicare,1,7,0.13,2,3,0.4,0.24,0.51
+idx_paytype_R,Index Payer type: Medicare Risk,0,13,0,0,3,0,0,1
+idx_paytype_S,Index Payer type: Self-insured,86,645,0.12,45,344,0.12,1.02,1
+idx_paytype_U,Index Payer type: unknown/missing,0,4,0,0,0,NaN,0,1
+idx_prodtype_D,Index Provider type: Consumer Directed,2,13,0.13,3,13,0.19,0.68,1
+idx_prodtype_H,Index Provider type: Health Maintenance Organization,28,240,0.1,13,96,0.12,0.86,0.72
+idx_prodtype_I,Index Provider type: Indemnity,2,40,0.05,3,23,0.12,0.39,0.36
+idx_prodtype_P,Index Provider type: Preferred Provided Organization,208,"1,514",0.12,131,829,0.14,0.87,0.25
+idx_prodtype_S,Index Provider type: Point of Service,15,84,0.15,5,49,0.09,1.74,0.45
+idx_prodtype_U,Index Provider type: unknown/missing,0,3,0,1,3,0.25,0,1
+idx_spec_01,Index Prescribing physician specialty: General practice/Family practice ,17,123,0.12,7,66,0.1,1.3,0.65
+idx_spec_02,Index Prescribing physician specialty: Internal medicine,11,89,0.11,7,30,0.19,0.53,0.26
+idx_spec_03,Index Prescribing physician specialty: Neurology,97,848,0.1,73,579,0.11,0.91,0.56
+idx_spec_04,Index Prescribing physician specialty: Other,119,767,0.13,65,321,0.17,0.77,0.12
+idx_spec_05,Index Prescribing physician specialty: Unknown,11,67,0.14,4,17,0.19,0.7,0.73
+age_1,Aged <35,47,291,0.14,21,135,0.13,1.04,1
+age_2,Aged 35-44,85,578,0.13,48,262,0.15,0.8,0.27
+age_3,Aged 45-54,82,665,0.11,55,371,0.13,0.83,0.34
+age_4,Aged 55+,41,360,0.1,32,245,0.12,0.87,0.62
+pchrlson_1,CCI score = 0,154,"1,395",0.1,100,695,0.13,0.77,0.06
+pchrlson_2,CCI score = 1,55,265,0.17,31,167,0.16,1.12,0.72
+pchrlson_3,CCI score = 2+,46,234,0.16,25,151,0.14,1.19,0.6
+num_pre_meds_1,Number of unique medications received pre-index: 0-3,26,345,0.07,15,183,0.08,0.92,0.87
+num_pre_meds_2,Number of unique medications received pre-index: 4-7,50,645,0.07,31,302,0.09,0.76,0.27
+num_pre_meds_3,Number of unique medications received pre-index: 8-11,73,456,0.14,46,255,0.15,0.89,0.61
+num_pre_meds_4,Number of unique medications received pre-index: 12+,106,448,0.19,64,273,0.19,1.01,1
+num_pre_op_dx_1,Number of pre-index OP visits with an MS diagnosis: 0-4,19,420,0.04,29,329,0.08,0.51,0.04
+num_pre_op_dx_2,Number of pre-index OP visits with an MS diagnosis: 5-7,38,501,0.07,27,232,0.1,0.65,0.13
+num_pre_op_dx_3,Number of pre-index OP visits with an MS diagnosis: 8-12,74,462,0.14,44,212,0.17,0.77,0.24
+num_pre_op_dx_4,Number of pre-index OP visits with an MS diagnosis: 13+,124,511,0.2,56,240,0.19,1.04,0.86
+pre_non_ms_total_allowed_1,Total non-ms pre-index costs: lowest 25%,47,500,0.09,21,262,0.07,1.17,0.6
+pre_non_ms_total_allowed_2,Total non-ms pre-index costs: middle lower 25%,44,509,0.08,35,241,0.13,0.6,0.03
+pre_non_ms_total_allowed_3,Total non-ms pre-index costs: middle upper 25%,72,476,0.13,41,240,0.15,0.89,0.59
+pre_non_ms_total_allowed_4,Total non-ms pre-index costs: highest 25%,92,409,0.18,59,270,0.18,1.03,0.93
+pre_ms_total_allowed_1,MS-related total pre-index costs: lowest 25%,41,524,0.07,35,230,0.13,0.51,0.01
+pre_ms_total_allowed_2,MS-related total pre-index costs: middle lower 25%,88,520,0.14,31,190,0.14,1.04,0.91
+pre_ms_total_allowed_3,MS-related total pre-index costs: middle upper 25%,71,524,0.12,32,202,0.14,0.86,0.49
+pre_ms_total_allowed_4,MS-related total pre-index costs: highest 25%,55,326,0.14,58,391,0.13,1.14,0.54
+pre_non_ms_pharmacy_allowed_1,Non-ms pre-index pharmacy costs: lowest 25%,43,473,0.08,23,291,0.07,1.15,0.69
+pre_non_ms_pharmacy_allowed_2,Non-ms pre-index pharmacy costs: middle lower 25%,57,495,0.1,45,232,0.16,0.59,0.02
+pre_non_ms_pharmacy_allowed_3,Non-ms pre-index pharmacy costs: middle upper 25%,70,477,0.13,42,240,0.15,0.84,0.45
+pre_non_ms_pharmacy_allowed_4,Non-ms pre-index pharmacy costs: highest 25%,85,449,0.16,46,250,0.16,1.03,0.92
+pre_ms_pharmacy_allowed_1,MS-related pre-index pharmacy costs: lowest 25%,44,531,0.08,33,222,0.13,0.56,0.02
+pre_ms_pharmacy_allowed_2,MS-related pre-index pharmacy costs: middle lower 25%,86,509,0.14,37,197,0.16,0.9,0.66
+pre_ms_pharmacy_allowed_3,MS-related pre-index pharmacy costs: middle upper 25%,81,526,0.13,33,189,0.15,0.88,0.57
+pre_ms_pharmacy_allowed_4,MS-related pre-index pharmacy costs: highest 25%,44,328,0.12,53,405,0.12,1.03,0.91
+pre_non_ms_medical_allowed_1,Non-ms pre-index medical costs: lowest 25%,42,507,0.08,26,255,0.09,0.81,0.43
+pre_non_ms_medical_allowed_2,Non-ms pre-index medical costs: middle lower 25%,53,515,0.09,31,230,0.12,0.76,0.27
+pre_non_ms_medical_allowed_3,Non-ms pre-index medical costs: middle upper 25%,65,472,0.12,42,250,0.14,0.82,0.39
+pre_non_ms_medical_allowed_4,Non-ms pre-index medical costs: highest 25%,95,400,0.19,57,278,0.17,1.16,0.46
+pre_ms_medical_allowed_1,MS-related pre-index medical costs: lowest 25%,35,474,0.07,33,288,0.1,0.64,0.09
+pre_ms_medical_allowed_2,MS-related pre-index medical costs: middle lower 25%,46,494,0.09,30,259,0.1,0.8,0.38
+pre_ms_medical_allowed_3,MS-related pre-index medical costs: middle upper 25%,79,458,0.15,36,256,0.12,1.23,0.4
+pre_ms_medical_allowed_4,MS-related pre-index medical costs: highest 25%,95,468,0.17,57,210,0.21,0.75,0.12
+pre_rx_any,Boolean for pre-index DMT use (max of pre_rx1-pre_rx11),191,"1,274",0.13,112,743,0.13,0.99,1
+pre_rx2,Boolean for pre-index medications: Glatiramer,72,433,0.14,43,296,0.13,1.14,0.54
+pre_rx3,Boolean for pre-index medications: Natalizumab,53,211,0.2,26,105,0.2,1.01,1
+pre_rx4,Boolean for pre-index medications: Extavia,1,4,0.2,1,4,0.2,1,1
+pre_rx5,Boolean for pre-index medications: Betaseron,16,156,0.09,13,66,0.16,0.52,0.14
+pre_rx6,Boolean for pre-index medications: Avonex,41,258,0.14,14,148,0.09,1.68,0.13
+pre_rx7,Boolean for pre-index medications: Rebif,34,288,0.11,25,160,0.14,0.76,0.32
+pre_rx8,Boolean for pre-index medications: Extavia/Betaseron,0,0,NaN,1,0,1,0,1
+pre_rx9,Boolean for pre-index medications: Avonex/Rebif,0,12,0,0,0,NaN,0,1
+pre_rx11,Boolean for pre-index medications: Aubagio,0,2,0,1,8,0.11,0,1
+pre_comor1,Boolean for pre-index symptoms and comorbidities: Numbness,56,341,0.14,46,244,0.16,0.87,0.59
+pre_comor2,"Boolean for pre-index symptoms and comorbidities: Walking (Gait), Balance, and Coordination Problems",84,364,0.19,47,226,0.17,1.11,0.62
+pre_comor3,Boolean for pre-index symptoms and comorbidities: Dizziness and Vertigo,37,177,0.17,21,105,0.17,1.05,1
+pre_comor4,Boolean for pre-index symptoms and comorbidities: Muscle weakness/spasm/spasticity,50,255,0.16,39,177,0.18,0.89,0.64
+pre_comor5,Boolean for pre-index symptoms and comorbidities: Fatigue,97,560,0.15,58,336,0.15,1,1
+pre_comor6,Boolean for pre-index symptoms and comorbidities: Bladder Dysfunction,47,229,0.17,31,134,0.19,0.89,0.7
+pre_comor7,Boolean for pre-index symptoms and comorbidities: Bowel Dysfunction,32,163,0.16,24,116,0.17,0.95,0.88
+pre_comor8,Boolean for pre-index symptoms and comorbidities: Hearing Loss,8,38,0.17,7,32,0.18,0.96,1
+pre_comor9,Boolean for pre-index symptoms and comorbidities: Speech disorders,7,18,0.28,8,17,0.32,0.83,1
+pre_comor10,Boolean for pre-index symptoms and comorbidities: Swallowing problems,6,43,0.12,5,29,0.15,0.81,0.75
+pre_comor11,Boolean for pre-index symptoms and comorbidities: Visual Symptoms,53,369,0.13,24,127,0.16,0.76,0.33
+pre_comor12,Boolean for pre-index symptoms and comorbidities: Pain,29,91,0.24,19,64,0.23,1.07,0.87
+pre_comor13,Boolean for pre-index symptoms and comorbidities: Headache,73,409,0.15,41,215,0.16,0.94,0.75
+pre_comor14,Boolean for pre-index symptoms and comorbidities: Seizures,20,63,0.24,8,23,0.26,0.91,1
+pre_comor15,Boolean for pre-index symptoms and comorbidities: Tremor,23,88,0.21,16,51,0.24,0.83,0.71
+pre_comor16,Boolean for pre-index symptoms and comorbidities: Respiration/breathing problems,47,194,0.2,22,94,0.19,1.04,1
+pre_comor17,Boolean for pre-index symptoms and comorbidities: Itching,8,30,0.21,2,19,0.1,2.5,0.47
+pre_comor18,Boolean for pre-index symptoms and comorbidities: Cognitive function,0,0,NaN,0,0,NaN,0,1
+pre_comor19,Boolean for pre-index symptoms and comorbidities: Other emotional change,0,6,0,2,3,0.4,0,0.18
+pre_comor20,Boolean for pre-index symptoms and comorbidities: Sexual dysfunction,1,14,0.07,0,5,0,Inf,1
+pre_comor21,Boolean for pre-index symptoms and comorbidities: Depression Symptom,0,0,NaN,0,0,NaN,0,1
+pre_comor22,Boolean for pre-index symptoms and comorbidities: Alcohol intake,2,14,0.13,0,2,0,Inf,1
+pre_comor23,Boolean for pre-index symptoms and comorbidities: Depression Comorbidity,76,382,0.17,46,219,0.17,0.95,0.84
+pre_comor24,Boolean for pre-index symptoms and comorbidities: Diabetes mellitus,18,111,0.14,7,84,0.08,1.94,0.2
+pre_comor25,Boolean for pre-index symptoms and comorbidities: Dyslipidemia,67,459,0.13,44,254,0.15,0.84,0.46
+pre_comor26,Boolean for pre-index symptoms and comorbidities: History of IHD,7,57,0.11,1,26,0.04,3.16,0.43
+pre_comor27,Boolean for pre-index symptoms and comorbidities: History of CVD,15,103,0.13,7,51,0.12,1.06,1
+pre_comor28,Boolean for pre-index symptoms and comorbidities: Hypotension,5,13,0.28,2,9,0.18,1.7,0.68
+pre_comor29,Boolean for pre-index symptoms and comorbidities: Heart Failure (including CHF),9,38,0.19,3,15,0.17,1.18,1
+pre_comor30,Boolean for pre-index symptoms and comorbidities: Obesity,15,89,0.14,6,61,0.09,1.71,0.35
+pre_comor31,Boolean for pre-index symptoms and comorbidities: Tobacco use (including disorder),33,149,0.18,28,76,0.27,0.6,0.1
+pre_comor32,Boolean for pre-index symptoms and comorbidities: Suicidality,4,10,0.29,2,7,0.22,1.38,1
+pre_comor33,Boolean for pre-index symptoms and comorbidities: Valvular disease,14,62,0.18,4,30,0.12,1.69,0.58
+pre_ampyra1,Boolean for pre-index ampyra use,35,222,0.14,17,95,0.15,0.88,0.75
+pre_mri_any,Boolean for pre-index MRI use,206,"1,384",0.13,126,787,0.14,0.93,0.58
+pre_90_mri_any,Boolean for MRI use within 90 days pre-index,90,602,0.13,67,418,0.14,0.93,0.73
+num_pre_mri_any_1,Number of pre-index MRI scans = 0,49,510,0.09,30,226,0.12,0.72,0.2
+num_pre_mri_any_2,Number of pre-index MRI scans = 1,67,538,0.11,40,290,0.12,0.9,0.67
+num_pre_mri_any_3,Number of pre-index MRI scans = 2,83,561,0.13,30,320,0.09,1.58,0.05
+num_pre_mri_any_4,Number of pre-index MRI scans = 3+,56,285,0.16,56,177,0.24,0.62,0.03
+pre_90_cort_any,Boolean for corticosteroid use within 90 days pre-index,125,438,0.22,73,230,0.24,0.9,0.55
+pre_cort_oral,Boolean for pre-index oral corticosteroid use,128,591,0.18,74,322,0.19,0.94,0.75
+num_pre_cort_oral_1,Number of pre-index oral corticosteroid scripts = 0,127,"1,303",0.09,82,691,0.11,0.82,0.2
+num_pre_cort_oral_2,Number of pre-index oral corticosteroid scripts = 1,60,378,0.14,36,196,0.16,0.86,0.56
+num_pre_cort_oral_3,Number of pre-index oral corticosteroid scripts = 2+,68,213,0.24,38,126,0.23,1.06,0.91
+pre_cort_iv,Boolean for pre-index iv corticosteroid use,153,627,0.2,88,302,0.23,0.84,0.25
+num_pre_cort_iv_1,Number of pre-index iv corticosteroid scripts = 0,102,"1,267",0.07,68,711,0.09,0.84,0.32
+num_pre_cort_iv_2,Number of pre-index iv corticosteroid scripts = 1-2,67,357,0.16,38,181,0.17,0.89,0.65
+num_pre_cort_iv_3,Number of pre-index iv corticosteroid scripts = 3+,86,270,0.24,50,121,0.29,0.77,0.24
+pre_relapse,Boolean for presence of pre-index relapse,166,691,0.19,99,334,0.23,0.81,0.15
+pre_relapse_90,Boolean for relapse within 90 days pre-index,90,314,0.22,52,159,0.25,0.88,0.55
+pre_ip_relapse,Boolean for inpatient relapse within 90 days pre-index,17,71,0.19,13,32,0.29,0.59,0.27
+num_pre_relapses_1,Number of pre-index relapses = 0,89,"1,203",0.07,57,679,0.08,0.88,0.48
+num_pre_relapses_2,Number of pre-index relapses = 1,74,488,0.13,53,236,0.18,0.68,0.05
+num_pre_relapses_3,Number of pre-index relapses = 2+,92,203,0.31,46,98,0.32,0.97,0.91

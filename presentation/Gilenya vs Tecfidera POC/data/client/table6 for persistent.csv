@@ -1,0 +1,26 @@
+Variable,Variable Description,Average in Quintile 1,SD in Quintile 1,Average in Quintile 5,SD in Quintile 5,Difference between Quintile 1 and 5,p-value
+pre_ms_total_allowed_4,MS-related total pre-index costs: highest 25%,0.03 ,0.04 ,0.47 ,0.10 ,-0.43 ,1.52E-23
+pre_ampyra1,Boolean for pre-index ampyra use,0.03 ,0.02 ,0.19 ,0.06 ,-0.16 ,1.52E-23
+pre_ms_total_allowed_2,MS-related total pre-index costs: middle lower 25%,0.52 ,0.12 ,0.09 ,0.06 ,0.44 ,1.13E-22
+der_sex_female,Female,0.87 ,0.05 ,0.65 ,0.08 ,0.22 ,3.58E-20
+pre_comor11,Boolean for pre-index symptoms and comorbidities: Visual Symptoms,0.08 ,0.04 ,0.20 ,0.06 ,-0.12 ,3.58E-20
+pre_comor20,Boolean for pre-index symptoms and comorbidities: Sexual dysfunction,0.00 ,0.00 ,0.01 ,0.00 ,-0.01 ,7.51E-20
+pre_comor25,Boolean for pre-index symptoms and comorbidities: Dyslipidemia,0.18 ,0.05 ,0.33 ,0.06 ,-0.15 ,7.32E-17
+pat_region_S,Region: South,0.22 ,0.06 ,0.38 ,0.08 ,-0.16 ,2.40E-16
+pre_cort_iv,Boolean for pre-index iv corticosteroid use,0.23 ,0.09 ,0.45 ,0.11 ,-0.22 ,1.24E-15
+pre_rx_any,Boolean for pre-index DMT use (max of pre_rx1-pre_rx11),0.63 ,0.10 ,0.82 ,0.08 ,-0.19 ,4.78E-14
+idx_prodtype_U,Index Provider type: unknown/missing,0.00 ,0.00 ,0.01 ,0.00 ,0.00 ,2.12E-13
+age_4,Aged 55+,0.16 ,0.05 ,0.26 ,0.05 ,-0.10 ,9.62E-13
+pre_comor15,Boolean for pre-index symptoms and comorbidities: Tremor,0.03 ,0.02 ,0.08 ,0.03 ,-0.04 ,1.54E-12
+pat_region_E,Region: Northeast,0.36 ,0.07 ,0.23 ,0.07 ,0.14 ,2.56E-12
+num_pre_op_dx_2,Number of pre-index OP visits with an MS diagnosis: 5-7,0.32 ,0.07 ,0.20 ,0.05 ,0.12 ,2.56E-12
+pre_comor24,Boolean for pre-index symptoms and comorbidities: Diabetes mellitus,0.04 ,0.02 ,0.11 ,0.04 ,-0.07 ,2.56E-12
+pchrlson_1,CCI score = 0,0.79 ,0.08 ,0.63 ,0.11 ,0.16 ,1.05E-11
+pre_ms_total_allowed_3,MS-related total pre-index costs: middle upper 25%,0.15 ,0.07 ,0.28 ,0.07 ,-0.13 ,1.05E-11
+pre_comor6,Boolean for pre-index symptoms and comorbidities: Bladder Dysfunction,0.09 ,0.05 ,0.18 ,0.06 ,-0.08 ,1.65E-11
+pre_comor2,"Boolean for pre-index symptoms and comorbidities: Walking (Gait), Balance, and Coordination Problems",0.18 ,0.05 ,0.25 ,0.06 ,-0.08 ,2.61E-11
+,,,,,,,
+Notes:,,,,,,,
+1. top 20 variables selected on the basis of p-value,,,,,,,
+2. the above results were calculated based on Uplift Ramdom Forest with 100 runs,,,,,,,
+3. p-value was calculated using Friedman rank sum test,,,,,,,

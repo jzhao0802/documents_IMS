@@ -1,0 +1,1598 @@
+ntree=50; bag.fraction=0.1; mtry=5; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.101,0.152,-0.050,-0.059,0.108,0.142,-0.034,-0.029,0.706,0.012
+0.133,0.125,0.008,-0.059,0.126,0.131,-0.005,-0.029,0.706,0.012
+0.112,0.139,-0.027,-0.015,0.107,0.142,-0.035,-0.030,0.677,0.002
+0.124,0.136,-0.012,-0.015,0.126,0.131,-0.004,-0.030,0.677,0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=5; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.077,0.169,-0.092,-0.144,0.102,0.146,-0.044,-0.047,0.719,0.016
+0.163,0.112,0.052,-0.144,0.133,0.130,0.003,-0.047,0.719,0.016
+0.105,0.135,-0.030,-0.023,0.103,0.147,-0.044,-0.045,0.650,0.000
+0.132,0.140,-0.007,-0.023,0.130,0.129,0.001,-0.045,0.650,0.000
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=5; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.065,0.147,-0.082,-0.124,0.103,0.142,-0.040,-0.045,0.703,0.018
+0.171,0.130,0.041,-0.124,0.135,0.130,0.005,-0.045,0.703,0.018
+0.095,0.127,-0.031,-0.025,0.103,0.143,-0.040,-0.044,0.646,0.001
+0.141,0.148,-0.007,-0.025,0.134,0.130,0.005,-0.044,0.646,0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=5; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.065,0.147,-0.082,-0.124,0.103,0.142,-0.040,-0.045,0.703,0.018
+0.171,0.130,0.041,-0.124,0.135,0.130,0.005,-0.045,0.703,0.018
+0.095,0.127,-0.031,-0.025,0.103,0.143,-0.040,-0.044,0.646,0.001
+0.141,0.148,-0.007,-0.025,0.134,0.130,0.005,-0.044,0.646,0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=5; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.065,0.147,-0.082,-0.124,0.103,0.142,-0.040,-0.045,0.703,0.018
+0.171,0.130,0.041,-0.124,0.135,0.130,0.005,-0.045,0.703,0.018
+0.095,0.127,-0.031,-0.025,0.103,0.143,-0.040,-0.044,0.646,0.001
+0.141,0.148,-0.007,-0.025,0.134,0.130,0.005,-0.044,0.646,0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=7; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.054,0.119,-0.065,-0.094,0.103,0.138,-0.036,-0.038,0.719,0.011
+0.186,0.157,0.029,-0.094,0.138,0.136,0.002,-0.038,0.719,0.011
+0.085,0.109,-0.024,-0.011,0.102,0.137,-0.035,-0.037,0.678,0.001
+0.153,0.165,-0.012,-0.011,0.139,0.137,0.002,-0.037,0.678,0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=7; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.068,0.159,-0.092,-0.142,0.105,0.149,-0.044,-0.045,0.724,0.020
+0.168,0.118,0.050,-0.142,0.133,0.133,0.001,-0.045,0.724,0.020
+0.086,0.120,-0.034,-0.033,0.104,0.148,-0.044,-0.044,0.656,0.004
+0.152,0.153,-0.001,-0.033,0.134,0.134,0.000,-0.044,0.656,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=7; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.075,0.140,-0.065,-0.086,0.101,0.147,-0.046,-0.056,0.714,0.019
+0.158,0.137,0.021,-0.086,0.140,0.130,0.010,-0.056,0.714,0.019
+0.081,0.110,-0.029,-0.017,0.100,0.145,-0.045,-0.055,0.641,0.004
+0.154,0.166,-0.012,-0.017,0.141,0.131,0.010,-0.055,0.641,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=7; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.075,0.140,-0.065,-0.086,0.101,0.147,-0.046,-0.056,0.714,0.019
+0.158,0.137,0.021,-0.086,0.140,0.130,0.010,-0.056,0.714,0.019
+0.081,0.110,-0.029,-0.017,0.100,0.145,-0.045,-0.055,0.641,0.004
+0.154,0.166,-0.012,-0.017,0.141,0.131,0.010,-0.055,0.641,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=7; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.075,0.140,-0.065,-0.086,0.101,0.147,-0.046,-0.056,0.714,0.019
+0.158,0.137,0.021,-0.086,0.140,0.130,0.010,-0.056,0.714,0.019
+0.081,0.110,-0.029,-0.017,0.100,0.145,-0.045,-0.055,0.641,0.004
+0.154,0.166,-0.012,-0.017,0.141,0.131,0.010,-0.055,0.641,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=9; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.091,0.154,-0.063,-0.084,0.107,0.143,-0.036,-0.036,0.697,0.011
+0.146,0.124,0.022,-0.084,0.132,0.132,0.000,-0.036,0.697,0.011
+0.088,0.109,-0.021,-0.001,0.107,0.143,-0.035,-0.036,0.654,0.002
+0.147,0.166,-0.020,-0.001,0.133,0.132,0.001,-0.036,0.654,0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=9; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.065,0.126,-0.061,-0.088,0.101,0.143,-0.043,-0.048,0.720,0.013
+0.176,0.150,0.026,-0.088,0.139,0.133,0.006,-0.048,0.720,0.013
+0.096,0.114,-0.018,0.003,0.101,0.145,-0.044,-0.050,0.667,-0.002
+0.140,0.160,-0.020,0.003,0.138,0.132,0.006,-0.050,0.667,-0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=9; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.068,0.134,-0.065,-0.092,0.099,0.145,-0.045,-0.049,0.723,0.017
+0.170,0.143,0.027,-0.092,0.138,0.134,0.004,-0.049,0.723,0.017
+0.082,0.122,-0.040,-0.039,0.099,0.146,-0.047,-0.052,0.665,0.006
+0.152,0.153,-0.001,-0.039,0.138,0.133,0.005,-0.052,0.665,0.006
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=9; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.068,0.134,-0.065,-0.092,0.099,0.145,-0.045,-0.049,0.723,0.017
+0.170,0.143,0.027,-0.092,0.138,0.134,0.004,-0.049,0.723,0.017
+0.082,0.122,-0.040,-0.039,0.099,0.146,-0.047,-0.052,0.665,0.006
+0.152,0.153,-0.001,-0.039,0.138,0.133,0.005,-0.052,0.665,0.006
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=9; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.068,0.134,-0.065,-0.092,0.099,0.145,-0.045,-0.049,0.723,0.017
+0.170,0.143,0.027,-0.092,0.138,0.134,0.004,-0.049,0.723,0.017
+0.082,0.122,-0.040,-0.039,0.099,0.146,-0.047,-0.052,0.665,0.006
+0.152,0.153,-0.001,-0.039,0.138,0.133,0.005,-0.052,0.665,0.006
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=10; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.086,0.154,-0.068,-0.097,0.104,0.151,-0.047,-0.051,0.716,0.006
+0.154,0.125,0.029,-0.097,0.131,0.128,0.003,-0.051,0.716,0.006
+0.117,0.150,-0.033,-0.026,0.105,0.150,-0.045,-0.047,0.679,0.000
+0.119,0.126,-0.007,-0.026,0.131,0.128,0.002,-0.047,0.679,0.000
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=10; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.086,0.159,-0.073,-0.106,0.105,0.152,-0.047,-0.047,0.731,0.014
+0.155,0.122,0.033,-0.106,0.130,0.130,0.000,-0.047,0.731,0.014
+0.112,0.131,-0.019,-0.001,0.104,0.152,-0.048,-0.046,0.657,-0.003
+0.125,0.143,-0.018,-0.001,0.129,0.131,-0.003,-0.046,0.657,-0.003
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=10; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.086,0.162,-0.076,-0.112,0.105,0.152,-0.047,-0.047,0.731,0.013
+0.156,0.119,0.036,-0.112,0.130,0.130,0.000,-0.047,0.731,0.013
+0.115,0.134,-0.019,0.000,0.103,0.152,-0.048,-0.046,0.658,-0.004
+0.121,0.140,-0.019,0.000,0.129,0.132,-0.002,-0.046,0.658,-0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=10; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.086,0.162,-0.076,-0.112,0.105,0.152,-0.047,-0.047,0.731,0.013
+0.156,0.119,0.036,-0.112,0.130,0.130,0.000,-0.047,0.731,0.013
+0.115,0.134,-0.019,0.000,0.103,0.152,-0.048,-0.046,0.658,-0.004
+0.121,0.140,-0.019,0.000,0.129,0.132,-0.002,-0.046,0.658,-0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=10; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.086,0.162,-0.076,-0.112,0.105,0.152,-0.047,-0.047,0.731,0.013
+0.156,0.119,0.036,-0.112,0.130,0.130,0.000,-0.047,0.731,0.013
+0.115,0.134,-0.019,0.000,0.103,0.152,-0.048,-0.046,0.658,-0.004
+0.121,0.140,-0.019,0.000,0.129,0.132,-0.002,-0.046,0.658,-0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=12; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.067,0.120,-0.053,-0.071,0.103,0.145,-0.042,-0.047,0.713,0.014
+0.173,0.155,0.018,-0.071,0.138,0.132,0.006,-0.047,0.713,0.014
+0.074,0.118,-0.044,-0.048,0.103,0.147,-0.043,-0.049,0.665,0.008
+0.161,0.157,0.004,-0.048,0.138,0.132,0.006,-0.049,0.665,0.008
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=12; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.074,0.155,-0.080,-0.119,0.102,0.148,-0.046,-0.047,0.723,0.020
+0.162,0.123,0.039,-0.119,0.135,0.133,0.001,-0.047,0.723,0.020
+0.104,0.146,-0.042,-0.044,0.102,0.148,-0.045,-0.049,0.663,0.009
+0.131,0.129,0.002,-0.044,0.136,0.133,0.003,-0.049,0.663,0.009
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=12; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.092,0.176,-0.083,-0.124,0.108,0.154,-0.045,-0.051,0.729,0.020
+0.144,0.103,0.041,-0.124,0.132,0.126,0.006,-0.051,0.729,0.020
+0.112,0.162,-0.051,-0.060,0.108,0.152,-0.044,-0.052,0.667,0.004
+0.125,0.115,0.010,-0.060,0.132,0.125,0.007,-0.052,0.667,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=12; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.092,0.176,-0.083,-0.124,0.108,0.154,-0.045,-0.051,0.729,0.020
+0.144,0.103,0.041,-0.124,0.132,0.126,0.006,-0.051,0.729,0.020
+0.112,0.162,-0.051,-0.060,0.108,0.152,-0.044,-0.052,0.667,0.004
+0.125,0.115,0.010,-0.060,0.132,0.125,0.007,-0.052,0.667,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.1; mtry=12; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.092,0.176,-0.083,-0.124,0.108,0.154,-0.045,-0.051,0.729,0.020
+0.144,0.103,0.041,-0.124,0.132,0.126,0.006,-0.051,0.729,0.020
+0.112,0.162,-0.051,-0.060,0.108,0.152,-0.044,-0.052,0.667,0.004
+0.125,0.115,0.010,-0.060,0.132,0.125,0.007,-0.052,0.667,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=5; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.050,0.171,-0.121,-0.198,0.105,0.143,-0.037,-0.036,0.755,0.034
+0.182,0.104,0.077,-0.198,0.132,0.133,-0.002,-0.036,0.755,0.034
+0.097,0.122,-0.025,-0.007,0.104,0.142,-0.038,-0.037,0.646,0.002
+0.137,0.155,-0.018,-0.007,0.133,0.133,0.000,-0.037,0.646,0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=5; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.052,0.189,-0.138,-0.235,0.103,0.149,-0.046,-0.046,0.795,0.040
+0.190,0.093,0.098,-0.235,0.132,0.131,0.001,-0.046,0.795,0.040
+0.101,0.122,-0.021,-0.004,0.103,0.148,-0.045,-0.046,0.670,0.000
+0.136,0.152,-0.016,-0.004,0.132,0.131,0.000,-0.046,0.670,0.000
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=5; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.042,0.185,-0.143,-0.247,0.099,0.146,-0.047,-0.048,0.802,0.041
+0.201,0.097,0.104,-0.247,0.135,0.133,0.001,-0.048,0.802,0.041
+0.099,0.133,-0.034,-0.030,0.097,0.145,-0.048,-0.049,0.687,0.002
+0.138,0.142,-0.004,-0.030,0.136,0.135,0.001,-0.049,0.687,0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=5; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.049,0.183,-0.135,-0.230,0.099,0.152,-0.053,-0.059,0.797,0.038
+0.195,0.099,0.096,-0.230,0.138,0.131,0.007,-0.059,0.797,0.038
+0.101,0.124,-0.023,-0.008,0.099,0.153,-0.053,-0.060,0.652,0.000
+0.136,0.150,-0.015,-0.008,0.139,0.132,0.007,-0.060,0.652,0.000
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=5; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.037,0.196,-0.159,-0.281,0.100,0.150,-0.050,-0.054,0.808,0.041
+0.212,0.090,0.122,-0.281,0.138,0.134,0.004,-0.054,0.808,0.041
+0.102,0.125,-0.023,-0.009,0.099,0.148,-0.049,-0.053,0.676,0.003
+0.135,0.149,-0.014,-0.009,0.139,0.135,0.004,-0.053,0.676,0.003
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=7; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.064,0.183,-0.119,-0.197,0.107,0.144,-0.037,-0.031,0.748,0.030
+0.177,0.099,0.078,-0.197,0.127,0.133,-0.005,-0.031,0.748,0.030
+0.104,0.133,-0.029,-0.020,0.107,0.143,-0.036,-0.031,0.660,-0.002
+0.133,0.142,-0.009,-0.020,0.128,0.133,-0.005,-0.031,0.660,-0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=7; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.046,0.192,-0.146,-0.250,0.101,0.148,-0.047,-0.052,0.795,0.043
+0.192,0.088,0.104,-0.250,0.137,0.132,0.005,-0.052,0.795,0.043
+0.099,0.117,-0.018,0.000,0.100,0.146,-0.046,-0.051,0.679,0.000
+0.139,0.157,-0.018,0.000,0.138,0.133,0.005,-0.051,0.679,0.000
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=7; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.047,0.207,-0.159,-0.277,0.100,0.151,-0.051,-0.055,0.796,0.043
+0.195,0.077,0.118,-0.277,0.136,0.132,0.004,-0.055,0.796,0.043
+0.091,0.142,-0.051,-0.064,0.098,0.150,-0.051,-0.056,0.661,0.002
+0.147,0.133,0.013,-0.064,0.138,0.133,0.005,-0.056,0.661,0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=7; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.052,0.207,-0.156,-0.269,0.101,0.153,-0.052,-0.060,0.813,0.045
+0.190,0.076,0.114,-0.269,0.137,0.129,0.008,-0.060,0.813,0.045
+0.116,0.138,-0.023,-0.006,0.100,0.151,-0.051,-0.058,0.683,0.000
+0.120,0.137,-0.017,-0.006,0.137,0.131,0.007,-0.058,0.683,0.000
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=7; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.048,0.196,-0.148,-0.255,0.101,0.151,-0.050,-0.058,0.811,0.046
+0.192,0.085,0.107,-0.255,0.136,0.129,0.008,-0.058,0.811,0.046
+0.106,0.121,-0.016,0.007,0.101,0.148,-0.047,-0.054,0.674,0.002
+0.131,0.153,-0.023,0.007,0.137,0.130,0.007,-0.054,0.674,0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=9; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.072,0.181,-0.110,-0.177,0.103,0.147,-0.044,-0.043,0.752,0.028
+0.162,0.094,0.068,-0.177,0.131,0.132,-0.001,-0.043,0.752,0.028
+0.101,0.142,-0.041,-0.043,0.103,0.147,-0.044,-0.043,0.657,0.003
+0.135,0.133,0.002,-0.043,0.132,0.132,-0.001,-0.043,0.657,0.003
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=9; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.041,0.193,-0.152,-0.265,0.099,0.149,-0.050,-0.060,0.805,0.041
+0.201,0.089,0.112,-0.265,0.141,0.131,0.010,-0.060,0.805,0.041
+0.104,0.127,-0.024,-0.007,0.100,0.148,-0.048,-0.060,0.646,0.001
+0.132,0.148,-0.016,-0.007,0.141,0.129,0.012,-0.060,0.646,0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=9; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.054,0.194,-0.140,-0.239,0.099,0.153,-0.055,-0.064,0.815,0.041
+0.187,0.088,0.099,-0.239,0.139,0.130,0.009,-0.064,0.815,0.041
+0.105,0.118,-0.013,0.012,0.098,0.151,-0.053,-0.063,0.668,-0.001
+0.132,0.157,-0.025,0.012,0.140,0.131,0.009,-0.063,0.668,-0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=9; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.034,0.190,-0.156,-0.273,0.100,0.147,-0.047,-0.054,0.810,0.047
+0.208,0.091,0.117,-0.273,0.141,0.134,0.007,-0.054,0.810,0.047
+0.109,0.130,-0.021,-0.002,0.099,0.145,-0.046,-0.053,0.680,-0.003
+0.127,0.145,-0.018,-0.002,0.142,0.134,0.007,-0.053,0.680,-0.003
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=9; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.054,0.211,-0.156,-0.270,0.103,0.153,-0.051,-0.058,0.814,0.043
+0.186,0.072,0.114,-0.270,0.135,0.128,0.007,-0.058,0.814,0.043
+0.115,0.141,-0.025,-0.012,0.103,0.153,-0.050,-0.057,0.675,-0.001
+0.121,0.134,-0.014,-0.012,0.134,0.127,0.007,-0.057,0.675,-0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=10; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.072,0.177,-0.105,-0.167,0.108,0.147,-0.039,-0.036,0.739,0.033
+0.162,0.099,0.063,-0.167,0.127,0.130,-0.004,-0.036,0.739,0.033
+0.101,0.123,-0.021,-0.004,0.109,0.147,-0.038,-0.035,0.610,0.001
+0.134,0.152,-0.017,-0.004,0.127,0.130,-0.003,-0.035,0.610,0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=10; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.049,0.195,-0.146,-0.255,0.101,0.150,-0.049,-0.054,0.808,0.036
+0.203,0.094,0.109,-0.255,0.138,0.133,0.006,-0.054,0.808,0.036
+0.113,0.123,-0.010,0.017,0.100,0.147,-0.047,-0.054,0.658,-0.009
+0.123,0.150,-0.027,0.017,0.139,0.132,0.007,-0.054,0.658,-0.009
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=10; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.046,0.211,-0.165,-0.289,0.100,0.154,-0.054,-0.062,0.834,0.050
+0.194,0.071,0.124,-0.289,0.137,0.129,0.008,-0.062,0.834,0.050
+0.116,0.128,-0.012,0.014,0.101,0.151,-0.050,-0.059,0.666,-0.005
+0.120,0.146,-0.026,0.014,0.137,0.128,0.009,-0.059,0.666,-0.005
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=10; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.033,0.196,-0.162,-0.287,0.097,0.153,-0.056,-0.066,0.828,0.049
+0.211,0.087,0.124,-0.287,0.141,0.131,0.010,-0.066,0.828,0.049
+0.098,0.128,-0.030,-0.019,0.098,0.152,-0.054,-0.062,0.659,0.002
+0.137,0.147,-0.010,-0.019,0.139,0.131,0.008,-0.062,0.659,0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=10; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.042,0.204,-0.162,-0.285,0.096,0.153,-0.056,-0.065,0.828,0.046
+0.205,0.082,0.123,-0.285,0.141,0.133,0.008,-0.065,0.828,0.046
+0.105,0.125,-0.020,-0.003,0.096,0.149,-0.053,-0.060,0.664,0.000
+0.132,0.149,-0.018,-0.003,0.142,0.135,0.007,-0.060,0.664,0.000
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=12; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.045,0.157,-0.112,-0.187,0.102,0.144,-0.042,-0.043,0.767,0.031
+0.196,0.121,0.075,-0.187,0.135,0.135,0.001,-0.043,0.767,0.031
+0.092,0.128,-0.036,-0.036,0.102,0.144,-0.042,-0.042,0.657,0.000
+0.145,0.146,-0.001,-0.036,0.136,0.136,0.000,-0.042,0.657,0.000
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=12; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.045,0.198,-0.153,-0.266,0.102,0.151,-0.049,-0.058,0.799,0.041
+0.197,0.084,0.113,-0.266,0.139,0.130,0.008,-0.058,0.799,0.041
+0.098,0.110,-0.012,0.013,0.101,0.150,-0.049,-0.057,0.636,-0.001
+0.139,0.164,-0.025,0.013,0.140,0.131,0.008,-0.057,0.636,-0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=12; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.050,0.215,-0.166,-0.289,0.098,0.155,-0.057,-0.068,0.808,0.044
+0.197,0.074,0.124,-0.289,0.140,0.129,0.011,-0.068,0.808,0.044
+0.111,0.121,-0.011,0.016,0.097,0.152,-0.055,-0.066,0.652,-0.003
+0.126,0.153,-0.027,0.016,0.142,0.130,0.011,-0.066,0.652,-0.003
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=12; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.027,0.192,-0.166,-0.295,0.095,0.151,-0.056,-0.065,0.822,0.043
+0.221,0.091,0.129,-0.295,0.145,0.136,0.009,-0.065,0.822,0.043
+0.095,0.128,-0.033,-0.028,0.096,0.150,-0.054,-0.062,0.665,0.001
+0.142,0.147,-0.005,-0.028,0.145,0.137,0.008,-0.062,0.665,0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.3; mtry=12; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.038,0.214,-0.176,-0.312,0.099,0.154,-0.055,-0.065,0.831,0.049
+0.209,0.073,0.136,-0.312,0.141,0.131,0.010,-0.065,0.831,0.049
+0.094,0.144,-0.049,-0.060,0.100,0.153,-0.053,-0.062,0.678,0.005
+0.141,0.131,0.010,-0.060,0.138,0.130,0.009,-0.062,0.678,0.005
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=5; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.053,0.193,-0.140,-0.237,0.107,0.144,-0.037,-0.031,0.757,0.039
+0.178,0.080,0.097,-0.237,0.128,0.133,-0.006,-0.031,0.757,0.039
+0.109,0.120,-0.011,0.018,0.107,0.143,-0.036,-0.030,0.628,-0.004
+0.127,0.155,-0.028,0.018,0.128,0.134,-0.006,-0.030,0.628,-0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=5; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.031,0.210,-0.179,-0.318,0.100,0.144,-0.044,-0.045,0.821,0.053
+0.215,0.076,0.139,-0.318,0.135,0.135,0.001,-0.045,0.821,0.053
+0.095,0.124,-0.030,-0.018,0.101,0.142,-0.041,-0.042,0.674,0.004
+0.140,0.151,-0.011,-0.018,0.135,0.134,0.001,-0.042,0.674,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=5; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.029,0.231,-0.202,-0.363,0.100,0.148,-0.048,-0.050,0.846,0.060
+0.218,0.057,0.161,-0.363,0.137,0.134,0.003,-0.050,0.846,0.060
+0.101,0.133,-0.032,-0.027,0.099,0.146,-0.047,-0.048,0.679,0.000
+0.136,0.141,-0.006,-0.027,0.138,0.136,0.001,-0.048,0.679,0.000
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=5; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.033,0.219,-0.186,-0.332,0.098,0.149,-0.051,-0.059,0.844,0.053
+0.214,0.068,0.146,-0.332,0.140,0.132,0.008,-0.059,0.844,0.053
+0.105,0.136,-0.031,-0.024,0.098,0.148,-0.050,-0.056,0.674,0.002
+0.131,0.139,-0.007,-0.024,0.139,0.133,0.005,-0.056,0.674,0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=5; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.031,0.221,-0.190,-0.340,0.100,0.153,-0.053,-0.060,0.853,0.055
+0.216,0.066,0.150,-0.340,0.137,0.130,0.007,-0.060,0.853,0.055
+0.098,0.133,-0.036,-0.032,0.100,0.151,-0.052,-0.057,0.677,0.004
+0.138,0.142,-0.003,-0.032,0.137,0.131,0.006,-0.057,0.677,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=7; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.037,0.177,-0.140,-0.245,0.104,0.144,-0.039,-0.036,0.761,0.032
+0.211,0.106,0.105,-0.245,0.132,0.135,-0.003,-0.036,0.761,0.032
+0.103,0.119,-0.016,0.008,0.104,0.144,-0.039,-0.036,0.623,-0.001
+0.133,0.156,-0.024,0.008,0.132,0.135,-0.003,-0.036,0.623,-0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=7; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.032,0.203,-0.170,-0.300,0.098,0.145,-0.047,-0.054,0.827,0.049
+0.208,0.078,0.130,-0.300,0.140,0.133,0.007,-0.054,0.827,0.049
+0.092,0.113,-0.020,-0.001,0.098,0.145,-0.046,-0.053,0.666,0.006
+0.143,0.162,-0.019,-0.001,0.140,0.133,0.007,-0.053,0.666,0.006
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=7; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.025,0.214,-0.190,-0.339,0.095,0.149,-0.054,-0.062,0.847,0.053
+0.219,0.070,0.150,-0.339,0.140,0.131,0.008,-0.062,0.847,0.053
+0.082,0.108,-0.026,-0.010,0.095,0.147,-0.052,-0.061,0.653,0.003
+0.152,0.168,-0.016,-0.010,0.141,0.132,0.009,-0.061,0.653,0.003
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=7; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.030,0.229,-0.199,-0.358,0.096,0.151,-0.055,-0.065,0.869,0.059
+0.221,0.063,0.159,-0.358,0.142,0.132,0.010,-0.065,0.869,0.059
+0.096,0.126,-0.030,-0.021,0.095,0.148,-0.052,-0.063,0.672,0.002
+0.140,0.149,-0.009,-0.021,0.144,0.133,0.011,-0.063,0.672,0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=7; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.018,0.226,-0.208,-0.377,0.094,0.149,-0.055,-0.067,0.868,0.063
+0.228,0.060,0.168,-0.377,0.144,0.133,0.011,-0.067,0.868,0.063
+0.108,0.128,-0.020,0.000,0.096,0.148,-0.051,-0.062,0.686,0.000
+0.127,0.148,-0.020,0.000,0.143,0.132,0.011,-0.062,0.686,0.000
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=9; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.046,0.178,-0.133,-0.226,0.106,0.146,-0.040,-0.036,0.778,0.041
+0.194,0.101,0.093,-0.226,0.129,0.133,-0.004,-0.036,0.778,0.041
+0.087,0.118,-0.030,-0.021,0.105,0.144,-0.039,-0.036,0.665,0.005
+0.148,0.157,-0.009,-0.021,0.130,0.133,-0.003,-0.036,0.665,0.005
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=9; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.039,0.214,-0.175,-0.308,0.101,0.151,-0.050,-0.055,0.826,0.050
+0.201,0.068,0.133,-0.308,0.134,0.129,0.005,-0.055,0.826,0.050
+0.099,0.131,-0.032,-0.024,0.101,0.150,-0.049,-0.055,0.646,0.003
+0.136,0.144,-0.008,-0.024,0.135,0.129,0.006,-0.055,0.646,0.003
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=9; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.027,0.240,-0.213,-0.384,0.100,0.154,-0.053,-0.062,0.859,0.060
+0.219,0.048,0.171,-0.384,0.138,0.129,0.009,-0.062,0.859,0.060
+0.099,0.127,-0.028,-0.019,0.100,0.151,-0.051,-0.058,0.680,0.002
+0.139,0.148,-0.009,-0.019,0.138,0.131,0.007,-0.058,0.680,0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=9; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.030,0.240,-0.210,-0.379,0.100,0.157,-0.057,-0.071,0.867,0.061
+0.226,0.057,0.169,-0.379,0.140,0.126,0.013,-0.071,0.867,0.061
+0.115,0.139,-0.024,-0.008,0.100,0.153,-0.053,-0.065,0.673,-0.003
+0.121,0.136,-0.015,-0.008,0.141,0.129,0.012,-0.065,0.673,-0.003
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=9; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.023,0.238,-0.215,-0.391,0.092,0.154,-0.062,-0.077,0.880,0.061
+0.235,0.059,0.176,-0.391,0.145,0.130,0.015,-0.077,0.880,0.061
+0.094,0.126,-0.032,-0.025,0.093,0.152,-0.060,-0.075,0.660,0.000
+0.142,0.149,-0.007,-0.025,0.145,0.131,0.015,-0.075,0.660,0.000
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=10; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.045,0.175,-0.130,-0.221,0.103,0.145,-0.042,-0.042,0.747,0.033
+0.196,0.105,0.091,-0.221,0.134,0.135,0.000,-0.042,0.747,0.033
+0.093,0.128,-0.035,-0.036,0.103,0.145,-0.041,-0.042,0.641,0.004
+0.146,0.145,0.001,-0.036,0.136,0.135,0.000,-0.042,0.641,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=10; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.036,0.199,-0.163,-0.286,0.098,0.148,-0.049,-0.056,0.826,0.049
+0.205,0.082,0.123,-0.286,0.138,0.131,0.006,-0.056,0.826,0.049
+0.095,0.124,-0.028,-0.017,0.098,0.146,-0.048,-0.053,0.653,0.000
+0.140,0.151,-0.011,-0.017,0.136,0.132,0.005,-0.053,0.653,0.000
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=10; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.038,0.240,-0.202,-0.360,0.097,0.155,-0.058,-0.070,0.856,0.057
+0.209,0.050,0.158,-0.360,0.140,0.128,0.012,-0.070,0.856,0.057
+0.105,0.125,-0.020,-0.003,0.097,0.152,-0.054,-0.066,0.682,0.000
+0.132,0.149,-0.017,-0.003,0.139,0.128,0.011,-0.066,0.682,0.000
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=10; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.025,0.234,-0.209,-0.377,0.097,0.159,-0.062,-0.081,0.871,0.064
+0.217,0.049,0.167,-0.377,0.144,0.125,0.019,-0.081,0.871,0.064
+0.100,0.131,-0.031,-0.023,0.098,0.156,-0.059,-0.076,0.654,0.004
+0.136,0.144,-0.008,-0.023,0.144,0.127,0.018,-0.076,0.654,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=10; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.024,0.255,-0.231,-0.418,0.096,0.159,-0.063,-0.081,0.885,0.064
+0.228,0.040,0.187,-0.418,0.143,0.126,0.018,-0.081,0.885,0.064
+0.096,0.134,-0.038,-0.037,0.095,0.155,-0.060,-0.075,0.671,0.003
+0.141,0.141,0.000,-0.037,0.144,0.129,0.015,-0.075,0.671,0.003
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=12; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.044,0.163,-0.118,-0.201,0.104,0.144,-0.040,-0.035,0.782,0.037
+0.200,0.117,0.083,-0.201,0.131,0.136,-0.005,-0.035,0.782,0.037
+0.095,0.132,-0.037,-0.033,0.105,0.145,-0.040,-0.035,0.660,0.007
+0.139,0.143,-0.004,-0.033,0.130,0.135,-0.005,-0.035,0.660,0.007
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=12; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.041,0.220,-0.179,-0.317,0.102,0.152,-0.050,-0.056,0.839,0.050
+0.209,0.071,0.138,-0.317,0.137,0.132,0.006,-0.056,0.839,0.050
+0.098,0.127,-0.028,-0.020,0.102,0.149,-0.047,-0.054,0.675,0.002
+0.139,0.147,-0.009,-0.020,0.137,0.131,0.006,-0.054,0.675,0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=12; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.031,0.220,-0.190,-0.340,0.097,0.158,-0.061,-0.074,0.857,0.058
+0.218,0.068,0.150,-0.340,0.140,0.127,0.013,-0.074,0.857,0.058
+0.102,0.128,-0.026,-0.015,0.097,0.155,-0.058,-0.071,0.664,-0.001
+0.135,0.146,-0.011,-0.015,0.141,0.128,0.013,-0.071,0.664,-0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=12; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.022,0.232,-0.210,-0.379,0.090,0.155,-0.064,-0.087,0.875,0.061
+0.228,0.059,0.170,-0.379,0.150,0.128,0.022,-0.087,0.875,0.061
+0.098,0.119,-0.021,-0.004,0.089,0.151,-0.062,-0.083,0.646,-0.001
+0.138,0.155,-0.017,-0.004,0.152,0.130,0.022,-0.083,0.646,-0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.5; mtry=12; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.029,0.241,-0.213,-0.383,0.095,0.156,-0.062,-0.079,0.877,0.064
+0.220,0.050,0.170,-0.383,0.145,0.128,0.017,-0.079,0.877,0.064
+0.111,0.134,-0.023,-0.009,0.095,0.154,-0.059,-0.074,0.653,-0.005
+0.126,0.141,-0.015,-0.009,0.143,0.128,0.015,-0.074,0.653,-0.005
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=5; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.047,0.189,-0.142,-0.245,0.106,0.141,-0.035,-0.029,0.768,0.038
+0.195,0.093,0.102,-0.245,0.129,0.135,-0.006,-0.029,0.768,0.038
+0.081,0.124,-0.043,-0.049,0.106,0.141,-0.035,-0.029,0.669,0.005
+0.156,0.150,0.006,-0.049,0.129,0.135,-0.006,-0.029,0.669,0.005
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=5; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.025,0.217,-0.193,-0.345,0.099,0.144,-0.044,-0.048,0.828,0.052
+0.220,0.067,0.153,-0.345,0.137,0.134,0.003,-0.048,0.828,0.052
+0.094,0.109,-0.015,0.010,0.099,0.142,-0.043,-0.046,0.680,0.000
+0.142,0.166,-0.024,0.010,0.137,0.134,0.004,-0.046,0.680,0.000
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=5; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.022,0.246,-0.224,-0.405,0.099,0.148,-0.049,-0.057,0.874,0.068
+0.223,0.042,0.181,-0.405,0.137,0.129,0.008,-0.057,0.874,0.068
+0.104,0.145,-0.041,-0.043,0.099,0.147,-0.048,-0.055,0.675,0.002
+0.133,0.130,0.002,-0.043,0.138,0.130,0.007,-0.055,0.675,0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=5; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.011,0.255,-0.244,-0.445,0.097,0.151,-0.054,-0.066,0.892,0.071
+0.229,0.028,0.201,-0.445,0.139,0.127,0.013,-0.066,0.892,0.071
+0.089,0.121,-0.033,-0.027,0.096,0.148,-0.052,-0.063,0.662,0.005
+0.148,0.153,-0.005,-0.027,0.140,0.129,0.011,-0.063,0.662,0.005
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=5; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.020,0.247,-0.227,-0.412,0.093,0.149,-0.055,-0.068,0.882,0.068
+0.230,0.045,0.185,-0.412,0.142,0.129,0.013,-0.068,0.882,0.068
+0.094,0.134,-0.040,-0.044,0.095,0.146,-0.051,-0.060,0.693,0.004
+0.144,0.141,0.003,-0.044,0.140,0.131,0.010,-0.060,0.693,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=7; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.050,0.186,-0.136,-0.232,0.106,0.143,-0.037,-0.032,0.764,0.039
+0.192,0.095,0.096,-0.232,0.130,0.135,-0.005,-0.032,0.764,0.039
+0.089,0.132,-0.043,-0.047,0.106,0.142,-0.037,-0.033,0.660,0.007
+0.147,0.143,0.004,-0.047,0.131,0.135,-0.004,-0.033,0.660,0.007
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=7; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.025,0.223,-0.198,-0.355,0.102,0.147,-0.045,-0.050,0.850,0.058
+0.218,0.061,0.157,-0.355,0.135,0.130,0.005,-0.050,0.850,0.058
+0.101,0.129,-0.029,-0.020,0.102,0.146,-0.044,-0.049,0.661,-0.001
+0.136,0.145,-0.009,-0.020,0.136,0.131,0.005,-0.049,0.661,-0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=7; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.015,0.248,-0.233,-0.424,0.095,0.149,-0.054,-0.063,0.882,0.069
+0.237,0.045,0.192,-0.424,0.140,0.131,0.009,-0.063,0.882,0.069
+0.115,0.124,-0.010,0.019,0.096,0.146,-0.050,-0.057,0.687,-0.002
+0.121,0.150,-0.028,0.019,0.139,0.131,0.007,-0.057,0.687,-0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=7; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.013,0.261,-0.248,-0.454,0.094,0.151,-0.057,-0.074,0.893,0.072
+0.244,0.038,0.206,-0.454,0.146,0.129,0.017,-0.074,0.893,0.072
+0.094,0.138,-0.044,-0.051,0.095,0.148,-0.052,-0.068,0.669,0.006
+0.143,0.137,0.007,-0.051,0.145,0.130,0.016,-0.068,0.669,0.006
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=7; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.021,0.270,-0.248,-0.451,0.094,0.152,-0.058,-0.074,0.899,0.074
+0.234,0.031,0.203,-0.451,0.143,0.127,0.016,-0.074,0.899,0.074
+0.091,0.113,-0.022,-0.009,0.095,0.147,-0.052,-0.066,0.677,-0.003
+0.147,0.160,-0.013,-0.009,0.144,0.130,0.014,-0.066,0.677,-0.003
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=9; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.044,0.186,-0.142,-0.244,0.105,0.142,-0.037,-0.034,0.764,0.038
+0.194,0.093,0.101,-0.244,0.132,0.135,-0.003,-0.034,0.764,0.038
+0.105,0.134,-0.029,-0.019,0.105,0.142,-0.037,-0.034,0.651,0.003
+0.131,0.141,-0.010,-0.019,0.131,0.134,-0.003,-0.034,0.651,0.003
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=9; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.033,0.234,-0.201,-0.359,0.101,0.149,-0.049,-0.058,0.838,0.055
+0.213,0.055,0.158,-0.359,0.137,0.128,0.009,-0.058,0.838,0.055
+0.088,0.139,-0.050,-0.066,0.101,0.148,-0.047,-0.057,0.658,0.001
+0.152,0.136,0.016,-0.066,0.138,0.129,0.009,-0.057,0.658,0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=9; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.023,0.239,-0.216,-0.390,0.095,0.153,-0.058,-0.073,0.888,0.069
+0.221,0.047,0.174,-0.390,0.141,0.126,0.015,-0.073,0.888,0.069
+0.095,0.117,-0.021,-0.003,0.096,0.148,-0.052,-0.066,0.663,0.004
+0.140,0.158,-0.018,-0.003,0.142,0.128,0.014,-0.066,0.663,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=9; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.013,0.271,-0.258,-0.472,0.091,0.155,-0.065,-0.087,0.902,0.072
+0.243,0.029,0.214,-0.472,0.148,0.126,0.022,-0.087,0.902,0.072
+0.107,0.118,-0.010,0.017,0.093,0.152,-0.059,-0.079,0.674,-0.001
+0.129,0.157,-0.028,0.017,0.148,0.128,0.020,-0.079,0.674,-0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=9; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.011,0.266,-0.255,-0.467,0.089,0.155,-0.066,-0.091,0.911,0.075
+0.241,0.029,0.212,-0.467,0.150,0.125,0.025,-0.091,0.911,0.075
+0.087,0.126,-0.038,-0.039,0.089,0.150,-0.061,-0.084,0.672,0.000
+0.150,0.149,0.001,-0.039,0.151,0.128,0.023,-0.084,0.672,0.000
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=10; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.042,0.178,-0.136,-0.230,0.105,0.142,-0.037,-0.034,0.773,0.036
+0.193,0.099,0.094,-0.230,0.131,0.134,-0.003,-0.034,0.773,0.036
+0.095,0.118,-0.023,-0.007,0.105,0.141,-0.036,-0.034,0.646,0.002
+0.141,0.157,-0.016,-0.007,0.132,0.134,-0.002,-0.034,0.646,0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=10; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.036,0.221,-0.185,-0.328,0.100,0.149,-0.049,-0.056,0.835,0.054
+0.206,0.063,0.143,-0.328,0.137,0.130,0.007,-0.056,0.835,0.054
+0.100,0.136,-0.036,-0.032,0.100,0.147,-0.047,-0.055,0.670,0.004
+0.136,0.139,-0.003,-0.032,0.138,0.130,0.008,-0.055,0.670,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=10; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.022,0.242,-0.220,-0.398,0.096,0.154,-0.058,-0.072,0.866,0.064
+0.224,0.046,0.178,-0.398,0.140,0.126,0.014,-0.072,0.866,0.064
+0.087,0.135,-0.049,-0.059,0.097,0.151,-0.055,-0.067,0.678,0.004
+0.150,0.140,0.010,-0.059,0.140,0.127,0.013,-0.067,0.678,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=10; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.019,0.270,-0.251,-0.457,0.093,0.158,-0.065,-0.086,0.903,0.074
+0.239,0.033,0.206,-0.457,0.145,0.124,0.021,-0.086,0.903,0.074
+0.104,0.145,-0.042,-0.044,0.095,0.154,-0.059,-0.077,0.675,0.005
+0.133,0.130,0.003,-0.044,0.146,0.128,0.018,-0.077,0.675,0.005
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=10; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.013,0.268,-0.255,-0.467,0.089,0.156,-0.067,-0.091,0.919,0.078
+0.243,0.031,0.212,-0.467,0.149,0.126,0.023,-0.091,0.919,0.078
+0.086,0.115,-0.029,-0.022,0.088,0.151,-0.062,-0.082,0.659,0.004
+0.151,0.159,-0.008,-0.022,0.149,0.130,0.019,-0.082,0.659,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=12; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.046,0.170,-0.124,-0.206,0.105,0.143,-0.039,-0.039,0.753,0.038
+0.190,0.108,0.083,-0.206,0.131,0.131,0.000,-0.039,0.753,0.038
+0.103,0.126,-0.023,-0.006,0.105,0.143,-0.039,-0.040,0.618,0.004
+0.133,0.149,-0.017,-0.006,0.132,0.131,0.001,-0.040,0.618,0.004
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=12; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.043,0.218,-0.174,-0.306,0.098,0.151,-0.052,-0.062,0.837,0.054
+0.196,0.064,0.132,-0.306,0.137,0.128,0.009,-0.062,0.837,0.054
+0.090,0.131,-0.041,-0.042,0.098,0.148,-0.050,-0.059,0.658,0.008
+0.145,0.144,0.001,-0.042,0.138,0.129,0.009,-0.059,0.658,0.008
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=12; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.026,0.247,-0.221,-0.399,0.095,0.155,-0.060,-0.076,0.882,0.064
+0.227,0.049,0.179,-0.399,0.143,0.126,0.016,-0.076,0.882,0.064
+0.089,0.131,-0.042,-0.046,0.095,0.152,-0.057,-0.073,0.663,0.002
+0.148,0.144,0.005,-0.046,0.145,0.129,0.016,-0.073,0.663,0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=12; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.024,0.268,-0.244,-0.443,0.091,0.156,-0.065,-0.088,0.904,0.074
+0.230,0.031,0.199,-0.443,0.148,0.125,0.023,-0.088,0.904,0.074
+0.094,0.113,-0.019,0.000,0.091,0.151,-0.060,-0.082,0.658,0.001
+0.142,0.161,-0.019,0.000,0.150,0.128,0.022,-0.082,0.658,0.001
+,,,,,,,,,
+,,,,,,,,,
+ntree=50; bag.fraction=0.7; mtry=12; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.011,0.271,-0.260,-0.476,0.090,0.155,-0.066,-0.087,0.911,0.076
+0.243,0.027,0.216,-0.476,0.147,0.126,0.022,-0.087,0.911,0.076
+0.103,0.116,-0.013,0.012,0.089,0.149,-0.060,-0.077,0.670,-0.002
+0.133,0.158,-0.025,0.012,0.148,0.131,0.017,-0.077,0.670,-0.002
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=5; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.106796117,0.171764706,-0.064968589,-0.089516156,0.114361436,0.147538679,-0.033177243,-0.028250168,0.713762642,0.021951403
+0.127562642,0.103015075,0.024547567,-0.089516156,0.121100024,0.126027098,-0.004927074,-0.028250168,0.713762642,0.021951403
+0.144638404,0.149082569,-0.004444165,0.028439978,0.113832582,0.146786068,-0.032953486,-0.02809984,0.656178786,-0.002121412
+0.092417062,0.125301205,-0.032884143,0.028439978,0.121226648,0.126080294,-0.004853646,-0.02809984,0.656178786,-0.002121412
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=5; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.070588235,0.15776699,-0.087178755,-0.132276593,0.105506133,0.142673284,-0.037167152,-0.035549378,0.74078223,0.022878623
+0.164319249,0.119221411,0.045097838,-0.132276593,0.129311125,0.1309289,-0.001617774,-0.035549378,0.74078223,0.022878623
+0.101895735,0.125301205,-0.02340547,-0.008986243,0.105873533,0.142567162,-0.03669363,-0.034143106,0.664990078,0.001361589
+0.134663342,0.149082569,-0.014419227,-0.008986243,0.127941303,0.130491827,-0.002550523,-0.034143106,0.664990078,0.001361589
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=5; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.052132701,0.14939759,-0.097264889,-0.15163209,0.104714581,0.13997514,-0.035260559,-0.032853151,0.735211561,0.026930678
+0.181818182,0.12745098,0.054367201,-0.15163209,0.130067422,0.13247483,-0.002407409,-0.032853151,0.735211561,0.026930678
+0.113300493,0.120649652,-0.007349159,0.025110587,0.104920742,0.140306301,-0.035385559,-0.032825677,0.666062284,0.000120536
+0.122302158,0.154761905,-0.032459746,0.025110587,0.129677866,0.132237748,-0.002559882,-0.032825677,0.666062284,0.000120536
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=5; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.052132701,0.14939759,-0.097264889,-0.15163209,0.104714581,0.13997514,-0.035260559,-0.032853151,0.735211561,0.026930678
+0.181818182,0.12745098,0.054367201,-0.15163209,0.130067422,0.13247483,-0.002407409,-0.032853151,0.735211561,0.026930678
+0.113300493,0.120649652,-0.007349159,0.025110587,0.104920742,0.140306301,-0.035385559,-0.032825677,0.666062284,0.000120536
+0.122302158,0.154761905,-0.032459746,0.025110587,0.129677866,0.132237748,-0.002559882,-0.032825677,0.666062284,0.000120536
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=5; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.052132701,0.14939759,-0.097264889,-0.15163209,0.104714581,0.13997514,-0.035260559,-0.032853151,0.735211561,0.026930678
+0.181818182,0.12745098,0.054367201,-0.15163209,0.130067422,0.13247483,-0.002407409,-0.032853151,0.735211561,0.026930678
+0.113300493,0.120649652,-0.007349159,0.025110587,0.104920742,0.140306301,-0.035385559,-0.032825677,0.666062284,0.000120536
+0.122302158,0.154761905,-0.032459746,0.025110587,0.129677866,0.132237748,-0.002559882,-0.032825677,0.666062284,0.000120536
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=7; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.075892857,0.131105398,-0.055212541,-0.073822963,0.10448591,0.138578932,-0.034093022,-0.029912664,0.722767571,0.010843465
+0.163771712,0.14516129,0.018610422,-0.073822963,0.133664759,0.137845116,-0.004180357,-0.029912664,0.722767571,0.010843465
+0.082352941,0.116504854,-0.034151913,-0.032755409,0.104327539,0.138029409,-0.03370187,-0.029700447,0.691059083,0.002780547
+0.155778894,0.157175399,-0.001396504,-0.032755409,0.134361995,0.138363418,-0.004001423,-0.029700447,0.691059083,0.002780547
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=7; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.082379863,0.1775,-0.095120137,-0.148054663,0.107882018,0.147090122,-0.039208104,-0.037984618,0.729026373,0.021814262
+0.154589372,0.101654846,0.052934526,-0.148054663,0.13051052,0.131734006,-0.001223486,-0.037984618,0.729026373,0.021814262
+0.097222222,0.133333333,-0.036111111,-0.035520467,0.107687989,0.147092627,-0.039404638,-0.037502444,0.660904494,0.000766049
+0.140664962,0.141255605,-0.000590644,-0.035520467,0.129983732,0.131885926,-0.001902194,-0.037502444,0.660904494,0.000766049
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=7; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.06744186,0.164619165,-0.097177304,-0.152842616,0.1060323,0.144688072,-0.038655772,-0.041371492,0.731052362,0.021479297
+0.168646081,0.112980769,0.055665312,-0.152842616,0.1343177,0.13160198,0.00271572,-0.041371492,0.731052362,0.021479297
+0.111111111,0.118686869,-0.007575758,0.020615946,0.106219384,0.14347372,-0.037254337,-0.039710581,0.647820382,-0.003582991
+0.12565445,0.153846154,-0.028191704,0.020615946,0.13388975,0.131433507,0.002456244,-0.039710581,0.647820382,-0.003582991
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=7; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.06744186,0.164619165,-0.097177304,-0.152842616,0.1060323,0.144688072,-0.038655772,-0.041371492,0.731052362,0.021479297
+0.168646081,0.112980769,0.055665312,-0.152842616,0.1343177,0.13160198,0.00271572,-0.041371492,0.731052362,0.021479297
+0.111111111,0.118686869,-0.007575758,0.020615946,0.106219384,0.14347372,-0.037254337,-0.039710581,0.647820382,-0.003582991
+0.12565445,0.153846154,-0.028191704,0.020615946,0.13388975,0.131433507,0.002456244,-0.039710581,0.647820382,-0.003582991
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=7; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.06744186,0.164619165,-0.097177304,-0.152842616,0.1060323,0.144688072,-0.038655772,-0.041371492,0.731052362,0.021479297
+0.168646081,0.112980769,0.055665312,-0.152842616,0.1343177,0.13160198,0.00271572,-0.041371492,0.731052362,0.021479297
+0.111111111,0.118686869,-0.007575758,0.020615946,0.106219384,0.14347372,-0.037254337,-0.039710581,0.647820382,-0.003582991
+0.12565445,0.153846154,-0.028191704,0.020615946,0.13388975,0.131433507,0.002456244,-0.039710581,0.647820382,-0.003582991
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=9; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.061904762,0.146282974,-0.084378212,-0.125530075,0.105692822,0.138316376,-0.032623554,-0.027498707,0.725464089,0.019157463
+0.171693735,0.130541872,0.041151864,-0.125530075,0.13113707,0.136261918,-0.005124847,-0.027498707,0.725464089,0.019157463
+0.07398568,0.11722488,-0.0432392,-0.049561657,0.105428756,0.137497559,-0.032068803,-0.027634239,0.676985981,0.003168626
+0.163366337,0.15704388,0.006322457,-0.049561657,0.132140516,0.13657508,-0.004434564,-0.027634239,0.676985981,0.003168626
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=9; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.054794521,0.120300752,-0.065506231,-0.093865224,0.101866742,0.139793211,-0.03792647,-0.040913533,0.740583792,0.017446732
+0.18401937,0.155660377,0.028358993,-0.093865224,0.139177907,0.136190843,0.002987063,-0.040913533,0.740583792,0.017446732
+0.082742317,0.103864734,-0.021122418,-0.006786033,0.102147863,0.141297865,-0.039150002,-0.042847139,0.67666912,-0.000294672
+0.155,0.169336384,-0.014336384,-0.006786033,0.138632299,0.134935162,0.003697136,-0.042847139,0.67666912,-0.000294672
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=9; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.050925926,0.12345679,-0.072530864,-0.105578334,0.100762722,0.13963413,-0.038871409,-0.040435527,0.742420945,0.020666659
+0.186157518,0.153110048,0.03304747,-0.105578334,0.138171967,0.136607848,0.001564118,-0.040435527,0.742420945,0.020666659
+0.07748184,0.103773585,-0.026291745,-0.013868143,0.100870737,0.140944657,-0.04007392,-0.042025167,0.671842594,0.001742957
+0.158536585,0.170960187,-0.012423602,-0.013868143,0.137647982,0.135696735,0.001951247,-0.042025167,0.671842594,0.001742957
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=9; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.050925926,0.12345679,-0.072530864,-0.105578334,0.100762722,0.13963413,-0.038871409,-0.040435527,0.742420945,0.020666659
+0.186157518,0.153110048,0.03304747,-0.105578334,0.138171967,0.136607848,0.001564118,-0.040435527,0.742420945,0.020666659
+0.07748184,0.103773585,-0.026291745,-0.013868143,0.100870737,0.140944657,-0.04007392,-0.042025167,0.671842594,0.001742957
+0.158536585,0.170960187,-0.012423602,-0.013868143,0.137647982,0.135696735,0.001951247,-0.042025167,0.671842594,0.001742957
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=9; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.050925926,0.12345679,-0.072530864,-0.105578334,0.100762722,0.13963413,-0.038871409,-0.040435527,0.742420945,0.020666659
+0.186157518,0.153110048,0.03304747,-0.105578334,0.138171967,0.136607848,0.001564118,-0.040435527,0.742420945,0.020666659
+0.07748184,0.103773585,-0.026291745,-0.013868143,0.100870737,0.140944657,-0.04007392,-0.042025167,0.671842594,0.001742957
+0.158536585,0.170960187,-0.012423602,-0.013868143,0.137647982,0.135696735,0.001951247,-0.042025167,0.671842594,0.001742957
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=10; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.069868996,0.142480211,-0.072611215,-0.11050407,0.103236516,0.142896134,-0.039659618,-0.038582087,0.738601011,0.013421091
+0.17302799,0.135135135,0.037892855,-0.11050407,0.13357648,0.134654011,-0.00107753,-0.038582087,0.738601011,0.013421091
+0.103044496,0.126829268,-0.023784772,-0.010230865,0.103354216,0.142688007,-0.039333791,-0.037317529,0.68098835,0.00112857
+0.133838384,0.14739229,-0.013553906,-0.010230865,0.133411476,0.135427737,-0.002016262,-0.037317529,0.68098835,0.00112857
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=10; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.068131868,0.162303665,-0.094171797,-0.150500389,0.10459932,0.145405354,-0.040806033,-0.036121833,0.739090705,0.019427676
+0.174242424,0.117913832,0.056328592,-0.150500389,0.131435137,0.136119338,-0.004684201,-0.036121833,0.739090705,0.019427676
+0.113378685,0.143939394,-0.030560709,-0.021729226,0.103694996,0.145032573,-0.041337577,-0.036198596,0.679080784,-0.003433142
+0.123036649,0.131868132,-0.008831483,-0.021729226,0.131218127,0.136357108,-0.005138981,-0.036198596,0.679080784,-0.003433142
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=10; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.061135371,0.153034301,-0.09189893,-0.14897891,0.103452292,0.145047967,-0.041595675,-0.03889611,0.736735053,0.016554279
+0.183206107,0.126126126,0.057079981,-0.14897891,0.13313652,0.135836085,-0.002699565,-0.03889611,0.736735053,0.016554279
+0.112643678,0.139303483,-0.026659804,-0.014513684,0.101777556,0.144065486,-0.042287931,-0.038503422,0.682180579,-0.001623321
+0.12371134,0.135857461,-0.012146121,-0.014513684,0.133456023,0.137240532,-0.003784509,-0.038503422,0.682180579,-0.001623321
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=10; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.061135371,0.153034301,-0.09189893,-0.14897891,0.103452292,0.145047967,-0.041595675,-0.03889611,0.736735053,0.016554279
+0.183206107,0.126126126,0.057079981,-0.14897891,0.13313652,0.135836085,-0.002699565,-0.03889611,0.736735053,0.016554279
+0.112643678,0.139303483,-0.026659804,-0.014513684,0.101777556,0.144065486,-0.042287931,-0.038503422,0.682180579,-0.001623321
+0.12371134,0.135857461,-0.012146121,-0.014513684,0.133456023,0.137240532,-0.003784509,-0.038503422,0.682180579,-0.001623321
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=10; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.061135371,0.153034301,-0.09189893,-0.14897891,0.103452292,0.145047967,-0.041595675,-0.03889611,0.736735053,0.016554279
+0.183206107,0.126126126,0.057079981,-0.14897891,0.13313652,0.135836085,-0.002699565,-0.03889611,0.736735053,0.016554279
+0.112643678,0.139303483,-0.026659804,-0.014513684,0.101777556,0.144065486,-0.042287931,-0.038503422,0.682180579,-0.001623321
+0.12371134,0.135857461,-0.012146121,-0.014513684,0.133456023,0.137240532,-0.003784509,-0.038503422,0.682180579,-0.001623321
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=12; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.081395349,0.14987715,-0.068481801,-0.095472254,0.108370744,0.145837982,-0.037467238,-0.038080961,0.732633466,0.022602842
+0.154394299,0.127403846,0.026990453,-0.095472254,0.130853564,0.130239841,0.000613723,-0.038080961,0.732633466,0.022602842
+0.108958838,0.134433962,-0.025475124,-0.01178917,0.107457633,0.146503013,-0.03904538,-0.039745213,0.655706696,0.002432732
+0.126829268,0.140515222,-0.013685954,-0.01178917,0.131160735,0.130460902,0.000699833,-0.039745213,0.655706696,0.002432732
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=12; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.07032967,0.157068063,-0.086738392,-0.136006585,0.105566453,0.148302176,-0.042735723,-0.043110084,0.738498592,0.018044342
+0.171717172,0.12244898,0.049268192,-0.136006585,0.133912511,0.133538151,0.000374361,-0.043110084,0.738498592,0.018044342
+0.089686099,0.138107417,-0.048421318,-0.06265843,0.105125112,0.14712583,-0.042000718,-0.043053955,0.679080784,0.00543963
+0.151193634,0.136956522,0.014237112,-0.06265843,0.134961508,0.133908271,0.001053237,-0.043053955,0.679080784,0.00543963
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=12; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.071583514,0.170212766,-0.098629252,-0.1585673,0.108836546,0.151120161,-0.042283615,-0.045627418,0.734310588,0.018233027
+0.171794872,0.111856823,0.059938049,-0.1585673,0.131832789,0.128488986,0.003343803,-0.045627418,0.734310588,0.018233027
+0.10738255,0.158974359,-0.051591809,-0.062605101,0.108859006,0.14996662,-0.041107614,-0.045117613,0.682558251,0.003387581
+0.130319149,0.119305857,0.011013292,-0.062605101,0.132121106,0.128111108,0.004009999,-0.045117613,0.682558251,0.003387581
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=12; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.071583514,0.170212766,-0.098629252,-0.1585673,0.108836546,0.151120161,-0.042283615,-0.045627418,0.734310588,0.018233027
+0.171794872,0.111856823,0.059938049,-0.1585673,0.131832789,0.128488986,0.003343803,-0.045627418,0.734310588,0.018233027
+0.10738255,0.158974359,-0.051591809,-0.062605101,0.108859006,0.14996662,-0.041107614,-0.045117613,0.682558251,0.003387581
+0.130319149,0.119305857,0.011013292,-0.062605101,0.132121106,0.128111108,0.004009999,-0.045117613,0.682558251,0.003387581
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.1; mtry=12; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.071583514,0.170212766,-0.098629252,-0.1585673,0.108836546,0.151120161,-0.042283615,-0.045627418,0.734310588,0.018233027
+0.171794872,0.111856823,0.059938049,-0.1585673,0.131832789,0.128488986,0.003343803,-0.045627418,0.734310588,0.018233027
+0.10738255,0.158974359,-0.051591809,-0.062605101,0.108859006,0.14996662,-0.041107614,-0.045117613,0.682558251,0.003387581
+0.130319149,0.119305857,0.011013292,-0.062605101,0.132121106,0.128111108,0.004009999,-0.045117613,0.682558251,0.003387581
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=5; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.04964539,0.176328502,-0.126683112,-0.211018053,0.106786372,0.142423932,-0.03563756,-0.030519197,0.758609653,0.034312174
+0.184579439,0.100244499,0.08433494,-0.211018053,0.130062738,0.135181102,-0.005118363,-0.030519197,0.758609653,0.034312174
+0.103703704,0.136574074,-0.03287037,-0.026024497,0.106247128,0.141794054,-0.035546926,-0.030874919,0.645247087,0.00254867
+0.131578947,0.138424821,-0.006845874,-0.026024497,0.130332057,0.135004065,-0.004672007,-0.030874919,0.645247087,0.00254867
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=5; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.0456621,0.200501253,-0.154839153,-0.268355074,0.10546449,0.147785791,-0.042321301,-0.040150892,0.801401869,0.045088289
+0.1937046,0.080188679,0.113515921,-0.268355074,0.130820313,0.132990722,-0.002170409,-0.040150892,0.801401869,0.045088289
+0.096244131,0.141119221,-0.04487509,-0.051842115,0.104353149,0.14621691,-0.041863761,-0.039083728,0.673137242,0.001308831
+0.141057935,0.134090909,0.006967025,-0.051842115,0.130926338,0.133706372,-0.002780033,-0.039083728,0.673137242,0.001308831
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=5; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.02283105,0.19047619,-0.16764514,-0.295940174,0.100278176,0.142282736,-0.04200456,-0.040496243,0.812261554,0.047440036
+0.217917676,0.089622642,0.128295034,-0.295940174,0.134883125,0.136391443,-0.001508318,-0.040496243,0.812261554,0.047440036
+0.094117647,0.109223301,-0.015105654,0.005687377,0.098449526,0.140329778,-0.041880252,-0.04021653,0.692833824,-0.002190447
+0.14321608,0.164009112,-0.020793031,0.005687377,0.136114502,0.137778223,-0.001663722,-0.04021653,0.692833824,-0.002190447
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=5; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.037861915,0.18814433,-0.150282415,-0.262497203,0.099199302,0.147902871,-0.048703569,-0.051669763,0.811733453,0.042691709
+0.206467662,0.094252874,0.112214788,-0.262497203,0.138413894,0.135447699,0.002966195,-0.051669763,0.811733453,0.042691709
+0.09976247,0.115384615,-0.015622145,0.006182624,0.098577886,0.147098447,-0.04852056,-0.050716254,0.667377737,0.00031122
+0.13681592,0.15862069,-0.021804769,0.006182624,0.138716186,0.136520492,0.002195694,-0.050716254,0.667377737,0.00031122
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=5; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.037037037,0.206349206,-0.169312169,-0.300147987,0.100660876,0.146121976,-0.0454611,-0.046502356,0.818216298,0.046264947
+0.211734694,0.080898876,0.130835817,-0.300147987,0.137096075,0.13605482,0.001041256,-0.046502356,0.818216298,0.046264947
+0.08685446,0.126520681,-0.039666221,-0.04307245,0.099679164,0.144154262,-0.044475098,-0.045071928,0.682510242,0.00255788
+0.151133501,0.147727273,0.003406229,-0.04307245,0.138035829,0.137438999,0.00059683,-0.045071928,0.682510242,0.00255788
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=7; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.046770601,0.190721649,-0.143951048,-0.248514438,0.105932753,0.141485276,-0.035552523,-0.029925468,0.769266099,0.033819365
+0.196517413,0.091954023,0.10456339,-0.248514438,0.130106465,0.13573352,-0.005627055,-0.029925468,0.769266099,0.033819365
+0.104265403,0.122891566,-0.018626163,0.000580407,0.1055066,0.140518786,-0.035012186,-0.029808489,0.671149661,-0.001377095
+0.132169576,0.151376147,-0.019206571,0.000580407,0.130373104,0.135576802,-0.005203698,-0.029808489,0.671149661,-0.001377095
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=7; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.047835991,0.211055276,-0.163219285,-0.284378623,0.104261987,0.148742876,-0.044480889,-0.043544866,0.805180195,0.046354114
+0.191747573,0.070588235,0.121159338,-0.284378623,0.13258514,0.133521162,-0.000936023,-0.043544866,0.805180195,0.046354114
+0.102325581,0.13022113,-0.027895549,-0.018611456,0.103018323,0.146270276,-0.043251953,-0.04325271,0.684413007,-0.001269581
+0.134860051,0.144144144,-0.009284093,-0.018611456,0.134350262,0.134349505,7.56E-07,-0.04325271,0.684413007,-0.001269581
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=7; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.034408602,0.190860215,-0.156451613,-0.278724513,0.0972031,0.147170241,-0.049967141,-0.052990289,0.810405198,0.044105812
+0.21761658,0.095343681,0.1222729,-0.278724513,0.13844733,0.135424182,0.003023148,-0.052990289,0.810405198,0.044105812
+0.082159624,0.143552311,-0.061392687,-0.08574579,0.096322067,0.146999435,-0.050677368,-0.05405163,0.672274677,0.002911192
+0.156171285,0.131818182,0.024353103,-0.08574579,0.139159836,0.135785575,0.003374262,-0.05405163,0.672274677,0.002911192
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=7; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.046357616,0.216145833,-0.169788217,-0.297665646,0.103053609,0.151317962,-0.048264352,-0.052983062,0.824254257,0.049699546
+0.198492462,0.070615034,0.127877428,-0.297665646,0.134229053,0.129510343,0.00471871,-0.052983062,0.824254257,0.049699546
+0.118993135,0.1375,-0.018506865,0.002385108,0.101641136,0.148451066,-0.04680993,-0.051173157,0.679346435,-0.003515884
+0.116580311,0.137472284,-0.020891973,0.002385108,0.135384654,0.131021427,0.004363227,-0.051173157,0.679346435,-0.003515884
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=7; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.030973451,0.205194805,-0.174221354,-0.309851525,0.102231128,0.149219853,-0.046988725,-0.052214185,0.82468954,0.049430118
+0.215538847,0.079908676,0.135630171,-0.309851525,0.13639455,0.13116909,0.00522546,-0.052214185,0.82468954,0.049430118
+0.086538462,0.125890736,-0.039352275,-0.040392215,0.101849197,0.146936048,-0.045086851,-0.050048241,0.672151453,0.004988799
+0.14987715,0.148837209,0.001039941,-0.040392215,0.137133865,0.132172474,0.004961391,-0.050048241,0.672151453,0.004988799
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=9; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.062937063,0.181372549,-0.118435486,-0.195035726,0.104971864,0.146443535,-0.041471671,-0.038822568,0.763199334,0.034807838
+0.172985782,0.096385542,0.07660024,-0.195035726,0.129270652,0.131919756,-0.002649104,-0.038822568,0.763199334,0.034807838
+0.0968523,0.134433962,-0.037581662,-0.03609083,0.105095123,0.14546913,-0.040374007,-0.038275035,0.642320125,0.003285706
+0.13902439,0.140515222,-0.001490832,-0.03609083,0.129633369,0.131732342,-0.002098973,-0.038275035,0.642320125,0.003285706
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=9; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.036781609,0.184079602,-0.147297993,-0.254209193,0.100073012,0.146383786,-0.046310774,-0.049574973,0.815286135,0.044510311
+0.201923077,0.095011876,0.1069112,-0.254209193,0.13763357,0.134369372,0.003264198,-0.049574973,0.815286135,0.044510311
+0.101204819,0.123222749,-0.02201793,-0.0053067,0.100258619,0.144630259,-0.04437164,-0.049546693,0.662533606,-0.000708023
+0.134803922,0.151515152,-0.01671123,-0.0053067,0.139123211,0.133948159,0.005175053,-0.049546693,0.662533606,-0.000708023
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=9; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.033860045,0.195431472,-0.161571427,-0.283657674,0.099435022,0.15092914,-0.051494118,-0.059285348,0.820560748,0.04612388
+0.208333333,0.086247086,0.122086247,-0.283657674,0.138999903,0.131208674,0.007791229,-0.059285348,0.820560748,0.04612388
+0.09512761,0.130541872,-0.035414262,-0.03445118,0.099450204,0.149173325,-0.049723121,-0.057561308,0.668208296,0.00132882
+0.142857143,0.143820225,-0.000963082,-0.03445118,0.13936073,0.131522542,0.007838188,-0.057561308,0.668208296,0.00132882
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=9; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.04805492,0.21,-0.16194508,-0.28184435,0.103170282,0.149824511,-0.046654229,-0.052263005,0.822890795,0.05122716
+0.190821256,0.070921986,0.11989927,-0.28184435,0.136587638,0.130978863,0.005608775,-0.052263005,0.822890795,0.05122716
+0.118764846,0.146634615,-0.02786977,-0.01604956,0.101602247,0.146374456,-0.044772209,-0.049793944,0.682830303,-0.000974238
+0.116915423,0.128735632,-0.011820209,-0.01604956,0.137651102,0.132629367,0.005021735,-0.049793944,0.682830303,-0.000974238
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=9; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.04954955,0.221374046,-0.171824496,-0.30067999,0.103574436,0.152517183,-0.048942747,-0.054549231,0.823985405,0.050679595
+0.191646192,0.062790698,0.128855494,-0.30067999,0.134780791,0.129174307,0.005606484,-0.054549231,0.823985405,0.050679595
+0.120567376,0.152173913,-0.031606537,-0.023036743,0.10320827,0.150961751,-0.047753481,-0.052586343,0.683974523,0.000401886
+0.115,0.123569794,-0.008569794,-0.023036743,0.134919692,0.13008683,0.004832861,-0.052586343,0.683974523,0.000401886
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=10; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.057471264,0.169154229,-0.111682964,-0.182707768,0.106419757,0.145030817,-0.03861106,-0.035303941,0.758616054,0.032547543
+0.180288462,0.109263658,0.071024804,-0.182707768,0.129825943,0.133133061,-0.003307118,-0.035303941,0.758616054,0.032547543
+0.094430993,0.132075472,-0.037644479,-0.036250751,0.106375946,0.144801217,-0.038425271,-0.035290312,0.637424786,0.001197319
+0.141463415,0.142857143,-0.001393728,-0.036250751,0.129915891,0.133050851,-0.003134959,-0.035290312,0.637424786,0.001197319
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=10; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.041758242,0.201570681,-0.159812439,-0.280457667,0.101269343,0.146770105,-0.045500762,-0.049123524,0.815900653,0.042992691
+0.204545455,0.083900227,0.120645228,-0.280457667,0.13688007,0.133257308,0.003622762,-0.049123524,0.815900653,0.042992691
+0.089655172,0.109452736,-0.019797564,-0.006698581,0.100964999,0.144956593,-0.043991594,-0.048482532,0.669539752,-0.00154215
+0.149484536,0.162583519,-0.013098983,-0.006698581,0.137824533,0.133333595,0.004490938,-0.048482532,0.669539752,-0.00154215
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=10; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.035164835,0.206806283,-0.171641448,-0.30439758,0.098263381,0.14835921,-0.050095829,-0.055569876,0.835213161,0.047933273
+0.212121212,0.079365079,0.132756133,-0.30439758,0.140374846,0.134900799,0.005474047,-0.055569876,0.835213161,0.047933273
+0.101176471,0.126213592,-0.025037122,-0.012651732,0.09918672,0.146380013,-0.047193293,-0.052871357,0.68098835,-0.003299213
+0.135678392,0.148063781,-0.012385389,-0.012651732,0.140576681,0.134898616,0.005678065,-0.052871357,0.68098835,-0.003299213
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=10; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.02690583,0.204603581,-0.177697751,-0.316277998,0.097074643,0.150922539,-0.053847896,-0.062623941,0.834854692,0.051151201
+0.217283951,0.078703704,0.138580247,-0.316277998,0.140894458,0.132118412,0.008776045,-0.062623941,0.834854692,0.051151201
+0.106024096,0.127962085,-0.021937989,-0.004986803,0.097562964,0.148779628,-0.051216664,-0.059905814,0.666636794,0.001786862
+0.129901961,0.146853147,-0.016951186,-0.004986803,0.141286815,0.132597665,0.008689149,-0.059905814,0.666636794,0.001786862
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=10; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.022222222,0.240310078,-0.218087855,-0.39436162,0.099410559,0.150008158,-0.050597599,-0.05581157,0.839799642,0.05671131
+0.224438903,0.048165138,0.176273765,-0.39436162,0.138316338,0.133102367,0.005213971,-0.05581157,0.839799642,0.05671131
+0.084134615,0.135391924,-0.051257309,-0.064056577,0.098586622,0.147683031,-0.049096409,-0.05331486,0.676382665,0.001508296
+0.152334152,0.139534884,0.012799269,-0.064056577,0.138918447,0.134699995,0.004218452,-0.05331486,0.676382665,0.001508296
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=12; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.047404063,0.177664975,-0.130260911,-0.22132426,0.103137029,0.144755076,-0.041618048,-0.040969265,0.767620983,0.034508426
+0.193627451,0.102564103,0.091063348,-0.22132426,0.134259675,0.134908458,-0.000648783,-0.040969265,0.767620983,0.034508426
+0.108433735,0.132701422,-0.024267687,-0.009527525,0.102980544,0.144123342,-0.041142798,-0.041058476,0.654589681,0.000569796
+0.12745098,0.142191142,-0.014740162,-0.009527525,0.134970514,0.135054836,-8.43E-05,-0.041058476,0.654589681,0.000569796
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=12; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.041758242,0.19895288,-0.157194638,-0.275572292,0.102749895,0.150757582,-0.048007687,-0.05375167,0.806746895,0.041497059
+0.204545455,0.0861678,0.118377654,-0.275572292,0.137976508,0.132232524,0.005743983,-0.05375167,0.806746895,0.041497059
+0.094339623,0.130750605,-0.036410983,-0.035432509,0.102265777,0.148914968,-0.046649191,-0.052571257,0.666724811,0.001347596
+0.142857143,0.143835616,-0.000978474,-0.035432509,0.138549593,0.132627527,0.005922066,-0.052571257,0.666724811,0.001347596
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=12; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.037037037,0.206349206,-0.169312169,-0.300147987,0.098810687,0.151496164,-0.052685477,-0.06072095,0.818502753,0.045945618
+0.211734694,0.080898876,0.130835817,-0.300147987,0.13994253,0.131907057,0.008035473,-0.06072095,0.818502753,0.045945618
+0.102088167,0.118226601,-0.016138434,0.003713664,0.09736948,0.148125729,-0.050756249,-0.059842185,0.660595634,-0.000909058
+0.135204082,0.15505618,-0.019852098,0.003713664,0.142091996,0.13300606,0.009085937,-0.059842185,0.660595634,-0.000909058
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=12; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.028888889,0.19379845,-0.164909561,-0.292417625,0.094707753,0.150145711,-0.055437958,-0.063649967,0.827005185,0.046568714
+0.216957606,0.089449541,0.127508065,-0.292417625,0.144937432,0.136725424,0.008212008,-0.063649967,0.827005185,0.046568714
+0.087885986,0.127403846,-0.03951786,-0.041645155,0.095658367,0.149600099,-0.053941732,-0.06094125,0.673742158,0.003388437
+0.149253731,0.147126437,0.002127295,-0.041645155,0.144365368,0.137365851,0.006999517,-0.06094125,0.673742158,0.003388437
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.3; mtry=12; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.03125,0.210796915,-0.179546915,-0.3192137,0.097213816,0.151590777,-0.054376961,-0.063669597,0.836163743,0.050547665
+0.213399504,0.073732719,0.139666785,-0.3192137,0.140782399,0.131489762,0.009292637,-0.063669597,0.836163743,0.050547665
+0.097387173,0.141826923,-0.04443975,-0.050409899,0.098901694,0.150730769,-0.051829075,-0.060576136,0.674065421,0.003801289
+0.139303483,0.133333333,0.005970149,-0.050409899,0.139220652,0.130473591,0.008747061,-0.060576136,0.674065421,0.003801289
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=5; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.053613054,0.178921569,-0.125308515,-0.208977789,0.108124012,0.142924778,-0.034800766,-0.02612902,0.768864422,0.039577725
+0.182464455,0.098795181,0.083669274,-0.208977789,0.126272227,0.134943973,-0.008671746,-0.02612902,0.768864422,0.039577725
+0.101204819,0.137440758,-0.036235939,-0.033510723,0.107586355,0.14283726,-0.035250906,-0.02706075,0.649263859,-0.000261975
+0.134803922,0.137529138,-0.002725216,-0.033510723,0.126908047,0.135098202,-0.008190155,-0.02706075,0.649263859,-0.000261975
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=5; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.024663677,0.21483376,-0.190170082,-0.340478724,0.102057766,0.143608184,-0.041550418,-0.040903756,0.824507105,0.052519329
+0.219753086,0.069444444,0.150308642,-0.340478724,0.135000582,0.135647244,-0.000646662,-0.040903756,0.824507105,0.052519329
+0.097323601,0.11971831,-0.022394709,-0.005450106,0.101755554,0.14110726,-0.039351706,-0.039070249,0.676189028,0.000248468
+0.138349515,0.155294118,-0.016944603,-0.005450106,0.135596133,0.13587759,-0.000281458,-0.039070249,0.676189028,0.000248468
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=5; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.022172949,0.243523316,-0.221350367,-0.400583777,0.101594198,0.147202637,-0.045608438,-0.046552392,0.856839713,0.06440778
+0.225,0.04576659,0.17923341,-0.400583777,0.13412752,0.133183566,0.000943953,-0.046552392,0.856839713,0.06440778
+0.104368932,0.127058824,-0.022689891,-0.006189429,0.101016369,0.144904957,-0.043888588,-0.043524922,0.674468698,-0.001441846
+0.131386861,0.147887324,-0.016500463,-0.006189429,0.134274189,0.134637854,-0.000363665,-0.043524922,0.674468698,-0.001441846
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=5; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.023861171,0.218085106,-0.194223935,-0.350840696,0.098223933,0.147290515,-0.049066582,-0.05398227,0.861739854,0.058148187
+0.228205128,0.071588367,0.156616761,-0.350840696,0.139474616,0.134558928,0.004915688,-0.05398227,0.861739854,0.058148187
+0.096385542,0.113744076,-0.017358534,0.003774745,0.097731222,0.145270178,-0.047538956,-0.051337766,0.684232173,0.00020649
+0.139705882,0.160839161,-0.021133278,0.003774745,0.139332277,0.135533467,0.00379881,-0.051337766,0.684232173,0.00020649
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=5; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.022222222,0.23255814,-0.210335917,-0.379728948,0.099555032,0.148918894,-0.049363861,-0.053555961,0.86333536,0.064142778
+0.224438903,0.055045872,0.169393031,-0.379728948,0.137692648,0.133500548,0.004192099,-0.053555961,0.86333536,0.064142778
+0.095588235,0.128205128,-0.032616893,-0.025456498,0.099147264,0.146590832,-0.047443568,-0.050081989,0.683825695,0.003648227
+0.139759036,0.146919431,-0.007160395,-0.025456498,0.138157841,0.135519419,0.002638422,-0.050081989,0.683825695,0.003648227
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=7; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.040540541,0.175572519,-0.135031979,-0.231855017,0.105539002,0.143120498,-0.037581496,-0.030981143,0.770711177,0.037144379
+0.201474201,0.104651163,0.096823039,-0.231855017,0.129990528,0.136590881,-0.006600352,-0.030981143,0.770711177,0.037144379
+0.104738155,0.116972477,-0.012234322,0.016470069,0.105903584,0.143033921,-0.037130337,-0.030773444,0.647849187,-0.00165766
+0.130331754,0.159036145,-0.028704391,0.016470069,0.130148069,0.136504962,-0.006356892,-0.030773444,0.647849187,-0.00165766
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=7; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.031390135,0.21483376,-0.183443625,-0.32634486,0.10038918,0.144881493,-0.044492313,-0.048179701,0.837178338,0.052314295
+0.212345679,0.069444444,0.142901235,-0.32634486,0.13779872,0.134111332,0.003687388,-0.048179701,0.837178338,0.052314295
+0.092198582,0.123188406,-0.030989824,-0.024960076,0.100039729,0.143941539,-0.04390181,-0.047841406,0.677025989,0.003021918
+0.145,0.151029748,-0.006029748,-0.024960076,0.138413336,0.13447374,0.003939596,-0.047841406,0.677025989,0.003021918
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=7; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.02690583,0.232736573,-0.205830743,-0.369873953,0.097512857,0.148719044,-0.051206188,-0.056223965,0.865526181,0.061252604
+0.217283951,0.053240741,0.16404321,-0.369873953,0.137549968,0.13253219,0.005017778,-0.056223965,0.865526181,0.061252604
+0.089775561,0.116972477,-0.027196916,-0.012710534,0.097046147,0.145860843,-0.048814697,-0.053448749,0.678845538,0.006525623
+0.144549763,0.159036145,-0.014486382,-0.012710534,0.137983606,0.133349553,0.004634053,-0.053448749,0.678845538,0.006525623
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=7; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.026315789,0.238845144,-0.212529355,-0.383277966,0.096654767,0.150143572,-0.053488805,-0.061650631,0.878567085,0.064223521
+0.22278481,0.052036199,0.170748611,-0.383277966,0.141377016,0.13321519,0.008161826,-0.061650631,0.878567085,0.064223521
+0.093676815,0.124390244,-0.030713429,-0.024992959,0.097153648,0.147294099,-0.050140452,-0.058235413,0.678069389,0.001750096
+0.143939394,0.149659864,-0.00572047,-0.024992959,0.141931314,0.133836352,0.008094962,-0.058235413,0.678069389,0.001750096
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=7; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.019736842,0.230971129,-0.211234287,-0.382790504,0.094096109,0.14810248,-0.054006372,-0.063904421,0.87671873,0.064433338
+0.230379747,0.058823529,0.171556217,-0.382790504,0.144960274,0.135062225,0.009898049,-0.063904421,0.87671873,0.064433338
+0.090686275,0.118881119,-0.028194844,-0.016375053,0.093895634,0.14474592,-0.050850286,-0.059338496,0.689602804,0.001939566
+0.144578313,0.156398104,-0.011819791,-0.016375053,0.145320235,0.136832025,0.00848821,-0.059338496,0.689602804,0.001939566
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=9; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.038288288,0.188295165,-0.150006877,-0.260914825,0.106189626,0.144731098,-0.038541472,-0.033679613,0.78468986,0.04330324
+0.203931204,0.093023256,0.110907948,-0.260914825,0.129195955,0.134057814,-0.004861859,-0.033679613,0.78468986,0.04330324
+0.095923261,0.128571429,-0.032648167,-0.026870562,0.105745636,0.143769397,-0.038023761,-0.03332799,0.671632954,0.003637447
+0.140394089,0.146171694,-0.005777605,-0.026870562,0.128993262,0.133689032,-0.004695771,-0.03332799,0.671632954,0.003637447
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=9; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.033707865,0.201530612,-0.167822747,-0.295975856,0.099489753,0.147088766,-0.047599013,-0.052243996,0.831151581,0.04914834
+0.209359606,0.081206497,0.128153109,-0.295975856,0.136448341,0.131803357,0.004644983,-0.052243996,0.831151581,0.04914834
+0.095823096,0.123255814,-0.027432718,-0.014836793,0.099827076,0.146020295,-0.046193219,-0.050313225,0.653770324,0.001555842
+0.139423077,0.152019002,-0.012595925,-0.014836793,0.136087421,0.131967415,0.004120006,-0.050313225,0.653770324,0.001555842
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=9; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.028384279,0.245382586,-0.216998306,-0.391075055,0.098921331,0.151835858,-0.052914527,-0.062186858,0.865020484,0.062365368
+0.221374046,0.047297297,0.174076749,-0.391075055,0.139503202,0.130230871,0.009272331,-0.062186858,0.865020484,0.062365368
+0.105882353,0.131067961,-0.025185608,-0.012330902,0.099664392,0.150429178,-0.050764786,-0.058245294,0.681945334,0.00253068
+0.130653266,0.143507973,-0.012854706,-0.012330902,0.138937542,0.131457035,0.007480508,-0.058245294,0.681945334,0.00253068
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=9; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.019911504,0.251948052,-0.232036548,-0.421293938,0.098443033,0.153731785,-0.055288751,-0.067602241,0.87775893,0.066876679
+0.228070175,0.038812785,0.18925739,-0.421293938,0.140136038,0.127822548,0.01231349,-0.067602241,0.87775893,0.066876679
+0.106132075,0.130750605,-0.02461853,-0.011108728,0.097793606,0.148962968,-0.051169362,-0.061729407,0.674934387,-0.00108932
+0.130325815,0.143835616,-0.013509802,-0.011108728,0.141602041,0.131041995,0.010560045,-0.061729407,0.674934387,-0.00108932
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=9; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.014893617,0.242506812,-0.227613195,-0.416883122,0.093145873,0.152024547,-0.058878674,-0.071906118,0.883628857,0.064706335
+0.244094488,0.054824561,0.189269927,-0.416883122,0.145340689,0.132313245,0.013027444,-0.071906118,0.883628857,0.064706335
+0.090261283,0.127403846,-0.037142563,-0.036782296,0.09397648,0.149783835,-0.055807355,-0.067821769,0.684056139,0.00245315
+0.146766169,0.147126437,-0.000360268,-0.036782296,0.145074852,0.133060437,0.012014415,-0.067821769,0.684056139,0.00245315
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=10; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.038812785,0.172932331,-0.134119545,-0.228955993,0.104336403,0.144079594,-0.039743191,-0.036276335,0.771682563,0.037717145
+0.200968523,0.106132075,0.094836448,-0.228955993,0.131595625,0.135062481,-0.003466857,-0.036276335,0.771682563,0.037717145
+0.09478673,0.120481928,-0.025695198,-0.014170111,0.104139066,0.143549325,-0.039410259,-0.035785394,0.651865958,0.002802892
+0.142144638,0.153669725,-0.011525086,-0.014170111,0.132393958,0.136018823,-0.003624865,-0.035785394,0.651865958,0.002802892
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=10; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.031319911,0.223076923,-0.191757013,-0.342272641,0.099647345,0.149437656,-0.049790311,-0.054763522,0.835233965,0.05245779
+0.212871287,0.062355658,0.150515629,-0.342272641,0.13614621,0.131172999,0.004973211,-0.054763522,0.835233965,0.05245779
+0.092857143,0.134292566,-0.041435423,-0.044803023,0.099374769,0.14749908,-0.048124311,-0.052145348,0.662927282,0.002254898
+0.143920596,0.140552995,0.0033676,-0.044803023,0.135619216,0.131598179,0.004021037,-0.052145348,0.662927282,0.002254898
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=10; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.028199566,0.247340426,-0.219140859,-0.395237917,0.09842343,0.154172082,-0.055748652,-0.064776994,0.866796825,0.064202746
+0.223076923,0.046979866,0.176097057,-0.395237917,0.137675323,0.128646981,0.009028342,-0.064776994,0.866796825,0.064202746
+0.1002331,0.125,-0.0247669,-0.012838539,0.098377345,0.150820211,-0.052442866,-0.060545918,0.682958328,0.000425516
+0.137055838,0.148984199,-0.011928361,-0.012838539,0.137793256,0.129690204,0.008103051,-0.060545918,0.682958328,0.000425516
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=10; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.017777778,0.237726098,-0.21994832,-0.398916039,0.094575757,0.153610331,-0.059034573,-0.074138194,0.877982973,0.065406605
+0.229426434,0.050458716,0.178967718,-0.398916039,0.144432826,0.129329205,0.01510362,-0.074138194,0.877982973,0.065406605
+0.08353222,0.129186603,-0.045654383,-0.053623194,0.09560867,0.150345774,-0.054737104,-0.069199352,0.665047689,0.003379228
+0.153465347,0.145496536,0.007968811,-0.053623194,0.145871501,0.131409252,0.014462249,-0.069199352,0.665047689,0.003379228
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=10; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.026431718,0.25848564,-0.232053922,-0.419625481,0.096455329,0.157903637,-0.061448308,-0.076900264,0.884987518,0.067339932
+0.221662469,0.034090909,0.187571559,-0.419625481,0.141365895,0.125913939,0.015451956,-0.076900264,0.884987518,0.067339932
+0.102625298,0.138755981,-0.036130683,-0.033535388,0.096464309,0.155061691,-0.058597381,-0.071249005,0.669629369,0.002160163
+0.133663366,0.136258661,-0.002595294,-0.033535388,0.141993645,0.129342022,0.012651624,-0.071249005,0.669629369,0.002160163
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=12; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.042792793,0.183206107,-0.140413314,-0.241756094,0.105168668,0.144130857,-0.038962189,-0.034709145,0.781170785,0.037472133
+0.199017199,0.097674419,0.10134278,-0.241756094,0.13060733,0.134860374,-0.004253044,-0.034709145,0.781170785,0.037472133
+0.102439024,0.119437939,-0.016998915,0.00548955,0.105589355,0.144003896,-0.038414541,-0.034384584,0.65817757,0.004703808
+0.133171913,0.155660377,-0.022488465,0.00548955,0.13062505,0.134655007,-0.004029957,-0.034384584,0.65817757,0.004703808
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=12; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.026548673,0.220779221,-0.194230548,-0.348571881,0.100248616,0.150018692,-0.049770075,-0.054314876,0.852422865,0.056055016
+0.220551378,0.066210046,0.154341333,-0.348571881,0.13761705,0.13307225,0.0045448,-0.054314876,0.852422865,0.056055016
+0.09929078,0.125603865,-0.026313085,-0.015071666,0.100843127,0.147866404,-0.047023277,-0.050589444,0.679557675,0.001423556
+0.1375,0.148741419,-0.011241419,-0.015071666,0.136652883,0.133086716,0.003566167,-0.050589444,0.679557675,0.001423556
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=12; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.02173913,0.23872679,-0.21698766,-0.393355029,0.097994309,0.156748465,-0.058754155,-0.069201697,0.866214313,0.061209056
+0.230179028,0.053811659,0.176367369,-0.393355029,0.138933664,0.128486123,0.010447541,-0.069201697,0.866214313,0.061209056
+0.107913669,0.135714286,-0.027800617,-0.016668297,0.097963297,0.153983941,-0.056020644,-0.066796711,0.662146332,0.000553805
+0.128078818,0.139211137,-0.011132319,-0.016668297,0.140064982,0.129288915,0.010776067,-0.066796711,0.662146332,0.000553805
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=12; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.015250545,0.246031746,-0.230781201,-0.420835088,0.093870714,0.155629977,-0.061759263,-0.080343161,0.887620023,0.066992974
+0.237244898,0.047191011,0.190053887,-0.420835088,0.145448612,0.126864713,0.018583898,-0.080343161,0.887620023,0.066992974
+0.097852029,0.110047847,-0.012195818,0.013162607,0.092838413,0.151419892,-0.058581479,-0.075246017,0.657508642,-0.00012005
+0.138613861,0.163972286,-0.025358425,0.013162607,0.14671259,0.130048053,0.016664538,-0.075246017,0.657508642,-0.00012005
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.5; mtry=12; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.021598272,0.259358289,-0.237760017,-0.431856864,0.095514237,0.156125136,-0.0606109,-0.075619151,0.888746639,0.068744041
+0.231958763,0.037861915,0.194096848,-0.431856864,0.143614621,0.12860637,0.015008251,-0.075619151,0.888746639,0.068744041
+0.098130841,0.122249389,-0.024118548,-0.011775344,0.095115511,0.151814566,-0.056699055,-0.071259343,0.666161503,-0.002444669
+0.139240506,0.15158371,-0.012343204,-0.011775344,0.144503296,0.129943008,0.014560288,-0.071259343,0.666161503,-0.002444669
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=5; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.038901602,0.18,-0.141098398,-0.24229071,0.105969766,0.139195276,-0.03322551,-0.02571901,0.773265267,0.039606495
+0.200483092,0.09929078,0.101192312,-0.24229071,0.129369348,0.136875848,-0.007506501,-0.02571901,0.773265267,0.039606495
+0.08040201,0.129840547,-0.049438537,-0.056748645,0.105905369,0.138954774,-0.033049405,-0.025496403,0.667468954,0.004186226
+0.152941176,0.145631068,0.007310109,-0.056748645,0.129352818,0.136905821,-0.007553002,-0.025496403,0.667468954,0.004186226
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=5; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.024886878,0.220253165,-0.195366287,-0.349886087,0.100821743,0.143641925,-0.042820182,-0.04368895,0.835229164,0.057061837
+0.217603912,0.063084112,0.1545198,-0.349886087,0.134597705,0.133728937,0.000868768,-0.04368895,0.835229164,0.057061837
+0.094430993,0.117924528,-0.023493536,-0.008048285,0.100247239,0.141430405,-0.041183166,-0.042216152,0.681332416,0.000807241
+0.141463415,0.156908665,-0.01544525,-0.008048285,0.135500875,0.134467889,0.001032986,-0.042216152,0.681332416,0.000807241
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=5; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.013363029,0.25,-0.236636971,-0.431387357,0.099887762,0.14644111,-0.046553348,-0.051326576,0.876129817,0.070030641
+0.233830846,0.03908046,0.194750386,-0.431387357,0.135597149,0.130823921,0.004773228,-0.051326576,0.876129817,0.070030641
+0.102625298,0.14354067,-0.040915372,-0.042939015,0.100257559,0.144668106,-0.044410547,-0.048242341,0.683417616,0.003286492
+0.133663366,0.131639723,0.002023643,-0.042939015,0.135577147,0.131745354,0.003831793,-0.048242341,0.683417616,0.003286492
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=5; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.01986755,0.265625,-0.24575745,-0.447065814,0.098769281,0.150700812,-0.051931532,-0.061477228,0.894190885,0.075095942
+0.228643216,0.027334852,0.201308364,-0.447065814,0.137135037,0.127589341,0.009545697,-0.061477228,0.894190885,0.075095942
+0.096018735,0.12195122,-0.025932484,-0.015419188,0.098413124,0.147628921,-0.049215797,-0.056499951,0.680271412,0.002661396
+0.141414141,0.151927438,-0.010513296,-0.015419188,0.136588057,0.129303903,0.007284154,-0.056499951,0.680271412,0.002661396
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=5; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.014957265,0.262872629,-0.247915364,-0.453290273,0.095296203,0.148836578,-0.053540375,-0.064283551,0.897173857,0.074411663
+0.242819843,0.037444934,0.205374909,-0.453290273,0.141225765,0.130482589,0.010743176,-0.064283551,0.897173857,0.074411663
+0.081775701,0.122249389,-0.040473688,-0.045852003,0.095542264,0.14454074,-0.048998476,-0.055732437,0.693954039,0.001113792
+0.156962025,0.15158371,0.005378315,-0.045852003,0.140065314,0.133331352,0.006733962,-0.055732437,0.693954039,0.001113792
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=7; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.033707865,0.193877551,-0.160169686,-0.281362238,0.105684059,0.141709815,-0.036025756,-0.030629415,0.781631673,0.043122193
+0.209359606,0.088167053,0.121192553,-0.281362238,0.129661254,0.135057596,-0.005396342,-0.030629415,0.781631673,0.043122193
+0.097156398,0.134939759,-0.037783361,-0.037525977,0.106067349,0.141525662,-0.035458313,-0.030384619,0.666340737,0.003877248
+0.139650873,0.139908257,-0.000257384,-0.037525977,0.129745761,0.134819455,-0.005073694,-0.030384619,0.666340737,0.003877248
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=7; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.021881838,0.234210526,-0.212328688,-0.384321676,0.101104087,0.14614457,-0.045040483,-0.04952099,0.856023557,0.057473118
+0.228426396,0.056433409,0.171992987,-0.384321676,0.135918188,0.13143768,0.004480508,-0.04952099,0.856023557,0.057473118
+0.111374408,0.13253012,-0.021155713,-0.003642157,0.101232303,0.144852565,-0.043620262,-0.047646731,0.669157278,-0.000947038
+0.124688279,0.142201835,-0.017513556,-0.003642157,0.136285642,0.132259172,0.00402647,-0.047646731,0.669157278,-0.000947038
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=7; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.021598272,0.256684492,-0.23508622,-0.426955896,0.098168871,0.152263879,-0.054095008,-0.062488989,0.887146332,0.068387516
+0.231958763,0.040089087,0.191869676,-0.426955896,0.137206406,0.128812425,0.008393981,-0.062488989,0.887146332,0.068387516
+0.109263658,0.134615385,-0.025351727,-0.011987513,0.097877243,0.148777689,-0.050900447,-0.057544528,0.690218922,-0.000304738
+0.126865672,0.140229885,-0.013364213,-0.011987513,0.136371926,0.129727845,0.006644081,-0.057544528,0.690218922,-0.000304738
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=7; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.008658009,0.277333333,-0.268675325,-0.493140528,0.095357838,0.152643534,-0.057285697,-0.071638707,0.900118423,0.077899376
+0.246786632,0.022321429,0.224465204,-0.493140528,0.141602605,0.127249594,0.014353011,-0.071638707,0.900118423,0.077899376
+0.104018913,0.120772947,-0.016754034,0.004064043,0.095168364,0.147360822,-0.052192458,-0.064745901,0.674055819,0.002678173
+0.1325,0.153318078,-0.020818078,0.004064043,0.142582313,0.13002887,0.012553443,-0.064745901,0.674055819,0.002678173
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=7; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.014830508,0.279452055,-0.264621546,-0.483803259,0.094848845,0.152277756,-0.057428912,-0.071703843,0.911487006,0.080172023
+0.245382586,0.026200873,0.219181712,-0.483803259,0.142166741,0.127891809,0.014274932,-0.071703843,0.911487006,0.080172023
+0.089371981,0.122931442,-0.033559461,-0.028389569,0.094792553,0.146897323,-0.052104769,-0.062377364,0.673889387,1.15E-05
+0.146699267,0.151869159,-0.005169892,-0.028389569,0.142504205,0.132231611,0.010272595,-0.062377364,0.673889387,1.15E-05
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=9; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.052511416,0.187969925,-0.135458509,-0.229918055,0.105971675,0.14273713,-0.036765455,-0.034025235,0.765953463,0.03738782
+0.186440678,0.091981132,0.094459546,-0.229918055,0.130523524,0.133263744,-0.00274022,-0.034025235,0.765953463,0.03738782
+0.107055961,0.124413146,-0.017357184,0.004590274,0.105683747,0.14204433,-0.036360583,-0.033508973,0.640895852,0.000509043
+0.128640777,0.150588235,-0.021947459,0.004590274,0.130648468,0.133500079,-0.002851611,-0.033508973,0.640895852,0.000509043
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=9; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.015283843,0.232189974,-0.216906131,-0.394988794,0.100084363,0.147881339,-0.047796976,-0.053782848,0.851462681,0.059425221
+0.236641221,0.058558559,0.178082663,-0.394988794,0.136295843,0.130309971,0.005985872,-0.053782848,0.851462681,0.059425221
+0.090261283,0.134615385,-0.044354102,-0.050890386,0.100573329,0.147097487,-0.046524159,-0.052426204,0.658963321,0.003656223
+0.146766169,0.140229885,0.006536284,-0.050890386,0.136434815,0.130532769,0.005902045,-0.052426204,0.658963321,0.003656223
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=9; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.02,0.250645995,-0.230645995,-0.418587837,0.095154284,0.151717229,-0.056562945,-0.070781564,0.890747023,0.070056627
+0.226932668,0.038990826,0.187941843,-0.418587837,0.141198971,0.126980352,0.014218619,-0.070781564,0.890747023,0.070056627
+0.098557692,0.121140143,-0.02258245,-0.006686216,0.095336243,0.148817712,-0.05348147,-0.065014373,0.666912047,0.004513552
+0.137592138,0.153488372,-0.015896235,-0.006686216,0.140458231,0.128925327,0.011532903,-0.065014373,0.666912047,0.004513552
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=9; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.013015184,0.276595745,-0.26358056,-0.482234837,0.093153345,0.15348273,-0.060329385,-0.078200784,0.907556651,0.075720252
+0.241025641,0.022371365,0.218654276,-0.482234837,0.144743582,0.126872183,0.017871399,-0.078200784,0.907556651,0.075720252
+0.104265403,0.125301205,-0.021035802,-0.004122809,0.094326237,0.150092049,-0.055765812,-0.07068305,0.670368711,-0.00166487
+0.132169576,0.149082569,-0.016912993,-0.004122809,0.143855237,0.128937999,0.014917238,-0.07068305,0.670368711,-0.00166487
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=9; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.00856531,0.278378378,-0.269813068,-0.495530507,0.09157903,0.155089409,-0.063510379,-0.083546711,0.921464921,0.079337467
+0.25,0.024282561,0.225717439,-0.495530507,0.146324271,0.126287939,0.020036332,-0.083546711,0.921464921,0.079337467
+0.10653753,0.117924528,-0.011386998,0.016253374,0.0916001,0.149409264,-0.057809164,-0.074705502,0.675436884,-0.002724448
+0.129268293,0.156908665,-0.027640372,0.016253374,0.14690968,0.130013342,0.016896338,-0.074705502,0.675436884,-0.002724448
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=10; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.041474654,0.183622829,-0.142148174,-0.243552765,0.104119644,0.14178611,-0.037666466,-0.035171885,0.78010498,0.03645132
+0.196642686,0.095238095,0.101404591,-0.243552765,0.131259296,0.133753877,-0.002494581,-0.035171885,0.78010498,0.03645132
+0.098522167,0.120649652,-0.022127484,-0.004056227,0.103781244,0.141218352,-0.037437109,-0.035408615,0.656890923,0.004721013
+0.136690647,0.154761905,-0.018071257,-0.004056227,0.13218238,0.134210873,-0.002028493,-0.035408615,0.656890923,0.004721013
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=10; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.029017857,0.213367609,-0.184349752,-0.328802074,0.100164982,0.147503889,-0.047338907,-0.05386248,0.843448342,0.056265262
+0.215880893,0.071428571,0.144452322,-0.328802074,0.136674467,0.130150894,0.006523573,-0.05386248,0.843448342,0.056265262
+0.092039801,0.135632184,-0.043592383,-0.046687121,0.099767211,0.145429583,-0.045662372,-0.052894645,0.664750032,0.00430652
+0.142517815,0.139423077,0.003094738,-0.046687121,0.137843583,0.130611309,0.007232274,-0.052894645,0.664750032,0.00430652
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=10; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.022172949,0.240932642,-0.218759693,-0.395704774,0.095988473,0.152348022,-0.056359548,-0.070306271,0.880013763,0.067437451
+0.225,0.04805492,0.17694508,-0.395704774,0.140307731,0.126361008,0.013946723,-0.070306271,0.880013763,0.067437451
+0.089156627,0.127962085,-0.038805459,-0.039011135,0.095871693,0.149158294,-0.053286601,-0.065829462,0.673054026,0.00398876
+0.147058824,0.146853147,0.000205677,-0.039011135,0.141171253,0.128628392,0.012542861,-0.065829462,0.673054026,0.00398876
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=10; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.015053763,0.274193548,-0.259139785,-0.473464889,0.094763957,0.156161308,-0.061397351,-0.078954511,0.914242735,0.076910546
+0.240932642,0.026607539,0.214325104,-0.473464889,0.142815714,0.125258554,0.01755716,-0.078954511,0.914242735,0.076910546
+0.107317073,0.133489461,-0.026172388,-0.012992252,0.095470417,0.150706155,-0.055235738,-0.069788012,0.676737934,0.00353029
+0.128329298,0.141509434,-0.013180136,-0.012992252,0.143154,0.128601726,0.014552274,-0.069788012,0.676737934,0.00353029
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=10; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.008510638,0.286103542,-0.277592904,-0.509824566,0.089550563,0.155910835,-0.066360272,-0.088365033,0.926558699,0.078187152
+0.251968504,0.019736842,0.232231662,-0.509824566,0.148544636,0.126539875,0.022004761,-0.088365033,0.926558699,0.078187152
+0.090243902,0.12412178,-0.033877877,-0.028212932,0.089236158,0.150736846,-0.061500688,-0.079321452,0.665891051,0.00669389
+0.14527845,0.150943396,-0.005664946,-0.028212932,0.148441826,0.130621062,0.017820763,-0.079321452,0.665891051,0.00669389
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=12; interaction.depth=3,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.036363636,0.181360202,-0.144996565,-0.250784578,0.10338865,0.142256288,-0.038867638,-0.037181436,0.772934003,0.037321856
+0.204379562,0.098591549,0.105788013,-0.250784578,0.132048265,0.133734467,-0.001686202,-0.037181436,0.772934003,0.037321856
+0.099514563,0.122352941,-0.022838378,-0.00650926,0.103910798,0.142314023,-0.038403225,-0.037358429,0.639124312,0.003360452
+0.136253041,0.15258216,-0.016329118,-0.00650926,0.132288043,0.133332839,-0.001044796,-0.037358429,0.639124312,0.003360452
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=12; interaction.depth=5,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.033783784,0.229007634,-0.19522385,-0.348255105,0.099864393,0.149387547,-0.049523154,-0.057514934,0.848364486,0.05849236
+0.208845209,0.055813953,0.153031255,-0.348255105,0.136635234,0.128643454,0.00799178,-0.057514934,0.848364486,0.05849236
+0.094292804,0.129032258,-0.034739454,-0.028932671,0.099387634,0.146363796,-0.046976161,-0.055402816,0.659925106,0.006171883
+0.14047619,0.146282974,-0.005806783,-0.028932671,0.138679117,0.130252462,0.008426655,-0.055402816,0.659925106,0.006171883
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=12; interaction.depth=7,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.023206751,0.258953168,-0.235746417,-0.428342427,0.094064289,0.15277202,-0.058707731,-0.074498952,0.892376136,0.068318767
+0.236074271,0.043478261,0.19259601,-0.428342427,0.143149424,0.127358203,0.015791221,-0.074498952,0.892376136,0.068318767
+0.084745763,0.125,-0.040254237,-0.041590846,0.094007057,0.148750803,-0.054743746,-0.069129201,0.671324094,0.003325685
+0.151219512,0.149882904,0.001336608,-0.041590846,0.145013385,0.13062793,0.014385455,-0.069129201,0.671324094,0.003325685
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=12; interaction.depth=9,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.012738854,0.273224044,-0.26048519,-0.477219038,0.092622388,0.155858284,-0.063235896,-0.082996499,0.909573038,0.075719467
+0.247368421,0.030634573,0.216733848,-0.477219038,0.146122446,0.126361842,0.019760603,-0.082996499,0.909573038,0.075719467
+0.094660194,0.117647059,-0.022986865,-0.006829091,0.09272652,0.150807852,-0.058081332,-0.07599013,0.667885034,0.002258896
+0.141119221,0.157276995,-0.016157774,-0.006829091,0.147500213,0.129591415,0.017908798,-0.07599013,0.667885034,0.002258896
+,,,,,,,,,
+,,,,,,,,,
+ntree=100; bag.fraction=0.7; mtry=12; interaction.depth=11,,,,,,,,,
+Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini
+0.019354839,0.279569892,-0.260215054,-0.4737934,0.089998683,0.155844695,-0.065846012,-0.086753423,0.919290104,0.078673178
+0.235751295,0.022172949,0.213578346,-0.4737934,0.146778685,0.125871274,0.020907411,-0.086753423,0.919290104,0.078673178
+0.098321343,0.111904762,-0.013583419,0.01089854,0.088971373,0.149183191,-0.060211818,-0.077352302,0.670967226,-0.001187624
+0.137931034,0.162412993,-0.024481959,0.01089854,0.148507527,0.131367043,0.017140484,-0.077352302,0.670967226,-0.001187624

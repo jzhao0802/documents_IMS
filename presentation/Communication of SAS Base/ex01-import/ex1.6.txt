@@ -1,0 +1,23 @@
+Country	Area_wise	Populations	Dummy1	Dummy2
+Afghanistan	29835392	250000	1	a
+Albania	2994667	11100	2	b
+Algeria	34994937	919590	3	c
+Andorra	84825	181	4	d
+Angola	13338541	481351	5	e
+Antigua and Barbuda	87884	171	6	f
+Argentina	41769726	1068296	7	g
+Armenia	2967975	11506	8	h
+Australia	21766711	2967893	9	i
+Austria	8217280	32382	10	j
+Azerbaijan	8372373	33436	11	k
+Bahamas The	313312	5382	12	l
+Bahrain	1214705	257	13	m
+Bangladesh	158570535	55598	14	n
+Barbados	286705	166	15	o
+Belarus	9577552	80154	16	p
+Belgium	10431477	11787	17	q
+Belize	321115	8867	18	r
+Benin	9325032	43483	19	s
+Bhutan	708427	18147	20	t
+Bolivia	10118683	424162	a	u
+Bosnia and Herzegovina	4622163	19741	22	0

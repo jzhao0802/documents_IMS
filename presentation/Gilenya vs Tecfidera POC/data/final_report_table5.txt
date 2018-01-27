@@ -1,0 +1,21 @@
+covariate_name	mean_score	sd_score	top20_occupation	var_description
+pre_ms_total_allowed_2	2.75453510375153	0.716866786322953	0.88	MS-related total pre-index costs: middle lower 25%
+pre_ms_total_allowed_4	2.67622642930403	0.819183917886136	0.8	MS-related total pre-index costs: highest 25%
+pre_cort_iv	2.67389102963283	0.833845339490101	0.76	Boolean for pre-index iv corticosteroid use
+pre_comor5	2.62830878559839	0.751899491538854	0.78	Boolean for pre-index symptoms and comorbidities: Fatigue
+der_sex_female	2.55935831602666	0.828264025255534	0.68	Female
+pat_region_S	2.47732202640418	0.745662002687415	0.74	Region: South
+age_3	2.28227592205656	0.530810092771591	0.7	Aged 45-54
+pre_non_ms_total_allowed_3	2.28095979928337	0.615911466057691	0.7	Total non-ms pre-index costs: middle upper 25%
+idx_spec_03	2.26702945351163	0.500376493180922	0.68	Index Prescribing physician specialty: Neurology
+idx_spec_04	2.21664658459372	0.561265746482846	0.62	Index Prescribing physician specialty: Other
+pre_comor13	2.17315656483675	0.622435990373069	0.55	Boolean for pre-index symptoms and comorbidities: Headache
+pat_region_E	2.15369771520072	0.570539134437336	0.6	Region: Northeast
+num_pre_meds_2	2.1527809629659	0.556824825520407	0.58	Number of unique medications received pre-index: 4-7
+pat_region_MW	2.14741832053152	0.510167012694128	0.54	Region: Midwest
+pre_mri_any	2.13144831168337	0.662852898626622	0.57	Boolean for pre-index MRI use
+num_pre_op_dx_3	2.08215922821078	0.559760336682815	0.53	Number of pre-index OP visits with an MS diagnosis: 8-12
+num_pre_op_dx_2	2.04503743499182	0.55513316377576	0.48	Number of pre-index OP visits with an MS diagnosis: 5-7
+pre_comor25	2.04116222604121	0.607733170836233	0.46	Boolean for pre-index symptoms and comorbidities: Dyslipidemia
+idx_paytype_S	2.02125008825351	0.499053442579407	0.51	Index Payer type: Self-insured
+idx_paytype_C	2.01044779826486	0.50979556984332	0.52	Index Payer type: Commercial

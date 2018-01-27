@@ -1,0 +1,63 @@
+"modelling relapse (re-label response variable of control patients): Uplift RF, ntree=100, split_method='KL'",,,,,,,,,,,,,,,,
+"performance: direction=2, groups=10",Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini,,,,,,
+Training top 50%,0.124 ,0.209 ,-0.085 ,-0.137 ,0.128 ,0.151 ,-0.023 ,-0.009 ,0.743 ,0.031 ,,,,,,
+Training bottom 50%,0.111 ,0.059 ,0.052 ,-0.137 ,0.109 ,0.123 ,-0.014 ,-0.009 ,0.743 ,0.031 ,,,,,,
+Test top 50%,0.146 ,0.171 ,-0.025 ,-0.013 ,0.127 ,0.150 ,-0.023 ,-0.008 ,0.712 ,-0.002 ,,,,,,
+Test bottom 50%,0.091 ,0.103 ,-0.012 ,-0.013 ,0.109 ,0.123 ,-0.014 ,-0.008 ,0.712 ,-0.002 ,,,,,,
+,,,,,,,,,,,,,,,,
+"performance: direction=2, groups=10",,,,,,,,,,,,,,,,
+"Training data, Qini=0.03",,,,,,,,,"Test data, Qini=-0.002",,,,,,,
+group,Gilenya patients,Tecfidera patients,Gilenya Relapse,Tecfidera Relapse,Gilenya Relapse Rate,Tecfidera Relapse Rate,uplift,,group,Gilenya patients,Tecfidera patients,Gilenya Relapse,Tecfidera Relapse,Gilenya Relapse Rate,Tecfidera Relapse Rate,uplift
+1,73,95,15,33,0.205 ,0.347 ,0.142 ,,1,82,86,3,6,0.037 ,0.070 ,0.033 
+2,76,91,14,17,0.184 ,0.187 ,0.003 ,,2,72,101,7,7,0.097 ,0.069 ,-0.028 
+3,88,79,11,14,0.125 ,0.177 ,0.052 ,,3,79,82,2,5,0.025 ,0.061 ,0.036 
+4,76,92,9,7,0.118 ,0.076 ,-0.042 ,,4,100,68,3,5,0.030 ,0.074 ,0.044 
+5,85,82,4,13,0.047 ,0.159 ,0.111 ,,5,82,85,6,10,0.073 ,0.118 ,0.044 
+6,80,87,5,4,0.063 ,0.046 ,-0.017 ,,6,89,78,8,10,0.090 ,0.128 ,0.038 
+7,84,86,6,10,0.071 ,0.116 ,0.045 ,,7,71,97,4,13,0.056 ,0.134 ,0.078 
+8,94,71,11,10,0.117 ,0.141 ,0.024 ,,8,71,96,16,14,0.225 ,0.146 ,-0.080 
+9,97,70,10,2,0.103 ,0.029 ,-0.075 ,,9,87,80,16,22,0.184 ,0.275 ,0.091 
+10,98,70,15,4,0.153 ,0.057 ,-0.096 ,,10,90,78,32,25,0.356 ,0.321 ,-0.035 
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+"performance: direction=2, groups=5",,,,,,,,,,,,,,,,
+"Training data, Qini=0.026",,,,,,,,,"Test data, Qini=-0.002",,,,,,,
+group,Gilenya patients,Tecfidera patients,Gilenya Relapse,Tecfidera Relapse,Gilenya Relapse Rate,Tecfidera Relapse Rate,uplift,,group,Gilenya patients,Tecfidera patients,Gilenya Relapse,Tecfidera Relapse,Gilenya Relapse Rate,Tecfidera Relapse Rate,uplift
+1,152,183,27,58,0.178 ,0.317 ,0.139 ,,1,173,162,37,29,0.214 ,0.179 ,-0.035 
+2,163,172,19,25,0.117 ,0.145 ,0.029 ,,2,160,175,17,32,0.106 ,0.183 ,0.077 
+3,173,162,9,16,0.052 ,0.099 ,0.047 ,,3,148,186,15,21,0.101 ,0.113 ,0.012 
+4,180,154,14,8,0.078 ,0.052 ,-0.026 ,,4,174,161,13,16,0.075 ,0.099 ,0.025 
+5,183,152,31,7,0.169 ,0.046 ,-0.123 ,,5,168,167,15,19,0.089 ,0.114 ,0.024 
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+"performance: direction=1, groups=10",,,,,,,,,,,,,,,,
+"Training data, Qini=-0.03",,,,,,,,,"Test data, Qini=0.003",,,,,,,
+group,Gilenya patients,Tecfidera patients,Gilenya Relapse,Tecfidera Relapse,Gilenya Relapse Rate,Tecfidera Relapse Rate,uplift,,group,Gilenya patients,Tecfidera patients,Gilenya Relapse,Tecfidera Relapse,Gilenya Relapse Rate,Tecfidera Relapse Rate,uplift
+1,97,71,19,2,0.196 ,0.028 ,0.168 ,,1,83,85,9,10,0.108 ,0.118 ,-0.009 
+2,86,81,12,5,0.140 ,0.062 ,0.078 ,,2,85,82,6,9,0.071 ,0.110 ,-0.039 
+3,91,76,9,1,0.099 ,0.013 ,0.086 ,,3,89,78,3,7,0.034 ,0.090 ,-0.056 
+4,90,79,5,7,0.056 ,0.089 ,-0.033 ,,4,85,83,10,9,0.118 ,0.108 ,0.009 
+5,85,81,5,8,0.059 ,0.099 ,-0.040 ,,5,77,90,10,8,0.130 ,0.089 ,0.041 
+6,87,80,4,8,0.046 ,0.100 ,-0.054 ,,6,71,96,5,13,0.070 ,0.135 ,-0.065 
+7,79,89,8,10,0.101 ,0.112 ,-0.011 ,,7,78,90,8,17,0.103 ,0.189 ,-0.086 
+8,84,83,11,15,0.131 ,0.181 ,-0.050 ,,8,82,85,9,15,0.110 ,0.176 ,-0.067 
+9,90,77,17,13,0.189 ,0.169 ,0.020 ,,9,94,73,17,9,0.181 ,0.123 ,0.058 
+10,62,106,10,45,0.161 ,0.425 ,-0.263 ,,10,79,89,20,20,0.253 ,0.225 ,0.028 
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+"performance: direction=1, groups=5",,,,,,,,,,,,,,,,
+"Training data, Qini=-0.03",,,,,,,,,"Test data, Qini=0.003",,,,,,,
+group,Gilenya patients,Tecfidera patients,Gilenya Relapse,Tecfidera Relapse,Gilenya Relapse Rate,Tecfidera Relapse Rate,uplift,,group,Gilenya patients,Tecfidera patients,Gilenya Relapse,Tecfidera Relapse,Gilenya Relapse Rate,Tecfidera Relapse Rate,uplift
+1,183,152,31,7,0.169 ,0.046 ,0.123 ,,1,168,167,15,19,0.089 ,0.114 ,-0.024 
+2,181,155,14,8,0.077 ,0.052 ,0.026 ,,2,174,161,13,16,0.075 ,0.099 ,-0.025 
+3,172,161,9,16,0.052 ,0.099 ,-0.047 ,,3,148,186,15,21,0.101 ,0.113 ,-0.012 
+4,163,172,19,25,0.117 ,0.145 ,-0.029 ,,4,160,175,17,32,0.106 ,0.183 ,-0.077 
+5,152,183,27,58,0.178 ,0.317 ,-0.139 ,,5,173,162,37,29,0.214 ,0.179 ,0.035 
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+"modelling relapse (not re-label response variable): Uplift RF, ntree=100, split_method='KL'",,,,,,,,,,,,,,,,
+"performance: direction=2, groups=10",Gilenya_relapse_rate,Tecfidera_relapse_rate,actual_treatment,summary_actual_treatment_effect,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment,summary_expect_treatment_effect,AUC,Qini,,,,,,
+Training top 50%,0.022 ,0.251 ,-0.230 ,-0.417 ,0.096 ,0.154 ,-0.058 ,-0.071 ,0.878 ,0.065 ,,,,,,
+Training bottom 50%,0.232 ,0.045 ,0.187 ,-0.417 ,0.144 ,0.131 ,0.013 ,-0.071 ,0.878 ,0.065 ,,,,,,
+Test top 50%,0.102 ,0.134 ,-0.032 ,-0.025 ,0.096 ,0.153 ,-0.057 ,-0.065 ,0.686 ,0.001 ,,,,,,
+Test bottom 50%,0.134 ,0.141 ,-0.007 ,-0.025 ,0.141 ,0.132 ,0.008 ,-0.065 ,0.686 ,0.001 ,,,,,,

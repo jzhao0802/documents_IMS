@@ -1,0 +1,73 @@
+
+# Automation Script for Batch submit of SAS programs in UNIX
+
+# This script will submit each SAS job successively till all
+# the programs are run. If at any point it encounters an 
+# error, the script will stop and send an email to the
+# programmer informing at which point the SAS jobs had ended
+
+# The script needs to be placed in the same location as the
+# SAS codes and can be run from UNIX prompt using the command
+# "sh auto.txt". The only parameters that are required are
+# the SAS program names (note: .SAS extension should not be
+# given) and your email ID
+
+
+# **********************  Give your email id below *************************
+
+mailto=myjia@cn.imshealth.com
+
+# ******************Give the program names without extension****************
+p[1]=01_read_product_master
+p[2]=02_read_mktdef_hcv
+p[3]=03_create_cmf10_formats
+p[4]=04_read_lrx_hcv_v2
+p[5]=05_check_rx_count_by_yrmon
+p[6]=06_formats
+p[7]=07_cohort_indexdate_v1
+p[8]=08_ifn_rbv_episodes_v1
+p[9]=09_current_prods_v1
+p[10]=10_prior_prods_v1
+p[11]=11_curr_prior_flag_v1
+p[12]=12_pi_status_flag
+p[13]=13_drug_level_file
+p[14]=14_read_ngps_v2
+p[15]=15_compute_pf_v2
+p[16]=16_genexh_regprdsob_v1
+p[17]=17_csv_allmonths_p3
+p[18]=addtion_daysupp_freq
+p[19]=completed_pats_fill_pattern_v1
+p[20]=all_pats_fill_pattern_v2
+
+
+# *******************Don't Change Anything Below****************************
+
+for i in ${p[*]};
+
+do
+
+nohup /usr/local/sas9_2_oracle/SASFoundation/9.2/sas -noterminal ${i}.sas
+
+#*************** CHECKS ********************
+
+echo Checking code ${i}.sas
+ervar=0
+ervar=$(more ${i}.log|grep "^ERROR"|wc -l)
+
+if test $ervar = 0
+ then 
+	echo 'NO ERROR'
+	
+ else 
+ 	echo 'ERROR'
+	echo 'PROGRAM WILL STOP NOW'
+	echo Program ${i}.sas ended with an error in JNJ History>error.log
+	sendmail ${mailto}<error.log
+	exit 1
+	
+fi 
+
+#*************** END CHECKS ****************
+
+done
+

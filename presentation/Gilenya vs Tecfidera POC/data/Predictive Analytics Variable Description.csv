@@ -1,0 +1,57 @@
+Variable,Definition,Notes,Summary Variable,Detailed Variable
+pat_id,Patient ID,character (length 16),,
+idx_rx,"Index medication - will be '01' or '10' for all patients
+
+Note that '04' through '09' are all interferons, and we generally combine them as a single ""interferon"" variable.  If not combining those, 04/05 should be combined with 08, and 06/07 should be combined with 09","            ""01"" = ""Fingolimod""
+            ""02"" = ""Glatiramer""
+            ""03"" = ""Natalizumab""
+            ""04"" = ""Extavia""
+            ""05"" = ""Betaseron""
+            ""06"" = ""Avonex""
+            ""07"" = ""Rebif""
+            ""08"" = Extavia/Betaseron""
+            ""09"" = ""Avonex/Rebif""
+            ""10"" = ""Tecfidera""
+            ""11"" = ""Aubagio""",,
+der_sex,Gender,"M' = male, 'F' = female",,
+age,Age,numeric,,
+pat_region,Region,"E' = northeast, 'W' = west, 'MW' = midwest, 'S' = South",,
+idx_paytype,Payer type,"C' = commercial, 'M' = medicare, 'R' = medicare risk, 'S' = Self-insured, 'U' = unknown/missing",,
+idx_prodtype,Provider type,"H' = HMO, 'P' = PPO, 'S' = point of service, 'D' = consumer directed, 'U' = unknown/missing",,
+pre_rx1-pre_rx11,Booleans for presense of pre-index medications (with variabels listed created for each possible rx per noted above),,,1
+pre_rx_any,Boolean for pre-index DMT use (max of pre_rx1-pre_rx11),,1,
+pre_ampyra1,Pre-index ampyra use,,,
+pchrlson,CCI score,,,
+idx_spec,Prescribing physician specialty,"01' = General practice/Family practice 
+'02' = Internal medicine 
+'03' = Neurology
+'04' = Other
+'05' = unknown",,
+pre_non_ms_total_allowed,Total non-ms pre-index costs,,1,
+pre_ms_total_allowed,MS-related total pre-index costs,,1,
+pre_non_ms_pharmacy_allowed,Non-ms pre-index pharmacy costs,,,1
+pre_ms_pharmacy_allowed,MS-related pre-index pharmacy costs,,,1
+pre_non_ms_medical_allowed,Non-ms pre-index medical costs,,,1
+pre_ms_medical_allowed,MS-related pre-index medical costs,,,1
+num_pre_meds,Number of unique medications received pre-index,,,
+num_pre_op_dx,Number of pre-index OP visits with an MS diagnosis,,,
+pre_mri_any,Boolean for pre-index MRI use,,1,
+num_pre_mri_any,Number of pre-index MRI scans,,,1
+pre_90_mri_any,Boolean for MRI use within 90 days pre-index,No other variables for use within 90 days or outside 90 days was created.  This variable is a subset of pre_mri_any,,
+pre_90_cort_any,Boolean for corticosteroid use within 90 days pre-index,"No other variables for use within 90 days or outside 90 days was created, and this was not created by type of corticosteroid.  Overlaps with pre_cort_oral and pre_cort_iv",,
+pre_cort_oral,Boolean for pre-index oral corticosteroid use,This or pre_cort_iv would equal any corticosteroid use,1,
+num_pre_cort_oral,Number of pre-index oral corticosteroid scripts,This plus num_pre_cort_iv would equal total number of corticosteroids,,1
+pre_cort_iv,Boolean for pre-index iv corticosteroid use,This or pre_cort_oral would equal any corticosteroid use,1,
+num_pre_cort_iv,Number of pre-index iv corticosteroid scripts,This plus num_pre_cort_oral would equal total number of corticosteroids,,1
+pre_comor1-pre_comor33,Booleans for pre-index symptoms and comorbidities,See attached file with format,,
+pre_relapse,Boolean for presense of pre-index relapse,,1,
+num_pre_relapses,Number of pre-index relapses,,,1
+pre_relapse_180,Boolean for relapse within 180 days pre-index,This variable is a subset of pre_relapse,,
+pre_relapse_90,Boolean for relapse within 90 days pre-index,This variable is a subset of pre_relapse and pre_relapse_180,,
+pre_ip_relapse,Boolean for inpatient relapse within 90 days pre-index,This variable is a subset of pre_relapse; by definition those with pre_relapse = 1 and pre_ip_relapse = 0 would have an outpatient relapse pre-index,,1
+persistent,Boolean for persistent ,,,
+persist_days,Days persistent,equal to 360 where persistent = 1,,
+post_relapse,Boolean for presense of post-index relapse anytime,,1,
+num_post_relapses,Number of post-index relapses anytime,,,1
+post_relapse_persist,Boolean for presense of post-index relapse while persistent,Main outcome variable of interest,1,
+num_post_relapses_persist,Number of post-index relapses while persistent,Main outcome variable of interest,,1

@@ -1,0 +1,110 @@
+Model: 1A Detail,Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.097,0.217,-0.12,-0.2,0.093,0.237,-0.143,-0.217,0.811
+Training bottom 50%,0.138,0.057,0.08,-0.2,0.135,0.061,0.074,-0.217,0.811
+Test top 50%,0.149,0.123,0.025,0.048,0.099,0.246,-0.147,-0.238,0.664
+Test bottom 50%,0.101,0.124,-0.023,0.048,0.152,0.061,0.091,-0.238,0.664
+,,,,,,,,,
+,,,,,,,,,
+Model: 1A Summary,Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.102,0.189,-0.087,-0.139,0.098,0.208,-0.11,-0.168,0.782
+Training bottom 50%,0.132,0.08,0.052,-0.139,0.132,0.074,0.058,-0.168,0.782
+Test top 50%,0.135,0.101,0.034,0.073,0.1,0.215,-0.115,-0.181,0.661
+Test bottom 50%,0.115,0.154,-0.039,0.073,0.145,0.079,0.066,-0.181,0.661
+,,,,,,,,,
+,,,,,,,,,
+Model: 1B Detail,Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.105,0.189,-0.084,-0.131,0.101,0.2,-0.099,-0.146,0.787
+Training bottom 50%,0.13,0.084,0.046,-0.131,0.131,0.084,0.047,-0.146,0.787
+Test top 50%,0.13,0.137,-0.007,-0.012,0.112,0.211,-0.099,-0.151,0.689
+Test bottom 50%,0.117,0.111,0.006,-0.012,0.138,0.086,0.052,-0.151,0.689
+,,,,,,,,,
+,,,,,,,,,
+Model: 1B Summary,Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.098,0.163,-0.064,-0.093,0.094,0.179,-0.085,-0.117,0.759
+Training bottom 50%,0.136,0.107,0.029,-0.093,0.136,0.104,0.033,-0.117,0.759
+Test top 50%,0.12,0.121,-0.001,-0.002,0.098,0.183,-0.085,-0.123,0.702
+Test bottom 50%,0.127,0.126,0.001,-0.002,0.148,0.109,0.038,-0.123,0.702
+,,,,,,,,,
+,,,,,,,,,
+Model: 1C Detail (AUC),Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.147,0.214,-0.068,-0.075,0.149,0.195,-0.046,-0.033,0.747
+Training bottom 50%,0.084,0.076,0.007,-0.075,0.08,0.093,-0.013,-0.033,0.747
+Test top 50%,0.158,0.171,-0.013,-0.015,0.156,0.201,-0.045,-0.033,0.74
+Test bottom 50%,0.085,0.083,0.002,-0.015,0.083,0.095,-0.012,-0.033,0.74
+,,,,,,,,,
+,,,,,,,,,
+Model: 1C Detail (treatment effect),Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.117,0.201,-0.085,-0.117,0.126,0.181,-0.054,-0.048,0.762
+Training bottom 50%,0.118,0.086,0.032,-0.117,0.104,0.11,-0.006,-0.048,0.762
+Test top 50%,0.137,0.16,-0.023,-0.037,0.133,0.188,-0.054,-0.05,0.74
+Test bottom 50%,0.108,0.095,0.013,-0.037,0.109,0.113,-0.005,-0.05,0.74
+,,,,,,,,,
+,,,,,,,,,
+Model: 1C Summary (AUC),Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.103,0.167,-0.063,-0.087,0.117,0.15,-0.033,-0.027,0.74
+Training bottom 50%,0.132,0.109,0.024,-0.087,0.118,0.124,-0.006,-0.027,0.74
+Test top 50%,0.105,0.114,-0.009,-0.017,0.115,0.147,-0.032,-0.026,0.714
+Test bottom 50%,0.142,0.133,0.009,-0.017,0.128,0.133,-0.005,-0.026,0.714
+,,,,,,,,,
+,,,,,,,,,
+Model: 1C Summary (treatment effect),Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.093,0.167,-0.075,-0.111,0.102,0.152,-0.05,-0.052,0.758
+Training bottom 50%,0.143,0.106,0.037,-0.111,0.13,0.128,0.002,-0.052,0.758
+Test top 50%,0.118,0.109,0.01,0.021,0.103,0.153,-0.05,-0.053,0.71
+Test bottom 50%,0.129,0.14,-0.011,0.021,0.14,0.137,0.003,-0.053,0.71
+,,,,,,,,,
+,,,,,,,,,
+Model: 2A Detail,Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.058,0.171,-0.113,-0.189,0.069,0.208,-0.139,-0.224,0.674
+Training bottom 50%,0.183,0.107,0.076,-0.189,0.17,0.085,0.085,-0.224,0.674
+Test top 50%,0.111,0.097,0.014,0.028,0.073,0.196,-0.122,-0.228,0.501
+Test bottom 50%,0.137,0.151,-0.014,0.028,0.185,0.079,0.106,-0.228,0.501
+,,,,,,,,,
+,,,,,,,,,
+Model: 2A Summary,Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.064,0.141,-0.078,-0.121,0.078,0.186,-0.107,-0.171,0.643
+Training bottom 50%,0.175,0.132,0.044,-0.121,0.157,0.093,0.064,-0.171,0.643
+Test top 50%,0.106,0.081,0.025,0.052,0.08,0.182,-0.102,-0.173,0.484
+Test bottom 50%,0.142,0.168,-0.027,0.052,0.162,0.091,0.071,-0.173,0.484
+,,,,,,,,,
+,,,,,,,,,
+Model: 2B Detail,Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.073,0.15,-0.077,-0.118,0.078,0.189,-0.111,-0.174,0.635
+Training bottom 50%,0.163,0.122,0.041,-0.118,0.157,0.094,0.063,-0.174,0.635
+Test top 50%,0.085,0.091,-0.006,-0.013,0.079,0.182,-0.103,-0.181,0.539
+Test bottom 50%,0.163,0.156,0.007,-0.013,0.167,0.089,0.078,-0.181,0.539
+,,,,,,,,,
+,,,,,,,,,
+Model: 2B Summary,Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.062,0.141,-0.079,-0.131,0.088,0.173,-0.086,-0.137,0.624
+Training bottom 50%,0.184,0.132,0.052,-0.131,0.152,0.101,0.051,-0.137,0.624
+Test top 50%,0.084,0.097,-0.012,-0.03,0.087,0.174,-0.087,-0.142,0.527
+Test bottom 50%,0.169,0.151,0.018,-0.03,0.155,0.1,0.055,-0.142,0.527
+,,,,,,,,,
+,,,,,,,,,
+Model: 2C Detail(AUC),Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.058,0.171,-0.113,-0.189,0.069,0.208,-0.139,-0.224,0.674
+Training bottom 50%,0.183,0.107,0.076,-0.189,0.17,0.085,0.085,-0.224,0.674
+Test top 50%,0.111,0.097,0.014,0.028,0.073,0.196,-0.122,-0.228,0.501
+Test bottom 50%,0.137,0.151,-0.014,0.028,0.185,0.079,0.106,-0.228,0.501
+,,,,,,,,,
+,,,,,,,,,
+Model: 2C Detail(treatment effect),Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.074,0.109,-0.035,-0.039,0.113,0.142,-0.029,-0.022,0.577
+Training bottom 50%,0.166,0.162,0.003,-0.039,0.123,0.131,-0.008,-0.022,0.577
+Test top 50%,0.093,0.133,-0.041,-0.084,0.113,0.142,-0.029,-0.023,0.569
+Test bottom 50%,0.157,0.114,0.043,-0.084,0.124,0.13,-0.007,-0.023,0.569
+,,,,,,,,,
+,,,,,,,,,
+Model: 2C Summary(AUC),Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.064,0.119,-0.055,-0.078,0.104,0.151,-0.047,-0.06,0.598
+Training bottom 50%,0.174,0.151,0.023,-0.078,0.132,0.12,0.013,-0.06,0.598
+Test top 50%,0.077,0.089,-0.012,-0.022,0.105,0.151,-0.046,-0.059,0.577
+Test bottom 50%,0.17,0.16,0.01,-0.022,0.132,0.12,0.013,-0.059,0.577
+,,,,,,,,,
+,,,,,,,,,
+Model: 2C Summary(treatment effect),Actual Gilenya relapse rate ,Actual Tecfidera relapse rate,Actual difference in relapse rate,Actual summary treatment effect,Expected Gilenya relapse rate ,Expected Tecfidera relapse rate,Expected difference in relapse rate,Expected summary treatment effect,AUC
+Training top 50%,0.063,0.137,-0.075,-0.117,0.084,0.177,-0.093,-0.145,0.64
+Training bottom 50%,0.177,0.135,0.042,-0.117,0.153,0.1,0.052,-0.145,0.64
+Test top 50%,0.082,0.081,0.001,0.004,0.085,0.175,-0.089,-0.145,0.505
+Test bottom 50%,0.165,0.168,-0.003,0.004,0.155,0.099,0.056,-0.145,0.505

@@ -1,0 +1,41 @@
+x<-seq(0.35,0.65,0.1)
+x
+y<-seq(0,17,1)
+it<-seq(1/30,10,n=10)
+it
+plot(x,type="n",xlim=c(0.5,1.5),ylim=c(0,6.5))
+
+#lines(density(rgamma(100,2,2)),col=3)
+c(rep(1,5),rep(2,5))
+c=1
+legend<-numeric(10)
+for (i in seq(1/30,10,n=10)){
+	a=30*i
+	lines(density(rgamma(100,a,a)),col=c,lty=c(rep(1,5),rep(2,5)),lwd=2)
+	legend[c]=paste("gamma(",a,",",a,")",sep="")
+	c=c+1
+	Sys.sleep(.1)
+
+}
+legend(1.18,6.5,legend=legend, col=c(1:10),lty=c(rep(1,5),rep(2,5)),lwd=2,cex=0.8)
+
+
+x<-seq(0.35,0.65,0.1)
+x
+y<-seq(0,17,1)
+it<-seq(1/30,10,n=10)
+it
+plot(x,type="n",xlim=c(0.35,0.65),ylim=c(0,17))
+
+#lines(density(rbeta(100,2,2)),col=3)
+c(rep(1,5),rep(2,5))
+c=1
+legend<-numeric(10)
+for (i in seq(1/30,10,n=10)){
+	lines(density(rbeta(100,30*i,30*i)),col=c,lty=c(rep(1,5),rep(2,5)),lwd=2)
+	legend[c]=paste("beta(",30*i,",",30*i,")",sep="")
+	c=c+1
+	Sys.sleep(.1)
+}
+legend(0.55,17,legend=legend, col=c(1:10),lty=c(rep(1,5),rep(2,5)),lwd=2,cex=0.8)
+

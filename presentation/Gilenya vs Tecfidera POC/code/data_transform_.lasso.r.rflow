@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rflow [
+<!ENTITY lt "&#38;#60;">
+<!ENTITY gt "&#62;">
+<!ENTITY amp "&#38;#38;">
+<!ENTITY apos "&#39;">
+<!ENTITY quot "&#34;">
+]>
+<rflow>
+	<graph version="0.3" width="913" height="585" locationtype="a" offsetx="0" offsety="0">
+		<setting>
+			<entry key="OUTPUT_DIRECTORY"></entry>
+			<entry key="SAVE_CACHE">false</entry>
+			<entry key="FONT_SCREEN">monospace</entry>
+			<entry key="TEXT_ENCODING">windows-1252</entry>
+			<entry key="LOAD_CACHE">false</entry>
+			<entry key="IGNORE_ERROR">false</entry>
+			<entry key="SAVE_WORKSPACE"></entry>
+			<entry key="OUTPUT_REPORT">true</entry>
+			<entry key="RUN_TYPE">2</entry>
+			<entry key="OUTPUT_ITEMS">script</entry>
+			<entry key="USE_GRID">true</entry>
+			<entry key="REPORT_TYPES">pdf,html</entry>
+			<entry key="FOLDER">data_transform_.lasso.r</entry>
+			<entry key="GRID_DISTANCE2">10</entry>
+			<entry key="IMAGE_SIZE">480,480</entry>
+			<entry key="FONT_OTHER">sans-serif</entry>
+		</setting>
+		<node id="0" x="120" y="90">
+			<command>#variable transformation 
+# there will be 3 datasets, dataset1 is the prior version2, dataset2 and dataset3 need to be created here
+
+library(glmnet)
+options(digits = 4)
+
+library(e1071)
+
+#1. set up working folder and read in model data
+data_path&lt;- &apos;D:\\working materials\\BRACE\\004 Output&apos;
+data_file&lt;- &apos;final_model_data_comb_hui.csv&apos;;
+out_path&lt;-&apos;D:\\working materials\\BRACE\\004 Output&apos;
+code_path &lt;- &apos;D:\\working materials\\BRACE\\003 R Code&apos;
+setwd(out_path)
+
+
+#Sampling and modelling
+raw_data &lt;- read.table(data_file, sep=&apos;,&apos;, head=T)
+dim(raw_data) #5483 101
+
+var_list &lt;- names(raw_data)
+treatment_var &lt;- var_list[grep(&apos;interf|glatir|none&apos;, var_list)]
+
+var_list_v1 &lt;- var_list
+dataset_v1 &lt;- raw_data[, var_list_v1]
+#Create Dataset 2 
+#This dataset will contain binary variables (from original categorical variables) + rescaled continuous variables + 
+#rescaled count variables. Continuous and count variables relate to e.g. cost of medication, number of operations, etc.
+
+data_path&lt;- &apos;D:\\working materials\\BRACE\\004 Output&apos;
+data_file&lt;- &apos;brace_pred_analytics_file.csv&apos;;
+
+setwd(data_path)
+
+raw_data&lt;- read.table(data_file, header=T, sep=&apos;,&apos;)
+# change names of all variables into lower case
+names(raw_data)&lt;- tolower(names(raw_data))
+
+# qc raw data, data missing etc.
+dim(raw_data) 
+#[1] 5670  110
+which(is.na(raw_data) == T)
+
+#create new vaialbe for modelling
+var_all_list &lt;- names(raw_data)
+
+
+pre_4_12_rx_brace_list &lt;- var_all_list[grep(&quot;pre_4_12_rx[2 4 5 6 7]&quot;, var_all_list, perl=TRUE)]
+pre_1_3_rx_brace_list &lt;- var_all_list[grep(&apos;pre_1_3_rx[2 4 5 6 7]&apos;, var_all_list, perl=TRUE)]
+pre_13_24_rx_brace_list &lt;- var_all_list[grep(&apos;pre_13_24_rx[2 4 5 6 7]&apos;, var_all_list, perl=TRUE)]
+#create pre_brance flag for three time periods
+raw_data$pre_rx_brace_flag1 &lt;- ifelse(apply(raw_data[,pre_1_3_rx_brace_list], 1, sum) &gt;0, 1, 0)
+raw_data$pre_rx_brace_flag2 &lt;- ifelse(apply(raw_data[,pre_4_12_rx_brace_list], 1, sum) &gt;0, 1, 0)
+#raw_data$pre_rx_brace_flag3 &lt;- ifelse(apply(raw_data[,pre_13_24_rx_brace_list], 1, sum) &gt;0, 1, 0)
+#raw_data$pre_rx_flag1 = NULL
+pre_rx_any_list &lt;- var_all_list[grep(&apos;pre.+rx_any$&apos;, var_all_list)]
+
+pre_rx_brace_list &lt;- names(raw_data)[grep(&apos;flag\\d$&apos;, names(raw_data), perl=TRUE)]
+#pre_rx_any_list &lt;- var_all_list[grep(&apos;^pre_[1 4 13].*any$&apos;, var_all_list, perl=TRUE)]
+#pre_rx_any_list &lt;- c(pre_rx_any_list[3], pre_rx_any_list[2], pre_rx_any_list[1])
+raw_data$pre_Interf =0
+raw_data$pre_Glatir =0
+raw_data$pre_none=0
+
+
+pre_idx_list &lt;- c(&apos;pre_Interf&apos;, &apos;pre_Glatir&apos;, &apos;pre_none&apos;)
+for (i in 1:nrow(raw_data)){
+    #if (length(which(raw_data[i,pre_rx_brace_list[-3]]!=0))==0){
+    if (length(which(raw_data[i, pre_rx_any_list[-1]]!=0))==0){
+        raw_data$pre_none[i] &lt;- 1
+    }else if(raw_data[i, pre_rx_brace_list[1]]==0 &amp; raw_data[i, pre_rx_brace_list[2]]==1){
+        set.seed(1)
+        idx &lt;-sample(rep(which(raw_data[i, pre_4_12_rx_brace_list ] &gt;0), 2), 1)
+        raw_data$pre_Interf[i] &lt;- ifelse(idx !=1, 1,0)
+        raw_data$pre_Glatir[i] &lt;- ifelse(idx ==1, 1,0)
+    }else if(raw_data[i, pre_rx_brace_list[1]]==1){
+        set.seed(10)
+        idx &lt;-sample(rep(which(raw_data[i, pre_1_3_rx_brace_list ] &gt;0), 2), 1)
+        raw_data$pre_Interf[i] &lt;- ifelse(idx !=1, 1,0)
+        raw_data$pre_Glatir[i] &lt;- ifelse(idx ==1, 1,0)
+    }
+    
+}
+table(raw_data$pre_Interf)[2]+
+    table(raw_data$pre_Glatir)[2]+
+    table(raw_data$pre_none)[2] - nrow(raw_data)
+#187 patients rows deleted
+
+
+#create Index treatment vaiables
+raw_data$Interf &lt;- ifelse(raw_data$idx_rx !=2, 1, 0)
+raw_data$Glatir &lt;- ifelse(raw_data$idx_rx ==2, 1, 0)
+idx_list &lt;- c(&apos;Interf&apos;, &apos;Glatir&apos;)
+idx_temp &lt;- ifelse(raw_data$Interf==1, &apos;Interf&apos;, &apos;Glatir&apos;)
+pos_list &lt;- numeric()
+for(i in c(&apos;pre_Interf&apos;, &apos;pre_Glatir&apos;, &apos;pre_none&apos;)){
+    
+    eval(parse(text=paste(&apos;pre &lt;- raw_data$&apos;, i, sep=&apos;&apos;)))
+    tb &lt;- table(idx_temp, pre)
+    if (&apos;1&apos; %in% colnames(tb)){
+        pos_vct &lt;- tb[, dim(tb)[2]]
+    }else{
+        pos_vct &lt;- 0    
+    } 
+    pos_list &lt;- cbind(pos_list, pos_vct)
+}
+pos.df &lt;- as.data.frame(pos_list)
+pre_idx_list &lt;- names(raw_data)[grep(&apos;^pre_\\D{4,6}$&apos;, names(raw_data), perl=TRUE)]
+colnames(pos.df) &lt;- pre_idx_list
+raw_data_delNoneBrace &lt;- raw_data[which(apply(raw_data[, pre_idx_list], 1, sum) &gt; 0),] #5483 272
+#raw_data &lt;- raw_data_delNoneBrace
+#create response variable 
+raw_data_delNoneBrace$response &lt;- ifelse(raw_data_delNoneBrace$num_post_relapse_1yr &gt;0, 1, 0)
+raw_data &lt;- raw_data_delNoneBrace
+var_delete &lt;- names(raw_data)[grep(&apos;rx\\d{1,2}$|any$|persistent|relapse&apos;, names(raw_data), perl=TRUE)]
+raw_data &lt;- raw_data[, c(setdiff(names(raw_data), c(&apos;num_post_relapse_1yr&apos;, pre_rx_brace_list, var_delete)), &apos;num_pre_relapse_1yr&apos;)]
+dim(raw_data)
+#[1] 5483   66
+var_list &lt;- names(raw_data)
+
+#for original categorical variables
+constant_flag &lt;- lapply(raw_data, function(x){length(levels(as.factor(x))) ==1}) 
+constant_var_list &lt;- var_list[unlist(constant_flag)] # character(0)
+#lapply(raw_data[, constant_var_list], function(x)levels(as.factor(x)))
+binary_flag &lt;- lapply(raw_data, function(x){length(levels(as.factor(x))) == 2})
+binary_var_list &lt;- var_list[unlist(binary_flag)]
+lapply(raw_data[, binary_var_list], function(x)levels(as.factor(x)))
+binary_var_list2 &lt;- c(
+                    #constant_var_list, 
+                    binary_var_list, &apos;pat_region&apos;, &apos;idx_rx&apos;, &apos;idx_paytype&apos;, &apos;idx_prodtype&apos;, &apos;idx_spec_grp&apos;, &apos;pchrlson&apos;)
+#original categorical variables end
+
+# rescaled continuous variables
+lapply(raw_data[, setdiff(var_list, binary_var_list2)], function(x)length(levels(as.factor(x))))
+
+conti_var_list &lt;- setdiff(var_list, c(binary_var_list2, &apos;pat_id&apos;))
+data_conti &lt;- raw_data[, conti_var_list]
+#data_conti_scale &lt;- scale(raw_data[, conti_var_list])
+data_conti_scale &lt;- as.data.frame(lapply(data_conti, function(x)(x-mean(x))/(max(x)-min(x))))
+#data_conti_scale_test &lt;- sapply(data_conti, function(x)(x-mean(x))/(max(x)-min(x)), simplify = TRUE, USE.NAMES = TRUE)
+rownames(data_conti_scale) &lt;- NULL
+#scale the continuous variables end
+
+#create dummy variables for catigaical variables
+data_for_dummy &lt;- raw_data[, setdiff(binary_var_list2, c(constant_var_list, binary_var_list))]
+data_for_model_matrix &lt;- lapply(data_for_dummy, as.factor)
+data_dummy &lt;- model.matrix(~., data_for_model_matrix, contrasts.arg=lapply(data_for_model_matrix, contrasts, contrasts=F))[, -1]
+rownames(data_dummy) &lt;- NULL
+dataset_v2 &lt;- data.frame(data_dummy, data_conti_scale)
+dataset_v2[1:2,]
+dim(dataset_v2)
+#[1] 5483   52
+
+
+#create dataset V3
+#In summary each patient vector is divided by its norm so that it has unit length
+dataset_v2_normalize &lt;- apply(dataset_v2, 1, function(x) x/sd(x))
+dataset_v3 &lt;- as.data.frame(t(dataset_v2_normalize)) 
+dataset_v3$response &lt;- dataset_v2$response
+
+#create table VT1
+#randomly select 4k training data
+dataset_version &lt;- &apos;v1&apos;
+training_size &lt;- 4000
+subtraining_size &lt;-1000
+seed=123
+sampling_training_data &lt;- function(seed, dataset_version, training_size, subtraining_size){
+    eval(parse(text=paste(&apos;raw_data &lt;- dataset_&apos;, dataset_version, sep=&apos;&apos;)))
+    training &lt;- numeric(nrow(raw_data))
+    response1_idx &lt;- which(raw_data$response == 1)
+    training_response1_size &lt;- training_size/dim(raw_data)[1]*length(response1_idx)
+    set.seed(seed)
+    
+    response1_training_idx &lt;- sample(response1_idx, training_response1_size)
+    response0_idx &lt;- which(raw_data$response == 0)
+    training_response0_size &lt;- training_size/dim(raw_data)[1]*length(response0_idx)
+    set.seed(seed)
+    
+    response0_training_idx &lt;- sample(response0_idx, size=training_response0_size)
+    idx_training &lt;- c(response1_training_idx, response0_training_idx)
+    training[idx_training]&lt;- 1
+    tb &lt;- table(training, raw_data$response)
+    prop.table(tb, 1)
+    prop.table(tb, 2)
+    training_data &lt;- raw_data[training==1,]
+    test_data &lt;- raw_data[training==0,]
+    
+    raw_data &lt;- training_data
+    subtraining &lt;- numeric(nrow(raw_data))
+    response1_idx &lt;- which(raw_data$response == 1)
+    training_response1_size &lt;- subtraining_size/dim(raw_data)[1]*length(response1_idx)
+    set.seed(seed)
+    
+    response1_training_idx &lt;- sample(response1_idx, training_response1_size)
+    response0_idx &lt;- which(raw_data$response == 0)
+    training_response0_size &lt;- subtraining_size/dim(raw_data)[1]*length(response0_idx)
+    set.seed(seed)
+    
+    response0_training_idx &lt;- sample(response0_idx, size=training_response0_size)
+    idx_training &lt;- c(response1_training_idx, response0_training_idx)
+    subtraining[idx_training]&lt;- 1
+    tb &lt;- table(subtraining, raw_data$response)
+    prop.table(tb, 1)
+    prop.table(tb, 2)
+    subtraining_data &lt;- raw_data[subtraining==1,]
+    out_list &lt;- list()
+    out_list &lt;- list(training_data &lt;-training_data, test_data &lt;- test_data, subtraining_data &lt;- subtraining_data )
+    return(out_list)
+    
+}
+
+#randomly select 1k, 2k, 3k, all ~4k sample from 4k training samples as subtraining sample
+source(&apos;D:\\working materials\\BRACE\\003 R Code\\resampling.r&apos;)
+set.seed(100)
+seed_seq &lt;- runif(10, min = 1, max = 99999)
+list_predict_prob_training_lasso &lt;- list()
+list_predict_prob_test_lasso &lt;- numeric()
+list_auc_lasso &lt;- numeric()
+actual_test_list &lt;- numeric()
+v &lt;- &apos;v1&apos;
+for(seed in seed_seq){
+    for(v in c(&apos;v1&apos;, &apos;v2&apos;, &apos;v3&apos;)[1]){
+        for (subsize in c(1000, 2000, 3000, 3999)){
+            seed.f &lt;- seed
+            v.f &lt;- v
+            subsize.f &lt;- subsize
+            output_data_list &lt;- sampling_training_data(seed=seed.f, dataset_version=v.f, training_size=4000, subtraining_size=subsize.f)
+            #eval(parse(text=paste(&apos;output_data_list &lt;- sampling_training_data(seed=&apos;, seed, &apos;,dataset_version=&apos;, v, &apos;,training_size=4000, subtraining_size=&apos;, subsize, &apos;)&apos;,  sep=&apos;&apos;)))
+            training_data_1 &lt;- output_data_list[[1]]
+            test_data_1 &lt;- output_data_list[[2]]
+            subtraining_data &lt;- output_data_list[[3]]
+            test_response &lt;- test_data_1$response
+            actual_test_list &lt;- rbind(actual_test_list, c(seed, test_response))
+            
+            #------------- Lasso: based on cross-validation on subtraining data------------------
+            
+            training_data &lt;- subtraining_data
+            test_data &lt;- test_data_1
+            
+            fold_num &lt;- 10
+            k.folds&lt;- fold_num
+            foldid&lt;- nrow(training_data)
+            foldid[training_data$response==1]&lt;- sample(rep(1:k.folds, length=length(which(training_data$response==1))))
+            foldid[training_data$response==0]&lt;- sample(rep(1:k.folds, length=length(which(training_data$response==0))))
+            table(training_data$response , foldid) # QC
+            
+            training_matrix&lt;- model.matrix(response~., data=training_data)[,-1] # removes intercept term
+            test_matrix&lt;- model.matrix(response~., data=test_data)[,-1]
+            initial_lambda&lt;- glmnet(x=training_matrix, y=training_data$response, family=&quot;binomial&quot;, alpha=1, standardize=F)$lambda
+            lambda_seq&lt;- c(initial_lambda[-length(initial_lambda)] , seq(initial_lambda[length(initial_lambda)] , 0 , length=500))
+            cv_auc &lt;- matrix(nr=k.folds , nc=length(lambda_seq))
+            for(i in 1:k.folds){
+                cv_training_data&lt;- training_data[foldid!=i,]
+                cv_training_matrix&lt;- model.matrix(response~., data=cv_training_data)[,-1]
+                cv_test_data&lt;- training_data[foldid==i,]
+                cv_test_matrix&lt;- model.matrix(response~., data=cv_test_data)[,-1]
+                
+                fit_lasso&lt;- glmnet(cv_training_matrix, cv_training_data$response, 
+                                   lambda=lambda_seq, family=&quot;binomial&quot;, alpha=1, standardize=F)
+                test_pred&lt;- predict(fit_lasso, cv_test_matrix, type=&quot;response&quot;)
+                test_pred_avg&lt;- apply(test_pred, 2, function(x){auc(cv_test_data$response , x)})
+                test_pred_avg&lt;- c(test_pred_avg , rep(NA , length(lambda_seq) - length(test_pred_avg))) #some small lambda may not be reached
+                
+                cv_auc[i,]&lt;- test_pred_avg
+            }
+            total_model&lt;- glmnet(x=training_matrix, y=training_data$response, lambda=lambda_seq, family=&quot;binomial&quot;, alpha=1, standardize=F)
+            cv_auc_mean&lt;- apply(cv_auc , 2 , function(x) mean(x[!is.na(x)]))
+            optimum_model&lt;- which.max(cv_auc_mean)
+            
+            
+            training_obs&lt;- predict(total_model, training_matrix, type=&quot;response&quot;)[,optimum_model]
+            training_auc&lt;- auc(training_data$response , training_obs)
+            test_obs&lt;- predict(total_model, test_matrix, type=&quot;response&quot;)[,optimum_model]
+            test_auc&lt;- auc(test_data$response , test_obs)
+            list_auc_lasso&lt;- rbind(list_auc_lasso , c(v, subsize , training_auc , test_auc))
+            
+            list_predict_prob_training_lasso&lt;- list(version=v, subsize=subsize, pred_training=training_obs)
+            list_predict_prob_test_lasso&lt;- rbind(list_predict_prob_test_lasso , c(v, subsize, test_obs))
+            #---------------------------------------------------------------------------------
+            
+        }
+    }
+    
+}
+auc_mean &lt;- tapply(list_auc_lasso, list(v, subsize), mean)
+auc_sd &lt;- tapply(list_auc_lasso, list(v, subsize), sd)
+#??????list_predict_prob_training &lt;- tapply(list_predict_prob_training_lasso, list(v, subsize), mean)
+#list_predict_prob_test &lt;- tapply(list_predict_prob_test_lasso, list(v, subsize), mean)
+#actual_test_list2 &lt;- tapply(actual_test_list, seed, mean)
+# set cut-off of predictions that predictive outcome rate is the same as actual rate on training data
+pred_thresh&lt;- mean(dataset_v1$response)
+
+for (i in 1:dim(list_predict_prob_training_lasso)[1]){
+    pred_test &lt;- list_predict_prob_test_lasso[i, -c(1,2)]
+    line_flag &lt;- list_predict_prob_test_lasso[i, c(1,2)]
+    actual_test_response &lt;- actual_test_list2[i %% 10]
+    #TPR ----- true positive rate
+    num_actual_postive &lt;- sum(actual_test_response) #actual positive response number
+    num_actual_negative &lt;- sum(1- actual_test_response)
+    
+    num_pred_positive &lt;- length[pred_test &gt;= pred_thresh]
+    num_pred_negative &lt;- length[pred_test &gt;= pred_thresh]
+    
+    num_true_positive &lt;- sum(actual_test_response[pred_test &gt;= pred_thresh])
+    num_false_positive &lt;- sum(1- actual_test_response[pred_test &gt;= pred_thresh])
+    num_true_negative &lt;- sum(1-actual_test_response[pred_test &lt; pred_thresh])
+    num_false_negative &lt;- sum(actual_test_response[pred_test &lt; pred_thresh])
+    
+    num_pred_negative1 &lt;- sum(1- actual_test_response[pred_test &gt;= pred_thresh])
+    TPR &lt;- num_true_positive/num_actual_positive                 #true positive / actual postive  (sensitivity)
+    FPR &lt;- num_false_positive/num_actual_negative                 #false positive / actual negative
+    TNR &lt;- 1- FPR                                                 #true negative / actual negative (specifity)
+    FNR &lt;- 1- TPR                                                 #false negative / actual positive
+    PPV &lt;- num_true_positive/num_pred_positive
+    outline &lt;- c(line_flag, TPR, FPR, TNR, FNR, PPV)
+}
+outline &lt;- as.data.frame(outline)
+names(outline) &lt;- c(&apos;version&apos;, &apos;subsize&apos;, &apos;TPR&apos;, &apos;FPR&apos;, &apos;TNR&apos;, &apos;FNR&apos;, &apos;PPV&apos;)
+false_rate &lt;- tapply(outline, list(version, subsize), mean)
+
+final_output &lt;- as.data.frame(cbind(auc_mean, auc_sd[, -c(1, 2)], false_rate[, -c(1, 2)]))
+
+
+
+</command>
+			<property title="data_transform_lasso"/>
+			<option type="com.ef_prime.rflow.node.base.FreeNodeModel"/>
+		</node>
+	</graph>
+	<task>
+		<taskgroup>
+			<taskproperty>
+				<entry key="title">Task</entry>
+			</taskproperty>
+		</taskgroup>
+	</task>
+</rflow>

@@ -1,0 +1,20 @@
+CV Lasso based on AUC evaluation,,,,,,,,,,,
+,Group,Gilenya_pat,Gilenya_relapse,Gilenya_relapse_rate,Tecfidera_pat,Tecfidera_relapse,Tecfidera_relapse_rate,actual_treatment,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment
+training,lowest 35%,663,106,0.16,266,66,0.248,-0.088,0.166,0.221,-0.055
+training,middle 30%,529,46,0.087,268,31,0.116,-0.029,0.086,0.113,-0.028
+training,highest 35%,537,51,0.095,392,29,0.074,0.021,0.088,0.095,-0.006
+test,lowest 50%,225,34,0.151,107,17,0.159,-0.008,0.149,0.195,-0.047
+test,highest 50%,195,18,0.092,136,13,0.096,-0.003,0.091,0.102,-0.011
+AUC of training data: 0.5169525,,,,,,,,,,,
+AUC of test data: 0.5101066,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+CV Lasso based on treatment effect evaluation,,,,,,,,,,,
+,Group,Gilenya_pat,Gilenya_relapse,Gilenya_relapse_rate,Tecfidera_pat,Tecfidera_relapse,Tecfidera_relapse_rate,actual_treatment,expect_Gilenya_relapse_rate,expect_Tecfidera_relapse_rate,expect_treatment
+training,lowest 35%,655,87,0.133,274,74,0.27,-0.137,0.146,0.209,-0.063
+training,middle 30%,532,43,0.081,265,20,0.075,0.005,0.085,0.114,-0.029
+training,highest 35%,542,73,0.135,387,32,0.083,0.052,0.109,0.109,0.001
+test,lowest 50%,226,29,0.128,106,17,0.16,-0.032,0.133,0.187,-0.054
+test,highest 50%,194,23,0.119,137,13,0.095,0.024,0.109,0.114,-0.005
+AUC of training data: 0.5881884,,,,,,,,,,,
+AUC of test data: 0.5883044,,,,,,,,,,,
